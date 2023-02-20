@@ -526,6 +526,10 @@
 
 
 /*** Footer ***/
+
+.footer{
+    background-color: var(--dark);
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -575,17 +579,17 @@
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
 
-.footer .copyright a {
+.footer .copyright button {
     color: var(--light);
 }
 
-.footer .footer-menu a {
+.footer .footer-menu button {
     margin-right: 15px;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
-.footer .footer-menu a:last-child {
+.footer .footer-menu button:last-child {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
