@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../Styles/style.css';
 import img from '../Assets/about.jpg'
 import { FaArrowRight, FaLinkedin, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
+import MoreButton from '../Common/MoreButton'
 
 
 const AboutHeader = () => {
@@ -19,7 +20,7 @@ const AboutHeader = () => {
 
     return (
 
-            <div className= {`container-xxl py-5 service-item-wrapper ${showContent ? 'show': ''}`}>
+            <div className= {`container-xxl pt-4 pb-5 service-item-wrapper ${showContent ? 'show': ''}`}>
             <div className="container">
                 <div className="row g-5 ">
                     <div className="col-lg-6" style={{ minHeight: '400px' }}>
@@ -32,7 +33,7 @@ const AboutHeader = () => {
                         <h1 className="mb-4">Welcome to eLEARNING</h1>
                         <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                         <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <div className="row gy-2 gx-4 mb-4">
+                        <div className="row gy-2 gx-4 mb-2">
                             <div className="col-sm-6">
                                 <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>Skilled Instructors</p>
                             </div>
@@ -58,6 +59,9 @@ const AboutHeader = () => {
                             <button className='primary-color-text social'><FaInstagramSquare /></button>
                             <button className='primary-color-text social'><FaFacebookSquare /></button>
                         </div>
+                        <div className="row justify-content-lg-start justify-content-center mt-3">
+                        <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" >Read More</button>
+    </div>
                     </div>
                 </div>
             </div>

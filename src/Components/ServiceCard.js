@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Styles/style.css';
 import { FaGraduationCap, FaGlobe, FaHome, FaBookOpen } from "react-icons/fa";
+import HeadingTitle from '../Common/HeadingTitle';
 
 const ServiceItem = () => {
   const [content, setContent] = useState([
@@ -49,8 +50,9 @@ const ServiceItem = () => {
   };
 
   return (
-    <div className="container-xxl py-4">
+    <div className="container-xxl py-5">
       <div className="container">
+        <HeadingTitle title="Services" mainTitle="What we offer"/>
         <div className="row g-4">
           {content.map((item, index) => (
             <div

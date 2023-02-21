@@ -390,6 +390,24 @@
 .social:hover{
     color: #0b5ed7;
 }
+.read-btn{
+    background-color: var(--primary);   
+    width: 30% !important;
+    color: white !important;
+    border: 1px solid var(--primary);
+}
+.read-btn:hover{
+    background-color: #0b5ed7;
+    color: white !important;
+    transition: 0.5s;
+}
+
+  @media (max-width: 767.98px) {
+    .read-btn{
+        width: 50% !important;
+    }
+}
+
 
 /*** Service ***/
 
@@ -506,6 +524,9 @@
 
 
 /*** Categories & Courses ***/
+.course-item{
+    background-color: var(--light);
+}
 .category img,
 .course-item img {
     transition: .5s;
@@ -515,6 +536,37 @@
 .course-item:hover img {
     transform: scale(1.1);
 }
+.more-btn{
+    background-color: var(--primary);   
+    width: 20% !important;
+    color: white !important;
+    border: 1px solid var(--primary);
+}
+.more-btn:hover{
+    background-color: #0b5ed7;
+    color: white !important;
+    transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+    .course-item p{
+        font-size: small;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .course-item p{
+        font-size: medium;
+    }
+    .more-btn{
+        width: 50% !important;
+    }
+}
+    @media (max-width: 450px) {
+        .course-item p{
+            font-size: smaller;
+        }
+      }
+
 
 
 /*** Team ***/
