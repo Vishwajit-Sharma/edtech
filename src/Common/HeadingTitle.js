@@ -4,9 +4,9 @@ import '../Styles/style.css'
 const HeadingTitle = ({ title, mainTitle }) => {
     return (
 
-        <div class="text-center" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center primary-color-text px-3">{title}</h6>
-            <h1 class="mb-5">{mainTitle}</h1>
+        <div className="text-center">
+            <h6 className="section-title bg-white text-center primary-color-text px-3">{title}</h6>
+            <h1 className="mb-5">{mainTitle}</h1>
         </div>
     )
 }

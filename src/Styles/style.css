@@ -428,6 +428,81 @@
     transform: translateY(0);
   }
 
+  /*** Features ***/
+
+  .features{
+    background-color: var(--light);
+  }
+  .features ul li{
+    padding: 3px 0;
+    font-size: large;
+  }
+  @media (max-width: 576px) {
+    .features ul li{
+        font-size: small;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .features ul li{
+        font-size: medium;
+    }
+    @media (max-width: 450px) {
+        .features ul li{
+            font-size: smaller;
+        }
+      }
+  }
+
+
+  /*** Demo Form ***/
+  .request-form {
+    background-color: var(--dark);
+    padding: 40px;
+  }
+  
+  @media (max-width: 992px) {
+    .request-form {
+      width: 90%;
+    }
+  }
+  @media (max-width: 450px) {
+    .request-form {
+      padding: 30px 20px;
+    }
+  }
+
+  .request-form ::placeholder{
+    color: rgb(131, 127, 127);
+    
+  }
+  
+  .request-form input,
+  .request-form  select
+ {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid var(--light);
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0px;
+  }
+  .request-form button {
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10px 15px;
+    margin-top: 30px;
+    /* margin-bottom: 0; */
+  }
+  
+  /* .request-form button {
+    width: auto;
+  } */
+  
+
 
 
 /*** Categories & Courses ***/
@@ -558,14 +633,16 @@
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    text-decoration: none;
 }
 
 .footer .btn.btn-link::before {
     position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    content: "";
+    font-family: "";
     font-weight: 900;
     margin-right: 10px;
+   
 }
 
 .footer .btn.btn-link:hover {
