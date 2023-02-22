@@ -5,7 +5,6 @@ import Contact from "./Screens/Contact";
 import Courses from "./Screens/Courses";
 
 import Team from "./Screens/Team";
-import Testimonial from "./Screens/Testimonial";
 import './App.css'
 import Home from "./Screens/Home";
 import Nav from "./Components/Nav";
@@ -42,7 +41,6 @@ function App() {
         <Route path="/courses" element={<Courses className="wow fadeIn"/>}/>
         <Route path="/contact" element={<Contact  className="wow fadeInUp"/>}/>
         <Route path="/team" element={<Team className="wow fadeIn"/>}/>
-        <Route path="/testimonial" element={<Testimonial  className="wow fadeInUp"/>}/>
        
       </Routes>
       </AnimatedWrapper>

@@ -5,6 +5,8 @@ import Features from '../Components/Features'
 import Footer from '../Components/Footer'
 import PopularCourses from '../Components/PopularCourses'
 import AboutHeader from '../Components/AboutHeader'
+import Testimonial from '../Components/Testimonial'
+
 
 
 
@@ -20,6 +22,7 @@ const Home = () => {
        
         <PopularCourses/>
         <Features/>
+       <Testimonial/>
         <Footer/>
     </div>
   )

@@ -616,19 +616,6 @@
     }
 }
 
-.testimonial-carousel .owl-item .testimonial-text,
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text {
-    background: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    color: #FFFFFF !important;
-}
-
 .testimonial-carousel .owl-dots {
     margin-top: 24px;
     display: flex;
@@ -636,20 +623,45 @@
     justify-content: center;
 }
 
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #CCCCCC;
-    transition: .5s;
+.owl-theme .owl-dots .owl-dot span{
+    position: relative !important;
+    display: inline-block !important;
+    margin: 0 5px !important;
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px solid #CCCCCC !important;
+    border-radius: 0 !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
-.testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
+.testimonial-carousel .owl-dots .owl-dot.active span, .testimonial-carousel .owl-dots .owl-dot.active span:hover{
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    transform: scale(1.2) !important;
 }
+.testimonial-carousel .owl-dots .owl-dot span{
+    background: transparent !important;
+    border-color: gray !important;
+    
+}
+.testimonial-carousel .owl-dots .owl-dot span:hover{
+    background: gray !important;
+    border-color: gray !important;
+}
+.testimonial-carousel .testimonial-text {
+    position: relative;
+    background-color: var(--primary) !important;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
+    z-index: 1;
+  }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 40px !important;
+}
+
 
 
 /*** Footer ***/
@@ -723,3 +735,6 @@
     padding-right: 0;
     border-right: none;
 }
+
+
+

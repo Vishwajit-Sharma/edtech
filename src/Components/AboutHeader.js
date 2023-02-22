@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import '../Styles/style.css';
 import img from '../Assets/about.jpg'
 import { FaArrowRight, FaLinkedin, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
-import MoreButton from '../Common/MoreButton'
 
 
 const AboutHeader = () => {
