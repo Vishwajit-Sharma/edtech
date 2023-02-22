@@ -12,6 +12,7 @@ import Spinner from "./Components/Spinner";
 import { useEffect, useState } from "react";
 
 import AnimatedWrapper from "./Components/AnimatedWrapper";
+import RandomQuote from "./Components/RandomQuote";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
     <div >
        
       {isLoading && <Spinner />}
+      <RandomQuote/>
       <Nav/>
       <AnimatedWrapper location={location}>
       <Routes>

@@ -67,6 +67,15 @@ const Testimonial = () => {
       loop
       margin={10}
       dotsEach={1}
+      responsive={{
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 3,
+        },
+        
+      }}
     >
       {testimonialItemsMarkup}
     </OwlCarousel>

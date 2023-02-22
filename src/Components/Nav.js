@@ -8,7 +8,7 @@ const Nav = () => {
 
     return (
 
-        <nav className="navbar navbar-expand-md nav-bg navbar-light shadow fixed-top p-0">
+        <nav className="navbar navbar-expand-md nav-bg navbar-light shadow sticky-top top-0 p-0">
             <NavLink to="/" className="navbar-brand d-flex align-items-center px-3 px-md-4 px-lg-5">
                 <h2 className="m-0 primary-color-text"><span className='me-2'><GiSkills /></span>Vishwa EdTech</h2>
             </NavLink>

@@ -33,6 +33,37 @@
 }
 
 
+/*** Quote ***/
+
+.quote{
+    background-color: #181d38;
+    color: #06BBCC;
+    padding: 20px 10px;
+    width: 100%;
+    font-size: large;
+    font-family: monospace;
+    letter-spacing: 1px;
+
+}
+@media (max-width: 576px) {
+    .quote{
+        font-size: small;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .quote{
+        font-size: medium;
+    }
+}
+    @media (max-width: 450px) {
+        .quote{
+            font-size: x-small;
+            padding: 10px;
+        }
+      }
+
+
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -661,7 +692,7 @@
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 40px !important;
 }
-
+  
 
 
 /*** Footer ***/
@@ -737,4 +768,104 @@
 }
 
 
-
+.flowchart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin-top: -20px;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    max-width: 20%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px #ccc;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #ccc;
+    margin: 0 10px;
+  }
+  
+  .box:nth-child(1) ~ .arrow-container:nth-child(odd) .arrow {
+    border-right-color: #fff;
+    border-left: 10px solid #ccc;
+  }
+  
+  @media (max-width: 992px) {
+    .box {
+      width: 33.33%;
+      max-width: 33.33%;
+      margin: 10px;
+    }
+    .arrow {
+        display: none;
+      }
+  }
+  
+  /* @media (max-width: 768px) {
+    .box {
+      width: 50%;
+      max-width: 50%;
+    }
+  } */
+  
+  @media (max-width: 576px) {
+    .box {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 0 10px 0;
+    }
+  
+    .box:nth-child(1) ~ .arrow-container:nth-child(odd) .arrow {
+      margin: 0;
+    }
+  
+    .arrow-container {
+      height: auto;
+      margin-bottom: 10px;
+      transform: rotate(180deg);
+    }
+   
+      
+      .arrow {
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        /* border-top: 10px solid #ccc; */
+        border-bottom: 10px solid #ccc;
+        display: flex;
+      }
+   
+  }
+  
+  
