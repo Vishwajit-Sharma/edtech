@@ -41,7 +41,7 @@
     padding: 20px 10px;
     width: 100%;
     font-size: large;
-    font-family: monospace;
+    font-family: cursive;
     letter-spacing: 1px;
 
 }
@@ -681,18 +681,21 @@
 }
 .testimonial-carousel .testimonial-text {
     position: relative;
-    background-color: var(--primary) !important;
+    background-color: var(--light) !important;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
     transition: all 0.3s ease-in-out;
     transform: scale(0.9);
     z-index: 1;
+    font-family: cursive;
   }
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 40px !important;
 }
-  
+  .testimonial-carousel .owl-item.center .testimonial-text {
+    background-color: var(--primary) !important;
+  }
 
 
 /*** Footer ***/
@@ -768,6 +771,8 @@
 }
 
 
+/*** Process ***/
+
 .flowchart {
     display: flex;
     flex-wrap: wrap;
@@ -785,20 +790,33 @@
     align-items: center;
     width: 20%;
     max-width: 20%;
-    height: 150px;
+    /* height: 150px; */
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 20px 0;
-    background-color: #fff;
+    background-color: var(--light);
     box-shadow: 0px 2px 5px #ccc;
     padding: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+  }
+  .box:hover{
+    background-color: var(--primary);
+    transition: 0.5s;
+    transform: translateY(-20px);
+  }
+  .box:hover *{
+    color: white;
+    transition: 0.5s;
   }
   
   .box h3 {
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: monospace;
+  }
+  .box p{
+    font-family: cursive;
   }
   
   .arrow-container {
@@ -806,6 +824,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    transform: rotate(180deg);
   }
   
   .arrow {
@@ -832,13 +851,6 @@
         display: none;
       }
   }
-  
-  /* @media (max-width: 768px) {
-    .box {
-      width: 50%;
-      max-width: 50%;
-    }
-  } */
   
   @media (max-width: 576px) {
     .box {

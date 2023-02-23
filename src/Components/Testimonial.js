@@ -11,6 +11,7 @@ import HeadingTitle from '../Common/HeadingTitle';
 
 const Testimonial = () => {
 
+
   const testimonialItems = [
     {
       name: 'Client Name 1',
@@ -23,6 +24,7 @@ const Testimonial = () => {
       profession: 'Profession 2',
       quote: 'Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.',
       image: img2,
+
     },
     {
       name: 'Client Name 3',
@@ -39,7 +41,7 @@ const Testimonial = () => {
   ];
 
   const testimonialItemsMarkup = testimonialItems.map((item, index) => (
-    <div key={index} className="testimonial-item text-center">
+    <div key={index} className={`testimonial-item text-center`}>
       <img
         className="border rounded-circle p-2 mx-auto mb-3"
         src={item.image}
@@ -49,7 +51,7 @@ const Testimonial = () => {
       <h5 className="mb-0">{item.name}</h5>
       <p>{item.profession}</p>
       <div
-        className={`testimonial-text bg-light text-center p-4 }`}
+        className={`testimonial-text bg-light text-center p-4`}
       >
         <p className="mb-0">{item.quote}</p>
       </div>
@@ -67,6 +69,7 @@ const Testimonial = () => {
       loop
       margin={10}
       dotsEach={1}
+      
       responsive={{
         0: {
           items: 1,
@@ -75,6 +78,19 @@ const Testimonial = () => {
           items: 3,
         },
         
+      }}
+      
+
+      onTranslated={(e) => {
+        const carousel = e.target;
+        const items = carousel.querySelectorAll('.owl-item.active');
+        const centerIndex = Math.floor(items.length / 2);
+        items.forEach((item, index) => {
+          item.classList.remove('center');
+          if (index === centerIndex) {
+            item.classList.add('center');
+          }
+        });
       }}
     >
       {testimonialItemsMarkup}
