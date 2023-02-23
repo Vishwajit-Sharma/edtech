@@ -345,7 +345,7 @@
         height: 60vh;
         margin: 0;
         padding: 0;
-        margin-top: 63px !important;
+        /* margin-top: 63px !important; */
         position: relative;
     }
     .heading-img{

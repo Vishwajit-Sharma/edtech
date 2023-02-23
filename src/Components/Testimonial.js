@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useEffect} from 'react'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -58,6 +58,19 @@ const Testimonial = () => {
     </div>
   ));
 
+  useEffect(() => {
+    const carousel = document.querySelector('.owl-carousel');
+    const items = carousel.querySelectorAll('.owl-item.active');
+    const centerIndex = Math.floor(items.length / 2);
+
+    items.forEach((item, index) => {
+      item.classList.remove('center');
+      if (index === centerIndex) {
+        item.classList.add('center');
+      }
+    });
+  }, []);
+
   return (
     <div className="container-xxl py-5" >
 
@@ -65,6 +78,7 @@ const Testimonial = () => {
       <HeadingTitle title="Testimonials" mainTitle="What our Students say" />
         <div className="row g-4 justify-content-center">
         <OwlCarousel
+       
       className="owl-theme testimonial-carousel position-relative"
       loop
       margin={10}

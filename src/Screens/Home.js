@@ -7,6 +7,7 @@ import PopularCourses from '../Components/PopularCourses'
 import AboutHeader from '../Components/AboutHeader'
 import Testimonial from '../Components/Testimonial'
 import Process from '../Components/Process'
+import  LazyLoad  from 'react-lazyload';
 
 
 
@@ -18,15 +19,33 @@ const Home = () => {
     <div>
         <MyCarousel/>
 
-        
-        <AboutHeader/>
-        
+        <LazyLoad height={200} offset={20}>
+          <AboutHeader/>
+        </LazyLoad>
+
+        <LazyLoad height={200} offset={20}>
         <ServiceCard />
-       
+        </LazyLoad>
+
+        <LazyLoad height={200} offset={20}>
         <PopularCourses/>
+        </LazyLoad>
+
+        <LazyLoad height={200} offset={20}>
         <Features/>
+        </LazyLoad>
+        
+        <LazyLoad height={200} offset={20}>
         <Process/>
-       <Testimonial/>
+        </LazyLoad>
+       
+        <LazyLoad height={200} offset={20}>
+        <Testimonial/>
+        </LazyLoad>
+        
+       
+        
+       
         <Footer/>
     </div>
   )

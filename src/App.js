@@ -3,8 +3,6 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import About from "./Screens/About";
 import Contact from "./Screens/Contact";
 import Courses from "./Screens/Courses";
-
-import Team from "./Screens/Team";
 import './App.css'
 import Home from "./Screens/Home";
 import Nav from "./Components/Nav";
@@ -42,7 +40,6 @@ function App() {
         <Route path="/about" element={<About  className="wow fadeInUp"/>}/>
         <Route path="/courses" element={<Courses className="wow fadeIn"/>}/>
         <Route path="/contact" element={<Contact  className="wow fadeInUp"/>}/>
-        <Route path="/team" element={<Team className="wow fadeIn"/>}/>
        
       </Routes>
       </AnimatedWrapper>

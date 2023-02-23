@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../Assets/carousel-1.jpg'
-import HeadingWallpaper from '../Components/HeadingWallpaper'
+import HeadingWallpaper from './HeadingWallpaper'
 
 const Team = () => {
   return (

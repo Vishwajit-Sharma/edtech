@@ -11,7 +11,7 @@ const AboutHeader = () => {
     useEffect(() => {
         const delay = setTimeout(() => {
             setShowContent(true);
-        }, 1000);
+        }, 500);
 
         return () => clearTimeout(delay);
     }, []);
