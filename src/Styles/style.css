@@ -947,6 +947,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 80%;
     margin: auto;
   }
@@ -970,7 +971,7 @@
   
   .founder-overlay {
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     left: 0;
     right: 0;
     padding: 20px;
@@ -979,13 +980,15 @@
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
   }
-  .founder-overlay p{
-    overflow-y: auto;
-    text-align: justify;
-  }
   .founder-card:hover .founder-overlay {
     opacity: 1;
     transition: 0.5s;
+  }
+  .founder-overlay p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    /* max-height: 200px; */
+    overflow: auto;
   }
 
   @media (max-width: 576px) {
@@ -993,8 +996,16 @@
         padding: 0.5rem;
         font-size: 21px;
       }
+      .founder-overlay{
+        padding: 0.5rem;
+        bottom: 28px;
+      }
       .founder-overlay p{
         font-size: 12px;
+      }
+      .founder-overlay p{
+       max-height: 200px;
+       user-select: none;
       }
 }
  
