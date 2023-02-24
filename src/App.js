@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 
 import AnimatedWrapper from "./Components/AnimatedWrapper";
 import RandomQuote from "./Components/RandomQuote";
+import BackToTop from "./Components/BackToTop";
 
 
 function App() {
@@ -31,18 +32,20 @@ function App() {
     <div >
        
       {isLoading && <Spinner />}
+      
       <RandomQuote/>
       <Nav/>
       <AnimatedWrapper location={location}>
       <Routes>
         
-        <Route path="/" element={<Home className="wow fadeIn"/>}/>
-        <Route path="/about" element={<About  className="wow fadeInUp"/>}/>
-        <Route path="/courses" element={<Courses className="wow fadeIn"/>}/>
-        <Route path="/contact" element={<Contact  className="wow fadeInUp"/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/courses" element={<Courses />}/>
+        <Route path="/contact" element={<Contact  />}/>
        
       </Routes>
       </AnimatedWrapper>
+      <BackToTop/>
         
     </div>
   );

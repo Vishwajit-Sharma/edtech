@@ -20,7 +20,7 @@ const Home = () => {
         <MyCarousel/>
 
         <LazyLoad height={200} offset={20}>
-          <AboutHeader/>
+          <AboutHeader readMoreVisible = {true}/>
         </LazyLoad>
 
         <LazyLoad height={200} offset={20}>

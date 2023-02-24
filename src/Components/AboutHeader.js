@@ -2,16 +2,19 @@ import React, { useEffect, useState } from 'react'
 import '../Styles/style.css';
 import img from '../Assets/about.jpg'
 import { FaArrowRight, FaLinkedin, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 
-const AboutHeader = () => {
+const AboutHeader = ({readMoreVisible}) => {
+
+    const navigate  = useNavigate()
 
     const [showContent, setShowContent] = useState(false);
 
     useEffect(() => {
         const delay = setTimeout(() => {
             setShowContent(true);
-        }, 500);
+        }, 100);
 
         return () => clearTimeout(delay);
     }, []);
@@ -19,8 +22,8 @@ const AboutHeader = () => {
 
     return (
 
-            <div className= {`container-xxl pt-4 pb-5 service-item-wrapper ${showContent ? 'show': ''}`}>
-            <div className="container">
+            <div className= {`container-xxl py-5 service-item-wrapper ${showContent ? 'show': ''}`}>
+            <div className="container ">
                 <div className="row g-5 ">
                     <div className="col-lg-6" style={{ minHeight: '400px' }}>
                         <div className="position-relative h-100 ">
@@ -59,7 +62,7 @@ const AboutHeader = () => {
                             <button className='primary-color-text social'><FaFacebookSquare /></button>
                         </div>
                         <div className="row justify-content-lg-start justify-content-center mt-3">
-                        <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" >Read More</button>
+                        {readMoreVisible && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick={()=>navigate('/about')}>Read More</button>}
     </div>
                     </div>
                 </div>

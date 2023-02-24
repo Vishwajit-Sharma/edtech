@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const HeadingWallpaper = ({ img, heading, headLink}) => {
     return (
-        <div className='container-fluid mx-0 px-0 heading-container'>
+        <div className='container-fluid mx-0 px-0 mb-5 heading-container'>
             <img src={img} alt="" className='heading-img' />
             <div className="heading-content">
                 <h1 className="text-white">{heading}</h1>
