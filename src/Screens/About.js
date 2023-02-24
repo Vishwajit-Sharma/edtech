@@ -5,6 +5,7 @@ import AboutHeader from '../Components/AboutHeader'
 import Footer from '../Components/Footer'
 import Team from '../Components/Team'
 import LazyLoad from 'react-lazyload'
+import OurStory from '../Components/OurStory'
 
 const About = () => {
 
@@ -16,7 +17,9 @@ const About = () => {
     <div >
       <HeadingWallpaper img={img} heading="About Us" headLink="About" />
 
-      <LazyLoad height={100} offset={20}><AboutHeader readMoreVisible={false} /></LazyLoad>
+    <AboutHeader readMoreVisible={false} />
+
+      <LazyLoad  height={200} offset={20}><OurStory /></LazyLoad>
 
       <LazyLoad  height={200} offset={20}><Team /></LazyLoad>
 
