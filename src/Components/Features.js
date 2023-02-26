@@ -34,7 +34,7 @@ const Features = () => {
                             </ul>
                         </div>
                         <div className="col-lg-5 col-12 d-flex align-items-center justify-content-lg-end justify-content-center pe-lg-4 mt-5 mt-lg-0">
-                            <LazyLoad> <FreeDemoForm /></LazyLoad>
+                             <FreeDemoForm title="Request for Free Demo" isCourse={true} />
 
                         </div>
                     </div>

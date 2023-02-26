@@ -575,6 +575,7 @@
 .category a:hover img,
 .course-item:hover img {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .more-btn{
@@ -582,6 +583,7 @@
     width: 20% !important;
     color: white !important;
     border: 1px solid var(--primary);
+    
 }
 .more-btn:hover{
     background-color: #0b5ed7;
@@ -940,6 +942,7 @@
 }
   
 
+/*** Our Story ***/
 
 .founder-card {
     position: relative;
@@ -1010,3 +1013,14 @@
 }
  
   
+/*** Course Card ***/
+
+.bgColorFoundation{
+    background-color: var(--light)
+}
+.bgColorProfessional{
+    background-color: #C0EEF2;
+}
+.bgColorFramework{
+    background-color: #B9E0FF;
+}

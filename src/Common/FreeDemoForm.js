@@ -8,7 +8,7 @@ const courses = [
   "Course D",
 ];
 
-const FreeDemoForm = () => {
+const FreeDemoForm = ({title, isCourse}) => {
 
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
@@ -38,7 +38,7 @@ const FreeDemoForm = () => {
 
   return (
     <form className="request-form" onSubmit={handleSubmit}>
-      <h3 className="mb-4 text-center primary-color-text">Request for Free Demo</h3>
+      <h3 className="mb-4 text-center primary-color-text">{title}</h3>
       <input
         type="text"
         id="name"
@@ -66,7 +66,7 @@ const FreeDemoForm = () => {
         onChange={handleEmailChange}
         required
       />
-      <select
+      {isCourse && <select
         id="course"
         name="course"
         placeholder="Select a Course *"
@@ -81,7 +81,7 @@ const FreeDemoForm = () => {
             {course}
           </option>
         ))}
-      </select>
+      </select>}
       <button type="submit" className="btn btn-light">Submit</button>
     </form>
   );

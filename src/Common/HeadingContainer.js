@@ -33,7 +33,7 @@ const HeadingContainer = ({ headingContainerContent}) => {
                         <h6 className="section-title bg-white text-start primary-color-text pe-3">{headingContainerContent.topic}</h6>
                         <h1 className="mb-4">Welcome to eLEARNING</h1>
                         <p className="mb-4">{headingContainerContent.para1}</p>
-                        <p className="mb-4">{headingContainerContent.par2}</p>
+                        <p className="mb-4">{headingContainerContent.para2}</p>
                         <div className="row gy-2 gx-4 mb-2">
                             <div className="col-sm-6">
                                 <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints1}</p>

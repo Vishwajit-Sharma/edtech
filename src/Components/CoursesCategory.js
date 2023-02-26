@@ -1,7 +1,8 @@
 import React from 'react'
 import HeadingTitle from '../Common/HeadingTitle'
 import '../Styles/style.css'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll';
+import {Link as RouterLink} from 'react-router-dom'
 import img1 from '../Assets/cat-1.jpg'
 import img2 from '../Assets/cat-2.jpg'
 import img3 from '../Assets/cat-3.jpg'
@@ -18,30 +19,30 @@ const CoursesCategory = () => {
            <div className="row g-3">
            
              <div className="col-lg-12 col-md-12 " >
-               <Link className="position-relative d-block overflow-hidden" to='/about'>
+               <Link className="position-relative d-block overflow-hidden" to='foundation' smooth={true} duration={500}>
                  <img className="img-fluid" src={img1} alt="" />
                  <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: '1px'}}>
-                   <h5 className="m-0 text-dark">Front End Development</h5>
-                   <small className="primary-color-text">3 Courses</small>
+                   <h5 className="m-0 text-dark">Foundational Courses</h5>
+                   <small className="primary-color-text">2 Courses</small>
                  </div>
                </Link>
              </div>
                       
              <div className="col-lg-6 col-md-12 " >
-               <Link className="position-relative d-block overflow-hidden" to='/about'>
+               <Link className="position-relative d-block overflow-hidden" to='professional' smooth={true} duration={500}>
                  <img className="img-fluid" src={img2} alt="" />
                  <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: '1px'}}>
-                   <h5 className="m-0 text-dark">Backend Development</h5>
+                   <h5 className="m-0 text-dark">Professional Courses</h5>
                    <small className="primary-color-text">3 Courses</small>
                  </div>
                </Link>
              </div>
                       
              <div className="col-lg-6 col-md-12 " >
-               <Link className="position-relative d-block overflow-hidden" to='/about'>
+               <Link className="position-relative d-block overflow-hidden" to='framework' smooth={true} duration={500}>
                  <img className="img-fluid" src={img3} alt="" />
                  <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: '1px'}}>
-                   <h5 className="m-0 text-dark">Mobile Development</h5>
+                   <h5 className="m-0 text-dark">Framework Courses</h5>
                    <small className="primary-color-text">2 Courses</small>
                  </div>
                </Link>
@@ -50,13 +51,13 @@ const CoursesCategory = () => {
            </div>
          </div>
          <div className="col-lg-5 col-md-6 "  style={{minHeight: '350px'}}>
-           <Link className="position-relative d-block h-100 overflow-hidden" to='/about'>
+           <RouterLink className="position-relative d-block h-100 overflow-hidden" to='/about'>
              <img className="img-fluid position-absolute w-100 h-100" src={img4} alt="" style={{objectFit: 'cover'}} />
              <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: '1px'}}>
-               <h5 className="m-0 text-dark">Full Stack Course</h5>
-               <small className="primary-color-text">1 Course</small>
+               <h5 className="m-0 text-dark">Bestseller Course</h5>
+               <small className="primary-color-text">This Month</small>
              </div>
-           </Link>
+           </RouterLink>
          </div>
         
        </div>
