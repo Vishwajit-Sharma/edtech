@@ -33,7 +33,7 @@ const FreeDemoForm = ({title, isCourse}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Name: ${name}\nMobile: ${mobile}\nEmail: ${email}\nCourse: ${selectedCourse}`);
+    alert("Submitted");
   };
 
   return (

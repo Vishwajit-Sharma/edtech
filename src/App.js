@@ -12,8 +12,7 @@ import { useEffect, useState } from "react";
 import AnimatedWrapper from "./Components/AnimatedWrapper";
 import RandomQuote from "./Components/RandomQuote";
 import BackToTop from "./Components/BackToTop";
-import ShowCourseCategory from "./Screens/ShowCourseCategory";
-import MainCourse from "./Screens/MainCourse";
+import ShowCourse from "./Screens/ShowCourse";
 
 
 function App() {
@@ -43,8 +42,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About />}/>
         <Route path="/courses" element={<Courses />}/>
-        <Route path="/courses/:category" element={<ShowCourseCategory />}/>
-        <Route path="/courses/:category/:subcategory" element={<MainCourse />}/>
+        <Route path="/courses/:course" element={<ShowCourse />}/>
         <Route path="/contact" element={<Contact  />}/>
        
       </Routes>

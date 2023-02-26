@@ -1,12 +1,12 @@
 import React from 'react'
 import '../Styles/style.css'
 import { GiSkills } from "react-icons/gi";
-import { FaArrowRight, FaAngleDown  } from "react-icons/fa";
+import { FaArrowRight  } from "react-icons/fa";
 import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
 
-    const categories = ['Front End Development', 'Back End Development', 'Full Stack Development', 'Mobile Development'];
+    // const categories = ['Front End Development', 'Back End Development', 'Full Stack Development', 'Mobile Development'];
 
     return (
 
@@ -21,14 +21,15 @@ const Nav = () => {
                 <div className="navbar-nav ms-auto p-4 p-lg-0">
                     <NavLink to="/" className="nav-item nav-link " end >Home</NavLink>
                     <NavLink to="/about" className="nav-item nav-link" >About</NavLink>
-                    <div className="nav-item dropdown">
+                    <NavLink to="/courses" className="nav-item nav-link" >Courses</NavLink>
+                    {/* <div className="nav-item dropdown">
                         <NavLink to="/courses" className="nav-link"  >Courses <span className='dropdown-toggle'><FaAngleDown /></span></NavLink>
                         <div className="dropdown-menu fade-down m-0">
                             {categories.map(cat =>(
                                  <NavLink to={`/courses/${cat.toLowerCase()}`} className="dropdown-item" >{cat}</NavLink>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
                   
                     <NavLink to="/contact" className="nav-item nav-link" >Contact</NavLink>
                 </div>

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import HeadingWallpaper from '../Components/HeadingWallpaper'
+import HeadingWallpaper from '../Common/HeadingWallpaper'
 import img from '../Assets/carousel-2.jpg'
 import CoursesCategory from '../Components/CoursesCategory'
-import headingImage from '../Assets/course-1.jpg'
+import headingImage from '../Assets/about.jpg'
 import HeadingContainer from '../Common/HeadingContainer'
 import CourseCard from '../Common/CourseCard'
 import HeadingTitle from '../Common/HeadingTitle'
@@ -35,15 +35,16 @@ const Courses = () => {
 
   const cardContentFoundation1 = {
     img: courseImgFoundation1,
-    courseName: "Web Development Foundation",
+    courseName: "Web Development Foundation 1",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGlobe />,
-    bgColor: "bgColorFoundation"
+    bgColor: "bgColorFoundation",
+    
   }
   const cardContentFoundation2 = {
     img: courseImgFoundation2,
-    courseName: "Web Development Foundation",
+    courseName: "Web Development Foundation 2",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -51,7 +52,7 @@ const Courses = () => {
   }
   const cardContentProfessional1 = {
     img: courseImgFoundation2,
-    courseName: "Web Development Foundation",
+    courseName: "Web Development Professional 1",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -59,7 +60,7 @@ const Courses = () => {
   }
   const cardContentProfessional2 = {
     img: courseImgFoundation2,
-    courseName: "Web Development Foundation",
+    courseName: "Web Development Professional 2",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -67,7 +68,7 @@ const Courses = () => {
   }
   const cardContentFramework1 = {
     img: courseImgFoundation2,
-    courseName: "Web Development Foundation",
+    courseName: "Web Development Framework 1",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -75,16 +76,16 @@ const Courses = () => {
   }
   const cardContentFramework2 = {
     img: courseImgFoundation2,
-    courseName: "Web Development Foundation",
+    courseName: "Web Development Framework 2",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
     bgColor: "bgColorFramework"
   }
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
@@ -141,11 +142,11 @@ const Courses = () => {
             <div className="row bgColorFoundation py-4">
               <div className="col-lg-7 col-12 d-flex align-items-center">
                 <div className='w-100'>
-                <h2 className='text-center primary-color-text mb-5'>Still Confused ?</h2>
-                <p className='text-center '>"Not sure what to choose and where to go ?"</p>
-                <p className='text-center '>Don't worry. You're at right place.</p>
-                <p className='text-center '>Feel free to Contact Us or Give us chance to Counsel you</p>
-                <span className='d-flex justify-content-center fs-6 mt-5'><MoreButton text="Contact Us" navigateTo="contact"/></span>
+                <h2 className='text-center primary-color-text mb-4'>Still Confused ?</h2>
+                <h3 className='text-center  mb-4'>"Not sure what to do ?"</h3>
+                <h4 className='text-center mb-4'>Don't worry. You're at right place.</h4>
+                <h5 className='text-center text-primary'>Feel free to Contact Us </h5>
+                <span className='d-flex justify-content-center fs-6 mt-sm-5 mt-4'><MoreButton text="Contact Us" navigateTo="contact"/></span>
                 </div>
               </div>
               <div className="col-lg-5 col-12 d-flex align-items-center justify-content-lg-end justify-content-center pe-lg-4 mt-5 mt-lg-0">

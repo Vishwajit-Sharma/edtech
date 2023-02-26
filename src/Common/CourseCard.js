@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/style.css';
 import { FaBookOpen } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const CourseCard = ({cardContent}) => {
@@ -12,8 +13,8 @@ const CourseCard = ({cardContent}) => {
       <div className="position-relative overflow-hidden">
            <img className="img-fluid" src={cardContent.img} alt="" />
           <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-              <button className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }}>Read More</button>
-              <button className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }}>Join Now</button>
+              <Link className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }} to={`/courses/${cardContent.courseName.toLowerCase()}`}>Read More</Link>
+              <Link className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }} to='/about'>Join Now</Link>
           </div>
       </div>
       <div className="text-center p-4 pb-0">
