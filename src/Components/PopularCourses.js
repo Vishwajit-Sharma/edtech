@@ -90,8 +90,8 @@ const CourseP = () => {
           ))}
         </div>
         <div className="row justify-content-center mt-4">
-        <MoreButton text="More Courses"/>
-    </div>
+           <MoreButton text="More Courses" navigateTo="courses"/>
+        </div>
       
       </div>
     </div>

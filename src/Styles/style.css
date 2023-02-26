@@ -142,10 +142,10 @@
     padding-top: 25px !important;
     padding-bottom: 25px !important;
 }
-.join-now:hover {
+/* .join-now:hover {
  
     transform: scale(1.02) ;
-}
+} */
 
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
