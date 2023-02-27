@@ -22,7 +22,7 @@ const CoursesCategory = () => {
                <Link className="position-relative d-block overflow-hidden" to='foundation' smooth={true} duration={500}>
                  <img className="img-fluid" src={img1} alt="" />
                  <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: '1px'}}>
-                   <h5 className="m-0 text-dark">Foundational Courses</h5>
+                   <h5 className="m-0 text-dark">Web Development Courses</h5>
                    <small className="primary-color-text">2 Courses</small>
                  </div>
                </Link>
@@ -32,7 +32,7 @@ const CoursesCategory = () => {
                <Link className="position-relative d-block overflow-hidden" to='professional' smooth={true} duration={500}>
                  <img className="img-fluid" src={img2} alt="" />
                  <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: '1px'}}>
-                   <h5 className="m-0 text-dark">Professional Courses</h5>
+                   <h5 className="m-0 text-dark">Programming Languages</h5>
                    <small className="primary-color-text">3 Courses</small>
                  </div>
                </Link>
@@ -42,7 +42,7 @@ const CoursesCategory = () => {
                <Link className="position-relative d-block overflow-hidden" to='framework' smooth={true} duration={500}>
                  <img className="img-fluid" src={img3} alt="" />
                  <div className="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style={{margin: '1px'}}>
-                   <h5 className="m-0 text-dark">Framework Courses</h5>
+                   <h5 className="m-0 text-dark">Trending Course</h5>
                    <small className="primary-color-text">2 Courses</small>
                  </div>
                </Link>

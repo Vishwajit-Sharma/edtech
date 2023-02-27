@@ -1024,3 +1024,21 @@
 .bgColorFramework{
     background-color: #B9E0FF;
 }
+
+
+/*** Course Page **/
+.overview{
+    font-size: large;
+    font-family: cursive;
+}
+@media (max-width: 576px) {
+    .overview{
+        font-size: medium;
+    }   
+}
+@media (max-width: 576px) {
+    .overview{
+        font-size: medium;
+    }
+    
+}

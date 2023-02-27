@@ -27,7 +27,7 @@ const CourseCard = ({cardContent}) => {
           <small className="flex-fill text-center border-end py-2"><span className="text-primary me-2"> <FaBookOpen/></span> {cardContent.time}</small>
           <small className="flex-fill text-center py-2"><span className="text-primary me-2"> <FaBookOpen/></span> 30 Students</small>
       </div>
-  </div>
+  </div> 
   </div>
   )
 }

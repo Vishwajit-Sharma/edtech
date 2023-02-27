@@ -31,7 +31,7 @@ const HeadingContainer = ({ headingContainerContent}) => {
                     </div>
                     <div className="col-lg-6 " >
                         <h6 className="section-title bg-white text-start primary-color-text pe-3">{headingContainerContent.topic}</h6>
-                        <h1 className="mb-4">Welcome to eLEARNING</h1>
+                        <h1 className="mb-4">{headingContainerContent.subTopic}</h1>
                         <p className="mb-4">{headingContainerContent.para1}</p>
                         <p className="mb-4">{headingContainerContent.para2}</p>
                         <div className="row gy-2 gx-4 mb-2">

@@ -8,13 +8,14 @@ import CourseCard from '../Common/CourseCard'
 import HeadingTitle from '../Common/HeadingTitle'
 import Footer from '../Components/Footer'
 import LazyLoad from 'react-lazyload';
-import courseImgDevelopment1 from '../Assets/course-2.jpg'
-import courseImgDevelopment2 from '../Assets/course-3.jpg'
+import courseImgFoundation1 from '../Assets/course-2.jpg'
+import courseImgFoundation2 from '../Assets/course-3.jpg'
 import { FaGraduationCap, FaGlobe } from "react-icons/fa";
 import { Element } from 'react-scroll';
 import FreeDemoForm from '../Common/FreeDemoForm'
 import MoreButton from '../Common/MoreButton'
-
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 const Courses = () => {
 
@@ -33,49 +34,49 @@ const Courses = () => {
     img: headingImage
   }
 
-  const cardContentDevelopment1 = {
-    img: courseImgDevelopment1,
-    courseName: "Web Development 1",
+  const cardContentFoundation1 = {
+    img: courseImgFoundation1,
+    courseName: "Web Development Foundation 1",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGlobe />,
     bgColor: "bgColorFoundation",
     
   }
-  const cardContentDevelopment2 = {
-    img: courseImgDevelopment2,
-    courseName: "Web Development 2",
+  const cardContentFoundation2 = {
+    img: courseImgFoundation2,
+    courseName: "Web Development Foundation 2",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
     bgColor: "bgColorFoundation"
   }
-  const cardContentlanguages1 = {
-    img: courseImgDevelopment2,
-    courseName: "Programming language 1",
+  const cardContentProfessional1 = {
+    img: courseImgFoundation2,
+    courseName: "Web Development Professional 1",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
     bgColor: "bgColorProfessional"
   }
-  const cardContentlanguages2 = {
-    img: courseImgDevelopment2,
-    courseName: "Programming language 2",
+  const cardContentProfessional2 = {
+    img: courseImgFoundation2,
+    courseName: "Web Development Professional 2",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
     bgColor: "bgColorProfessional"
   }
-  const cardContentTrending1 = {
-    img: courseImgDevelopment2,
+  const cardContentFramework1 = {
+    img: courseImgFoundation2,
     courseName: "Web Development Framework 1",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
     bgColor: "bgColorFramework"
   }
-  const cardContentTrending2 = {
-    img: courseImgDevelopment2,
+  const cardContentFramework2 = {
+    img: courseImgFoundation2,
     courseName: "Web Development Framework 2",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
@@ -86,6 +87,39 @@ const Courses = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const responsive = {
+    0: { 
+        items: 1
+    },
+    576: { 
+        items: 1
+    },
+    768: { 
+      items: 2
+  },
+    992: {
+        items: 3, 
+        itemsFit: 'contain'
+    },
+};
+
+  const category1 = [
+    <CourseCard cardContent={cardContentFoundation1} />,
+    <CourseCard cardContent={cardContentFoundation2} />,
+    <CourseCard cardContent={cardContentFoundation1} />,
+    <CourseCard cardContent={cardContentFoundation2} />
+  ];
+  const category2 = [
+    <CourseCard cardContent={cardContentProfessional1} />,
+    <CourseCard cardContent={cardContentProfessional2} />,
+    <CourseCard cardContent={cardContentProfessional1} />,
+  ]
+  const category3 = [
+    <CourseCard cardContent={cardContentFramework1} />,
+    <CourseCard cardContent={cardContentFramework2} />,
+  ]
+  
 
   return (
     <div>
@@ -98,11 +132,9 @@ const Courses = () => {
         <LazyLoad >
           {<div className="container-xxl py-5" >
             <div className="container">
-              <HeadingTitle title="Web development" mainTitle="Web development Courses" />
+              <HeadingTitle title="Foundation" mainTitle="Foundational Courses" />
               <div className="row g-4 justify-content-center">
-                <CourseCard cardContent={cardContentDevelopment1} />
-                <CourseCard cardContent={cardContentDevelopment2} />
-                <CourseCard cardContent={cardContentDevelopment1} />
+                <AliceCarousel items={category1} autoPlay autoPlayInterval={3000} responsive={responsive} />
               </div>
             </div>
           </div>}</LazyLoad>
@@ -112,11 +144,9 @@ const Courses = () => {
         <LazyLoad >
           {<div className="container-xxl py-5">
             <div className="container">
-              <HeadingTitle title="Languages" mainTitle="Programming Languages Courses" />
+              <HeadingTitle title="Professional" mainTitle="Professional Courses" />
               <div className="row g-4 justify-content-center">
-                <CourseCard cardContent={cardContentlanguages1} />
-                <CourseCard cardContent={cardContentlanguages2} />
-                <CourseCard cardContent={cardContentlanguages1} />
+                <AliceCarousel items={category2} autoPlay autoPlayInterval={3000} responsive={responsive} />
               </div>
             </div>
           </div>}
@@ -127,10 +157,9 @@ const Courses = () => {
         <LazyLoad >
           {<div className="container-xxl py-5">
             <div className="container">
-              <HeadingTitle title="Trending" mainTitle="Trending Courses" />
+              <HeadingTitle title="Framework" mainTitle="Framework Courses" />
               <div className="row g-4 justify-content-center">
-                <CourseCard cardContent={cardContentTrending1} />
-                <CourseCard cardContent={cardContentTrending2} />
+              <AliceCarousel items={category3} autoPlay autoPlayInterval={3000} responsive={responsive} />
               </div>
             </div>
           </div>}
