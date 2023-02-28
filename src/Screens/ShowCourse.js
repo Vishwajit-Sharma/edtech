@@ -6,6 +6,9 @@ import HeadingTitle from '../Common/HeadingTitle';
 import HeadingContainer from '../Common/HeadingContainer';
 import LazyLoad from 'react-lazyload';
 import Process from '../Components/Process'
+import CourseOutline from '../Components/CourseOutline';
+import CourseContent from '../Components/CourseContent';
+
 
 
 const ShowCourse = () => {
@@ -36,6 +39,21 @@ const ShowCourse = () => {
   const preRequisites = {
     webDesign: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
   }
+  const included = {
+    webDesign: ["3 Mini Projects", "1 Major Project"]
+  }
+  const webDesignL1 = [
+    { title: 'Introduction to Web Design', details: 'Details about Introduction to Web Design' },
+    { title: 'Introduction to HTML4 and HTML5', details: 'Details about Introduction to HTML4 and HTML5' },
+    { title: 'Introduction to CSS and CSS3', details: 'Details about Introduction to CSS and CSS3' },
+    { title: 'Introduction to JavaScript', details: 'Details about Introduction to JavaScript' },
+  ];
+  const webDesignL2 = [
+    { title: 'Introduction to Advanced JavaScript', details: 'Details about Introduction to Advanced JavaScript' },
+    { title: 'Introduction to jQuery', details: 'Details about Introduction to jQuery' },
+    { title: 'Introduction to AJAX', details: 'Details about Introduction to AJAX' },
+    { title: 'Introduction to Bootstrap', details: 'Details about Introduction to Bootstrap' }
+  ];
 
   return (
     <div>
@@ -44,26 +62,13 @@ const ShowCourse = () => {
       {course === "web development 1" && <HeadingContainer headingContainerContent={webDesigningOverview} />}
 
       <HeadingTitle title="Course Description" mainTitle="Course Outline" />
-      <div className="row g-4 m-0 px-5">
-        <div className="col-md-6  mt-1 outline-left">
-          {course === "web development 1" &&  <div>
-            <p><span>Duration : </span> <span className=''>&nbsp;{duration.webDesign}</span></p>
-            <div className='d-flex'>
-              <span>Pre-requisites: </span>
-              <ul>
-                {preRequisites.webDesign.map(item => <li>&nbsp;{item}</li>)}
-              </ul>
-            </div>
-          </div>}
+      
+      {course === "web development 1" && <LazyLoad><CourseOutline  duration = {duration.webDesign} preRequisites = {preRequisites.webDesign} included={included.webDesign}/></LazyLoad>}
+      
+      <LazyLoad><HeadingTitle title="Course Curriculum" mainTitle="Course Content" /></LazyLoad>
 
-        </div>
-        
-        <div className="col-md-6 mt-1 outline-right">
-         {course === "web development 1" && <div>
-         <p> INCLUSION </p>
-         </div>}
-        </div>
-      </div>
+      {course === "web development 1" && <LazyLoad><CourseContent courseContentL1={webDesignL1} courseContentL2={webDesignL2}/></LazyLoad>}
+
 
       <LazyLoad><Process /></LazyLoad>
 

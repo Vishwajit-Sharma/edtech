@@ -1031,14 +1031,72 @@
     font-size: large;
     font-family: cursive;
 }
-@media (max-width: 576px) {
-    .overview{
-        font-size: medium;
-    }   
+.outline .including:hover{
+    transform: translateX(5px);
+}
+.forBorder{
+    border-right: 1px solid var(--primary);
 }
 @media (max-width: 576px) {
     .overview{
         font-size: medium;
+    }   
+    
+}
+@media (max-width: 768px) {
+    .overview{
+        font-size: medium;
+    }
+    .forBorder{
+        border-bottom: 1px solid var(--primary);
+    }
+    .forBorder{
+        border-right: none;
+    }
+}
+
+
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--light);
+    border: 1px solid #dee2e6;
+  }
+  
+  .accordion-header:hover {
+    background-color: var(--primary);
+    letter-spacing: 1px;
+  }
+  
+  .accordion-header span {
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  
+  .accordion-body {
+    padding: 1rem;
+  }
+  
+  .accordion-collapse {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .accordion-collapse.show {
+    display: block;
+  }
+  @media (max-width: 576px) {
+    .accordion-header {
+        font-size: medium;
+    }   
+    .accordion-body{
+        font-size: small;
     }
     
 }
