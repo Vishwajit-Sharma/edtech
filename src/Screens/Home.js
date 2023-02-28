@@ -6,7 +6,7 @@ import Footer from '../Components/Footer'
 import PopularCourses from '../Components/PopularCourses'
 import HeadingContainer from '../Common/HeadingContainer'
 import Testimonial from '../Components/Testimonial'
-import Process from '../Components/Process'
+// import Process from '../Components/Process'
 import  LazyLoad  from 'react-lazyload';
 import headingImage from '../Assets/about.jpg'
 
@@ -49,9 +49,9 @@ const Home = () => {
         <Features/>
         </LazyLoad>
         
-        <LazyLoad height={200} offset={20}>
+        {/* <LazyLoad height={200} offset={20}>
         <Process/>
-        </LazyLoad>
+        </LazyLoad> */}
        
         <LazyLoad height={200} offset={20}>
         <Testimonial/>
