@@ -1056,7 +1056,7 @@
 }
 
 
-
+/*** Accordion in Course COntent ***/
 .accordion-header {
     display: flex;
     align-items: center;
@@ -1100,3 +1100,48 @@
     }
     
 }
+
+/*** FAQ's ***/
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+  }
+  
+  .faq-item {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    
+  }
+
+  .faq-item:hover{
+    background-color: var(--light);
+  }
+  
+  .faq-question {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    display: none;
+  }
+  
+  .faq-icon {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  .faq-answer.active {
+    display: block;
+    background-color: var(--light);
+  }
+  
+
+  

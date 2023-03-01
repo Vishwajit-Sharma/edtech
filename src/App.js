@@ -13,6 +13,7 @@ import AnimatedWrapper from "./Components/AnimatedWrapper";
 import RandomQuote from "./Components/RandomQuote";
 import BackToTop from "./Components/BackToTop";
 import ShowCourse from "./Screens/ShowCourse";
+import JoinNowPage from "./Screens/JoinNowPage";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path="/courses" element={<Courses />}/>
         <Route path="/courses/:course" element={<ShowCourse />}/>
         <Route path="/contact" element={<Contact  />}/>
+        <Route path="/join" element={<JoinNowPage  />}/>
        
       </Routes>
       </AnimatedWrapper>

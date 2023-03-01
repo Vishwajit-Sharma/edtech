@@ -8,7 +8,9 @@ import LazyLoad from 'react-lazyload';
 import Process from '../Components/Process'
 import CourseOutline from '../Components/CourseOutline';
 import CourseContent from '../Components/CourseContent';
-
+import FAQ from '../Components/FAQ';
+import Footer from '../Components/Footer';
+import MoreButton from '../Common/MoreButton';
 
 
 const ShowCourse = () => {
@@ -30,7 +32,9 @@ const ShowCourse = () => {
     bulletPoints4: "Skilled Instructors",
     bulletPoints5: "Skilled Instructors",
     bulletPoints6: "Skilled Instructors",
-    img: img
+    img: img,
+    btn: "Join Now", 
+    navigateTo: "/contact"
   }
 
   const duration = {
@@ -43,16 +47,16 @@ const ShowCourse = () => {
     webDesign: ["3 Mini Projects", "1 Major Project"]
   }
   const webDesignL1 = [
-    { title: 'Introduction to Web Design', details: 'Details about Introduction to Web Design' },
-    { title: 'Introduction to HTML4 and HTML5', details: 'Details about Introduction to HTML4 and HTML5' },
-    { title: 'Introduction to CSS and CSS3', details: 'Details about Introduction to CSS and CSS3' },
-    { title: 'Introduction to JavaScript', details: 'Details about Introduction to JavaScript' },
+    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
   ];
   const webDesignL2 = [
-    { title: 'Introduction to Advanced JavaScript', details: 'Details about Introduction to Advanced JavaScript' },
-    { title: 'Introduction to jQuery', details: 'Details about Introduction to jQuery' },
-    { title: 'Introduction to AJAX', details: 'Details about Introduction to AJAX' },
-    { title: 'Introduction to Bootstrap', details: 'Details about Introduction to Bootstrap' }
+    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
   ];
 
   return (
@@ -69,10 +73,16 @@ const ShowCourse = () => {
 
       {course === "web development 1" && <LazyLoad><CourseContent courseContentL1={webDesignL1} courseContentL2={webDesignL2}/></LazyLoad>}
 
+      <LazyLoad><Process />
+        <div className="container-xxl ">
+          <div className="container d-flex justify-content-center">
+            <MoreButton text="Join Now"  navigateTo="join" />
+          </div>
+        </div>
+      </LazyLoad>
 
-      <LazyLoad><Process /></LazyLoad>
-
-      <h1>{course}</h1>
+    <LazyLoad><FAQ/></LazyLoad>
+    <LazyLoad><Footer/></LazyLoad>
 
     </div>
   )

@@ -4,10 +4,16 @@ import '../Styles/style.css'
 
 const CourseContent = ({courseContentL1, courseContentL2}) => {
 
-    const [activeAccordion, setActiveAccordion] = useState(null);
+    const [activeAccordion1, setActiveAccordion1] = useState(null);
 
-  const toggleAccordion = (index) => {
-    setActiveAccordion(activeAccordion === index ? null : index);
+  const toggleAccordion1 = (index) => {
+    setActiveAccordion1(activeAccordion1 === index ? null : index);
+  };
+
+  const [activeAccordion2, setActiveAccordion2] = useState(null);
+
+  const toggleAccordion2 = (index) => {
+    setActiveAccordion2(activeAccordion2 === index ? null : index);
   };
 
   return (
@@ -15,22 +21,24 @@ const CourseContent = ({courseContentL1, courseContentL2}) => {
     <div className='container'>
         <h4 className='mb-4'><span className='text-primary'>Level 1</span> </h4>
       {courseContentL1.map((content, index) => (
-        <div className='row' key={index}>
+        <div className='row py-1' key={index}>
           <div className='col-12'>
             <div className='accordion-item '>
-              <h5 className='accordion-header' onClick={() => toggleAccordion(index)}>
+              <h5 className='accordion-header' onClick={() => toggleAccordion1(index)}>
               <span>
                  {index+1}. {content.title}
                 </span>
-                {activeAccordion === index ? (
+                {activeAccordion1 === index ? (
                   <HiOutlineMinus className='d-inline' />
                 ) : (
                   <HiOutlinePlus className='d-inline' />
                 )}
                
               </h5>
-              <div className={`accordion-collapse ${activeAccordion === index ? 'show' : ''}`}>
-                <div className='accordion-body'>{content.details}</div>
+              <div className={`accordion-collapse ${activeAccordion1 === index ? 'show' : ''}`}>
+                <div className='accordion-body'>
+                  <ul className='d-flex flex-column'>{content.details.map(item => <li>{item}</li>)}</ul>               
+                </div>
               </div>
             </div>
           </div>
@@ -42,18 +50,18 @@ const CourseContent = ({courseContentL1, courseContentL2}) => {
         <div className='row' key={index}>
           <div className='col-12'>
             <div className='accordion-item '>
-              <h5 className='accordion-header' onClick={() => toggleAccordion(index)}>
+              <h5 className='accordion-header' onClick={() => toggleAccordion2(index)}>
               <span>
                  {index+1}. {content.title}
                 </span>
-                {activeAccordion === index ? (
+                {activeAccordion2 === index ? (
                   <HiOutlineMinus className='d-inline' />
                 ) : (
                   <HiOutlinePlus className='d-inline' />
                 )}
                
               </h5>
-              <div className={`accordion-collapse ${activeAccordion === index ? 'show' : ''}`}>
+              <div className={`accordion-collapse ${activeAccordion2 === index ? 'show' : ''}`}>
                 <div className='accordion-body'>{content.details}</div>
               </div>
             </div>
