@@ -142,10 +142,9 @@
     padding-top: 25px !important;
     padding-bottom: 25px !important;
 }
-/* .join-now:hover {
- 
-    transform: scale(1.02) ;
-} */
+.activateBtn{
+  background-color: #0b5ed7 !important;
+}
 
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {

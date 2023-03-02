@@ -6,26 +6,30 @@ import img1 from '../Assets/course-1.jpg'
 import img2 from '../Assets/course-2.jpg'
 import img3 from '../Assets/course-3.jpg'
 import MoreButton from '../Common/MoreButton';
+import { useNavigate } from 'react-router-dom';
 
-const CourseP = () => {
+const PopularCourses = () => {
+
+  const navigate = useNavigate()
+
   const [content, setContent] = useState([
     {
       icon: <FaGraduationCap />,
-      courseName: "title1",
+      courseName: "React JS",
       description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
       img: img1,
       time: "1 Month"
     },
     {
       icon: <FaGlobe />,
-      courseName: "title2",
+      courseName: "Web Designing",
       description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
       img: img2,
       time: "1 Month"
     },
     {
       icon: <FaHome />,
-      courseName: "title3",
+      courseName: "Python With Machine Learning",
       description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
       img: img3,
       time: "1 Month"
@@ -71,8 +75,8 @@ const CourseP = () => {
                 <div className="position-relative overflow-hidden">
                      <img className="img-fluid" src={item.img} alt="" />
                     <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                        <button className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }}>Read More</button>
-                        <button className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }}>Join Now</button>
+                        <button className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }} onClick={() => navigate(`/courses/${item.courseName.toLowerCase()}`)}>Read More</button>
+                        <button className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }} onClick={() => navigate(`/courses/${item.courseName.toLowerCase()}/join`)}>Join Now</button>
                     </div>
                 </div>
                 <div className="text-center p-4 pb-0">
@@ -98,4 +102,4 @@ const CourseP = () => {
   );
 };
 
-export default CourseP;
+export default PopularCourses;

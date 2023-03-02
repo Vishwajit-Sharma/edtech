@@ -14,7 +14,7 @@ const CourseCard = ({cardContent}) => {
            <img className="img-fluid" src={cardContent.img} alt="" />
           <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
               <Link className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }} to={`/courses/${cardContent.courseName.toLowerCase()}`}>Read More</Link>
-              <Link className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }} to='/about'>Join Now</Link>
+              <Link className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }} to={`/courses/${cardContent.courseName.toLowerCase()}/join`}>Join Now</Link>
           </div>
       </div>
       <div className="text-center p-4 pb-0">

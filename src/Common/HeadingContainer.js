@@ -62,7 +62,7 @@ const HeadingContainer = ({ headingContainerContent}) => {
                         </div>}
                         <div className="row justify-content-lg-start justify-content-center mt-3">
                         {headingContainerContent.readMoreVisible && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick={()=>navigate('/about')}>Read More</button>}
-                        {headingContainerContent.btn && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick>Join Now</button>}
+                        {headingContainerContent.btn && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick={()=>navigate(headingContainerContent.navigateTo)}>Join Now</button>}
     </div>
                     </div>
                 </div>

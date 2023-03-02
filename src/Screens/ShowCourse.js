@@ -17,6 +17,8 @@ const ShowCourse = () => {
 
   const { course } = useParams();
 
+  const courseCapitalise = course.replace(/(^|\s)\S/g, (match) => match.toUpperCase());
+
   // const courseNames= ["web development 1", "front end development", "back end development", "react"]
 
   const webDesigningOverview = {
@@ -34,7 +36,7 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
-    navigateTo: "/contact"
+    navigateTo: `/courses/${course}/join`
   }
 
   const duration = {
@@ -61,17 +63,17 @@ const ShowCourse = () => {
 
   return (
     <div>
-      <HeadingWallpaper img={img} heading={course} headLink={course} isCourses={true} />
+      <HeadingWallpaper img={img} heading={courseCapitalise} headLink={courseCapitalise} isCourses={true} />
 
-      {course === "web development 1" && <HeadingContainer headingContainerContent={webDesigningOverview} />}
+      {course === "web designing" && <HeadingContainer headingContainerContent={webDesigningOverview} />}
 
       <HeadingTitle title="Course Description" mainTitle="Course Outline" />
       
-      {course === "web development 1" && <LazyLoad><CourseOutline  duration = {duration.webDesign} preRequisites = {preRequisites.webDesign} included={included.webDesign}/></LazyLoad>}
+      {course === "web designing" && <LazyLoad><CourseOutline  duration = {duration.webDesign} preRequisites = {preRequisites.webDesign} included={included.webDesign}/></LazyLoad>}
       
       <LazyLoad><HeadingTitle title="Course Curriculum" mainTitle="Course Content" /></LazyLoad>
 
-      {course === "web development 1" && <LazyLoad><CourseContent courseContentL1={webDesignL1} courseContentL2={webDesignL2}/></LazyLoad>}
+      {course === "web designing" && <LazyLoad><CourseContent courseContentL1={webDesignL1} courseContentL2={webDesignL2}/></LazyLoad>}
 
       <LazyLoad><Process />
         <div className="container-xxl ">

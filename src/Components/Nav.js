@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../Styles/style.css'
 import { GiSkills } from "react-icons/gi";
 import { FaArrowRight  } from "react-icons/fa";
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 
 const Nav = () => {
 
+    const [activeButton, setActiveButton] = useState(false)
+
+    const navigate = useNavigate()
+    const location = useLocation()
+  
+    useEffect(() => {
+      setActiveButton(location.pathname.endsWith('/join'));
+    }, [location]);
+  
     // const categories = ['Front End Development', 'Back End Development', 'Full Stack Development', 'Mobile Development'];
 
     return (
@@ -33,7 +42,7 @@ const Nav = () => {
                   
                     <NavLink to="/contact" className="nav-item nav-link" >Contact</NavLink>
                 </div>
-                <button className="btn btn-primary primary-color-bg  px-lg-5 d-none d-md-block border-0 rounded-0 join-now"><span>Join Now </span><span className="ms-3"><FaArrowRight /></span></button>
+                <button className={`btn btn-primary primary-color-bg  px-lg-5 d-none d-md-block border-0 rounded-0 join-now ${activeButton ? "activateBtn" : ""}`} onClick={()=>navigate("/courses/selectcourse/join")}><span>Join Now </span><span className="ms-3"><FaArrowRight /></span></button>
             </div>
         </nav>
     )

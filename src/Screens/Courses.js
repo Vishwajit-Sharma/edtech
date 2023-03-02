@@ -35,7 +35,7 @@ const Courses = () => {
 
   const cardContentDevelopment1 = {
     img: courseImgDevelopment1,
-    courseName: "Web Development 1",
+    courseName: "Web Designing",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGlobe />,
@@ -44,7 +44,15 @@ const Courses = () => {
   }
   const cardContentDevelopment2 = {
     img: courseImgDevelopment2,
-    courseName: "Web Development 2",
+    courseName: "Front End Development",
+    description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    time: "2 Month",
+    icon: <FaGraduationCap />,
+    bgColor: "bgColorFoundation"
+  }
+  const cardContentDevelopment3 = {
+    img: courseImgDevelopment2,
+    courseName: "Back End Development",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -52,7 +60,7 @@ const Courses = () => {
   }
   const cardContentlanguages1 = {
     img: courseImgDevelopment2,
-    courseName: "Programming language 1",
+    courseName: "Java",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -60,7 +68,7 @@ const Courses = () => {
   }
   const cardContentlanguages2 = {
     img: courseImgDevelopment2,
-    courseName: "Programming language 2",
+    courseName: "Advanced Javascript",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -68,7 +76,7 @@ const Courses = () => {
   }
   const cardContentTrending1 = {
     img: courseImgDevelopment2,
-    courseName: "Web Development Framework 1",
+    courseName: "React JS",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -76,7 +84,7 @@ const Courses = () => {
   }
   const cardContentTrending2 = {
     img: courseImgDevelopment2,
-    courseName: "Web Development Framework 2",
+    courseName: "Python With Machine Learning",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaGraduationCap />,
@@ -102,7 +110,7 @@ const Courses = () => {
               <div className="row g-4 justify-content-center">
                 <CourseCard cardContent={cardContentDevelopment1} />
                 <CourseCard cardContent={cardContentDevelopment2} />
-                <CourseCard cardContent={cardContentDevelopment1} />
+                <CourseCard cardContent={cardContentDevelopment3} />
               </div>
             </div>
           </div>}</LazyLoad>
@@ -116,7 +124,6 @@ const Courses = () => {
               <div className="row g-4 justify-content-center">
                 <CourseCard cardContent={cardContentlanguages1} />
                 <CourseCard cardContent={cardContentlanguages2} />
-                <CourseCard cardContent={cardContentlanguages1} />
               </div>
             </div>
           </div>}

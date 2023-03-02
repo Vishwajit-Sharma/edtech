@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom';
 function JoinNowPage() {
 
   const { course } = useParams();
+  const courseCapitalise = course.replace(/(^|\s)\S/g, (match) => match.toUpperCase());
 
   return (
     <div className='container-fluid p-0'>
@@ -21,7 +22,7 @@ function JoinNowPage() {
           }}>
           </div>
         </div>
-        <div className="col-lg-5  d-flex align-items-center justify-content-center pt-lg-0 pt-3"><EnrollmentForm course={course} /></div>
+        <div className="col-lg-5  d-flex align-items-center justify-content-center pt-lg-0 pt-3"><EnrollmentForm course={courseCapitalise} /></div>
       </div>
       <Footer />
     </div>

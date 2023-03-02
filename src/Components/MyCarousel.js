@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../Styles/style.css'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate  } from 'react-router-dom';
 import img1 from '../Assets/carousel-1.jpg'
 import img2 from '../Assets/carousel-2.jpg'
 
@@ -22,7 +22,7 @@ function MyCarousel() {
                   <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Grow Your Skills</h5>
                   <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Best Online Learning Platform</h1>
                   <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-                  <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3 " onClick={() => navigate('/about')}>Join Now</button>
+                  <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3" onClick={()=>navigate("/courses/selectcourse/join")}>Join Now</button>
                   <button className="btn btn-light py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3" onClick={() => navigate('/courses')}>Explore</button>
                 </div>
               </div>
@@ -38,7 +38,7 @@ function MyCarousel() {
                   <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Grow Your Skills</h5>
                   <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Best Online Learning Platform</h1>
                   <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-                  <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3 " onClick={() => navigate('/about')}>Join Now</button>
+                  <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3 " onClick={()=>navigate("/courses/selectcourse/join")}>Join Now</button>
                   <button className="btn btn-light py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3" onClick={() => navigate('/courses')}>Explore</button>
                 </div>
               </div>
@@ -54,7 +54,7 @@ function MyCarousel() {
                   <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Grow Your Skills</h5>
                   <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Best Online Learning Platform</h1>
                   <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
-                  <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3 " onClick={() => navigate('/about')}>Join Now</button>
+                  <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3 " onClick={()=>navigate("/courses/selectcourse/join")}>Join Now</button>
                   <button className="btn btn-light py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3" onClick={() => navigate('/courses')}>Explore</button>
                 </div>
               </div>
