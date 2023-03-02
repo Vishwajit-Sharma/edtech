@@ -76,7 +76,7 @@ const ShowCourse = () => {
       <LazyLoad><Process />
         <div className="container-xxl ">
           <div className="container d-flex justify-content-center">
-            <MoreButton text="Join Now"  navigateTo="join" />
+            <MoreButton text="Join Now"  navigateTo={`courses/${course}/join`}/>
           </div>
         </div>
       </LazyLoad>

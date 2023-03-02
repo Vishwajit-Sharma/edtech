@@ -2,45 +2,31 @@ import React from 'react'
 import "../Styles/style.css"
 import img from '../Assets/join-now.jpg'
 import Footer from '../Components/Footer';
+import EnrollmentForm from '../Components/EnrollmentForm';
+import { useParams } from 'react-router-dom';
 
 function JoinNowPage() {
-    return (
-        <div className='position-relative'>
-            <img src={img} alt="" className='img-fluid'/>
-      <div
-        className="position-absolute w-100 top-0"
-        style={{
-          background: "rgba(24, 29, 56, 0.7)",
-        }}
-      >
-        {/* <div className="join-now-box">
-          <h2>Join Now</h2>
-          <form>
-            <div className="form-group">
-              <label htmlFor="firstName">First Name</label>
-              <input type="text" className="form-control" id="firstName" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="lastName">Last Name</label>
-              <input type="text" className="form-control" id="lastName" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="email" className="form-control" id="email" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="phone">Phone</label>
-              <input type="tel" className="form-control" id="phone" />
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
-          </form>
-        </div> */}
+
+  const { course } = useParams();
+
+  return (
+    <div className='container-fluid p-0'>
+      <div className="row pt-3 m-0">
+        <div className="col-lg-7 p-0">
+          <div className='join-now-container' style={{
+            background: `linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(${img})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            objectFit: "scale-down",
+          }}>
+          </div>
+        </div>
+        <div className="col-lg-5  d-flex align-items-center justify-content-center pt-lg-0 pt-3"><EnrollmentForm course={course} /></div>
       </div>
-      <Footer/>
-      </div>
-    );
-  }
-  
-  export default JoinNowPage;
+      <Footer />
+    </div>
+
+  );
+}
+
+export default JoinNowPage;

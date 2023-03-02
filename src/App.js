@@ -45,7 +45,7 @@ function App() {
         <Route path="/courses" element={<Courses />}/>
         <Route path="/courses/:course" element={<ShowCourse />}/>
         <Route path="/contact" element={<Contact  />}/>
-        <Route path="/join" element={<JoinNowPage  />}/>
+        <Route path="/courses/:course/join" element={<JoinNowPage  />}/>
        
       </Routes>
       </AnimatedWrapper>
