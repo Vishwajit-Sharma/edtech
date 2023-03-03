@@ -14,6 +14,7 @@ import RandomQuote from "./Components/RandomQuote";
 import BackToTop from "./Components/BackToTop";
 import ShowCourse from "./Screens/ShowCourse";
 import JoinNowPage from "./Screens/JoinNowPage";
+import WhatsAppButton from "./Components/WhatsAppButton";
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
        
       </Routes>
       </AnimatedWrapper>
+      <WhatsAppButton/>
       <BackToTop/>
         
     </div>

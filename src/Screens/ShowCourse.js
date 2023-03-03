@@ -19,9 +19,110 @@ const ShowCourse = () => {
 
   const courseCapitalise = course.replace(/(^|\s)\S/g, (match) => match.toUpperCase());
 
-  // const courseNames= ["web development 1", "front end development", "back end development", "react"]
-
   const webDesigningOverview = {
+    topic: "Course Overview",
+    subTopic: "The Best Course Available",
+    socialVisible: false,
+    readMoreVisible: false,
+    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
+    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+    bulletPoints1: "Skilled Instructors",
+    bulletPoints2: "Skilled Instructors",
+    bulletPoints3: "Skilled Instructors",
+    bulletPoints4: "Skilled Instructors",
+    bulletPoints5: "Skilled Instructors",
+    bulletPoints6: "Skilled Instructors",
+    img: img,
+    btn: "Join Now", 
+    navigateTo: `/courses/${course}/join`
+  }
+
+  const pythonOverview = {
+    topic: "Course Overview",
+    subTopic: "The Best Course Available",
+    socialVisible: false,
+    readMoreVisible: false,
+    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
+    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+    bulletPoints1: "Skilled Instructors",
+    bulletPoints2: "Skilled Instructors",
+    bulletPoints3: "Skilled Instructors",
+    bulletPoints4: "Skilled Instructors",
+    bulletPoints5: "Skilled Instructors",
+    bulletPoints6: "Skilled Instructors",
+    img: img,
+    btn: "Join Now", 
+    navigateTo: `/courses/${course}/join`
+  }
+  const frontEndOverview = {
+    topic: "Course Overview",
+    subTopic: "The Best Course Available",
+    socialVisible: false,
+    readMoreVisible: false,
+    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
+    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+    bulletPoints1: "Skilled Instructors",
+    bulletPoints2: "Skilled Instructors",
+    bulletPoints3: "Skilled Instructors",
+    bulletPoints4: "Skilled Instructors",
+    bulletPoints5: "Skilled Instructors",
+    bulletPoints6: "Skilled Instructors",
+    img: img,
+    btn: "Join Now", 
+    navigateTo: `/courses/${course}/join`
+  }
+  const backEndOverview = {
+    topic: "Course Overview",
+    subTopic: "The Best Course Available",
+    socialVisible: false,
+    readMoreVisible: false,
+    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
+    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+    bulletPoints1: "Skilled Instructors",
+    bulletPoints2: "Skilled Instructors",
+    bulletPoints3: "Skilled Instructors",
+    bulletPoints4: "Skilled Instructors",
+    bulletPoints5: "Skilled Instructors",
+    bulletPoints6: "Skilled Instructors",
+    img: img,
+    btn: "Join Now", 
+    navigateTo: `/courses/${course}/join`
+  }
+  const reactOverview = {
+    topic: "Course Overview",
+    subTopic: "The Best Course Available",
+    socialVisible: false,
+    readMoreVisible: false,
+    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
+    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+    bulletPoints1: "Skilled Instructors",
+    bulletPoints2: "Skilled Instructors",
+    bulletPoints3: "Skilled Instructors",
+    bulletPoints4: "Skilled Instructors",
+    bulletPoints5: "Skilled Instructors",
+    bulletPoints6: "Skilled Instructors",
+    img: img,
+    btn: "Join Now", 
+    navigateTo: `/courses/${course}/join`
+  }
+  const javascriptOverview = {
+    topic: "Course Overview",
+    subTopic: "The Best Course Available",
+    socialVisible: false,
+    readMoreVisible: false,
+    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
+    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+    bulletPoints1: "Skilled Instructors",
+    bulletPoints2: "Skilled Instructors",
+    bulletPoints3: "Skilled Instructors",
+    bulletPoints4: "Skilled Instructors",
+    bulletPoints5: "Skilled Instructors",
+    bulletPoints6: "Skilled Instructors",
+    img: img,
+    btn: "Join Now", 
+    navigateTo: `/courses/${course}/join`
+  }
+  const javaOverview = {
     topic: "Course Overview",
     subTopic: "The Best Course Available",
     socialVisible: false,
@@ -41,12 +142,30 @@ const ShowCourse = () => {
 
   const duration = {
     webDesign: "8-9 weeks / 8-9 weekends",
+    python: "8-9 weeks / 8-9 weekends",
+    frontEnd: "8-9 weeks / 8-9 weekends",
+    backEnd: "8-9 weeks / 8-9 weekends",
+    react: "8-9 weeks / 8-9 weekends",
+    javascript: "8-9 weeks / 8-9 weekends",
+    java: "8-9 weeks / 8-9 weekends",
   }
   const preRequisites = {
     webDesign: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    python: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    frontEnd: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    backEnd: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    react: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    javascript: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    java: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
   }
   const included = {
-    webDesign: ["3 Mini Projects", "1 Major Project"]
+    webDesign: ["3 Mini Projects", "1 Major Project"],
+    python: ["3 Mini Projects", "1 Major Project"],
+    frontEnd: ["3 Mini Projects", "1 Major Project"],
+    backEnd: ["3 Mini Projects", "1 Major Project"],
+    react: ["3 Mini Projects", "1 Major Project"],
+    javascript: ["3 Mini Projects", "1 Major Project"],
+    java: ["3 Mini Projects", "1 Major Project"],
   }
   const webDesignL1 = [
     { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
@@ -60,20 +179,111 @@ const ShowCourse = () => {
     { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
     { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
   ];
+  const pythonL1 = [
+    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+  ];
+  const pythonL2 = [
+    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+  ];
+  const frontEndL1 = [
+    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+  ];
+  const frontEndL2 = [
+    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+  ];
+  const backtEndL1 = [
+    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+  ];
+  const backtEndL2 = [
+    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+  ];
+  const reactL1 = [
+    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+  ];
+  const reactL2 = [
+    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+  ];
+  const javascriptL1 = [
+    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+  ];
+  const javascriptL2 = [
+    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+  ];
+  const javaL1 = [
+    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+  ];
+  const javaL2 = [
+    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+  ];
 
   return (
     <div>
       <HeadingWallpaper img={img} heading={courseCapitalise} headLink={courseCapitalise} isCourses={true} />
 
       {course === "web designing" && <HeadingContainer headingContainerContent={webDesigningOverview} />}
+      {course === "python with machine learning" && <HeadingContainer headingContainerContent={pythonOverview} />}
+      {course === "front end development" && <HeadingContainer headingContainerContent={frontEndOverview} />}
+      {course === "back end development" && <HeadingContainer headingContainerContent={backEndOverview} />}
+      {course === "react js" && <HeadingContainer headingContainerContent={reactOverview} />}
+      {course === "advanced javascript" && <HeadingContainer headingContainerContent={javascriptOverview} />}
+      {course === "java" && <HeadingContainer headingContainerContent={javaOverview} />}
+      
 
       <HeadingTitle title="Course Description" mainTitle="Course Outline" />
       
       {course === "web designing" && <LazyLoad><CourseOutline  duration = {duration.webDesign} preRequisites = {preRequisites.webDesign} included={included.webDesign}/></LazyLoad>}
+      {course === "python with machine learning" && <LazyLoad><CourseOutline  duration = {duration.python} preRequisites = {preRequisites.python} included={included.python}/></LazyLoad>}
+      {course === "front end development" && <LazyLoad><CourseOutline  duration = {duration.frontEnd} preRequisites = {preRequisites.frontEnd} included={included.frontEnd}/></LazyLoad>}
+      {course === "back end development" && <LazyLoad><CourseOutline  duration = {duration.backEnd} preRequisites = {preRequisites.backEnd} included={included.backEnd}/></LazyLoad>}
+      {course === "react js" && <LazyLoad><CourseOutline  duration = {duration.react} preRequisites = {preRequisites.react} included={included.react}/></LazyLoad>}
+      {course === "advanced javascript" && <LazyLoad><CourseOutline  duration = {duration.javascript} preRequisites = {preRequisites.javascript} included={included.javascript}/></LazyLoad>}
+      {course === "java" && <LazyLoad><CourseOutline  duration = {duration.java} preRequisites = {preRequisites.java} included={included.java}/></LazyLoad>}
       
       <LazyLoad><HeadingTitle title="Course Curriculum" mainTitle="Course Content" /></LazyLoad>
 
       {course === "web designing" && <LazyLoad><CourseContent courseContentL1={webDesignL1} courseContentL2={webDesignL2}/></LazyLoad>}
+      {course === "python with machine learning" && <LazyLoad><CourseContent courseContentL1={pythonL1} courseContentL2={pythonL2}/></LazyLoad>}
+      {course === "front end development" && <LazyLoad><CourseContent courseContentL1={frontEndL1} courseContentL2={frontEndL2}/></LazyLoad>}
+      {course === "back end development" && <LazyLoad><CourseContent courseContentL1={backtEndL1} courseContentL2={backtEndL2}/></LazyLoad>}
+      {course === "react js" && <LazyLoad><CourseContent courseContentL1={reactL1} courseContentL2={reactL2}/></LazyLoad>}
+      {course === "advanced javascript" && <LazyLoad><CourseContent courseContentL1={javascriptL1} courseContentL2={javascriptL2}/></LazyLoad>}
+      {course === "java" && <LazyLoad><CourseContent courseContentL1={javaL1} courseContentL2={javaL2}/></LazyLoad>}
 
       <LazyLoad><Process />
         <div className="container-xxl ">

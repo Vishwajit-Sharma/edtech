@@ -1221,4 +1221,22 @@
     }
   }
   
+
+  /*** Whatsapp Button ***/
+  .wa__btn {
+    position: fixed;
+    bottom: 20px;
+   left: 20px;
+    z-index: 999;
+    background-color: transparent;
+    border: none;
+  }
+  .wa__btn img{
+    width: 60px;
+    height: 60px;
+  }
+  .wa__btn img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
   
