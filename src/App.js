@@ -1,5 +1,5 @@
 
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation  } from "react-router-dom";
 import About from "./Screens/About";
 import Contact from "./Screens/Contact";
 import Courses from "./Screens/Courses";
@@ -28,6 +28,25 @@ function App() {
     setTimeout(() => {
       setIsLoading(false);
     }, 300);
+  }, [location]);
+
+   useEffect(() => {
+
+    const currentRoute = decodeURIComponent(location.pathname).split("/").pop();
+
+    let pageTitle = "Vishwa Ed-Tech";
+
+    if (currentRoute === "") {
+      pageTitle = "Home";
+    } else if (currentRoute === "about") {
+      pageTitle = "About Us";
+    } else if (currentRoute === "join") {
+      pageTitle = "Join Now";
+    } else {
+      pageTitle = currentRoute.replace(/(^|\s)\S/g, (match) => match.toUpperCase());
+    }
+  
+    document.title = pageTitle;
   }, [location]);
 
 

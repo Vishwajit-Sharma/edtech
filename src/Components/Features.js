@@ -3,8 +3,22 @@ import '../Styles/style.css'
 import HeadingTitle from '../Common/HeadingTitle'
 import FreeDemoForm from '../Common/FreeDemoForm'
 import LazyLoad from 'react-lazyload';
+import { GiSkills } from "react-icons/gi";
 
 const Features = () => {
+
+    const content = [
+        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <GiSkills/>, main: "Project Driven Sessions", sub: "Less theory, more practical"},
+        {icon: <GiSkills/>, main: "Reward Based Learning", sub: "Get rewarded for performance"},
+        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+    ]
+
     return (
         <div className='container-xxl py-5'>
             <div className="container">
@@ -13,9 +27,15 @@ const Features = () => {
                 </LazyLoad>
 
                 <LazyLoad height={200} offset={20}>
-                    <div className="row features py-4">
-                        <div className="col-lg-7 col-12">
-                            <ul>
+                    <div className="row features py-3">
+                        <div className="col-lg-7 col-12 p-0 d-flex flex-wrap justify-content-center align-items-center">
+                            {content.map(item => 
+                                <div className='d-flex flex-column justify-content-center align-items-center p-3 each-feature'>
+                                    <span className='fs-1 primary-color-text'>{item.icon}</span>
+                                    <h6>{item.main}</h6>
+                                    <small>{item.sub}</small>
+                                </div>)}
+                            {/* <ul>
                                 <li>Experienced, well Qualified and expert trainers </li>
                                 <li>State of the art curriculum with newest industry practices focused on candidate's continued professional growth</li>
                                 <li>Latest and verified course material</li>
@@ -31,7 +51,7 @@ const Features = () => {
 
                                 <li>Strict confidentiality of student's details </li>
                                 <li>Competitive course fees</li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div className="col-lg-5 col-12 d-flex align-items-center justify-content-lg-end justify-content-center pe-lg-4 mt-5 mt-lg-0">
                              <FreeDemoForm title="Request for Free Demo" isCourse={true} />

@@ -490,26 +490,15 @@
   .features{
     background-color: var(--light);
   }
-  .features ul li{
-    padding: 3px 0;
-    font-size: large;
+  .each-feature:hover{
+    background-color: var(--primary);
+    transform: scaley(1.2);
+    transition: 0.5s;
   }
-  @media (max-width: 576px) {
-    .features ul li{
-        font-size: small;
-    }
+  .each-feature:hover *{
+    color: white;
   }
-  @media (max-width: 767.98px) {
-    .features ul li{
-        font-size: medium;
-    }
-    @media (max-width: 450px) {
-        .features ul li{
-            font-size: smaller;
-        }
-      }
-  }
-
+ 
 
   /*** Demo Form ***/
   .request-form {
@@ -1238,5 +1227,89 @@
   .wa__btn img:hover{
     transform: scale(1.2);
     transition: 0.5s;
+  }
+
+
+  
+/*** Contact ***/
+
+  .contact-page {
+    margin-top: 50px;
+  }
+  
+  .contact-info {
+    padding: 20px;
+    background-color: var(--light);
+    
+  }
+  .contact-info img{
+    width: 40%;
+    height: 50%;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .contact-info-box,
+  .contact-form-box {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 30px;
+  }
+  
+  .contact-info-box h3,
+  .contact-form-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info-box p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form-box form {
+    margin-top: 30px;
+  }
+  
+  .contact-form-box input[type="text"],
+  .contact-form-box input[type="email"],
+  .contact-form-box textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-box button[type="submit"] {
+    background-color: var(--primary);
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  .contact-form-box button[type="submit"]:hover {
+    background-color: #0b5ed7;
   }
   
