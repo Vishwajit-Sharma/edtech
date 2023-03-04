@@ -1313,3 +1313,18 @@
     background-color: #0b5ed7;
   }
   
+
+
+  /*** Purpose***/
+  .purpose-card, .our-method{
+    background-color: var(--light);
+  }
+  .purpose-card:hover, .our-method:hover{
+    background-color: var(--primary);
+    transform: scaleY(1.1);
+    transition: 0.5s;
+    
+  }
+  .purpose-card:hover *, .our-method:hover *{
+    color: white;
+  }

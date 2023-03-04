@@ -5,8 +5,9 @@ import HeadingContainer from '../Common/HeadingContainer'
 import Footer from '../Components/Footer'
 import Team from '../Components/Team'
 import LazyLoad from 'react-lazyload'
-import OurStory from '../Components/OurStory'
 import headingImage from '../Assets/about.jpg'
+import OurPurpose from '../Components/OurPurpose'
+import OurMethodology from '../Components/OurMethodology'
 
 const About = () => {
 
@@ -34,9 +35,11 @@ const About = () => {
     <div >
       <HeadingWallpaper img={img} heading="About Us" headLink="About" />
 
-    <HeadingContainer  headingContainerContent={headingContainerContent}/>
+      <HeadingContainer  headingContainerContent={headingContainerContent}/>
 
-      <LazyLoad  height={200} offset={20}><OurStory /></LazyLoad>
+      <LazyLoad ><OurMethodology /></LazyLoad>
+
+      <LazyLoad ><OurPurpose /></LazyLoad>
 
       <LazyLoad  height={200} offset={20}><Team /></LazyLoad>
 

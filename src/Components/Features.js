@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef }  from 'react'
 import '../Styles/style.css'
 import HeadingTitle from '../Common/HeadingTitle'
 import FreeDemoForm from '../Common/FreeDemoForm'
@@ -7,17 +7,38 @@ import { GiSkills } from "react-icons/gi";
 
 const Features = () => {
 
-    const content = [
+    const [content, setContent] = useState([
         {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
         {icon: <GiSkills/>, main: "Project Driven Sessions", sub: "Less theory, more practical"},
         {icon: <GiSkills/>, main: "Reward Based Learning", sub: "Get rewarded for performance"},
+        {icon: <GiSkills/>, main: "Mock Interviews", sub: "Crack interviews"},
         {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
         {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
         {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
         {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
         {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
-        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
-    ]
+    ])
+
+    const showItemsRef = useRef(Array(content.length).fill(false));
+  
+    useEffect(() => {
+      const timeoutIds = [];
+      setContent((prevContent) => prevContent.map((item, index) => {
+        const timeoutId = setTimeout(() => {
+          showItemsRef.current[index] = true;
+          forceUpdate();
+        }, (index + 1) * 600);
+        timeoutIds.push(timeoutId);
+        return item;
+      }));
+      return () => {
+        timeoutIds.forEach((id) => clearTimeout(id));
+      };
+    }, []);
+  
+    const forceUpdate = () => {
+      setContent((prevContent) => [...prevContent]);
+    };
 
     return (
         <div className='container-xxl py-5'>
@@ -29,8 +50,10 @@ const Features = () => {
                 <LazyLoad height={200} offset={20}>
                     <div className="row features py-3">
                         <div className="col-lg-7 col-12 p-0 d-flex flex-wrap justify-content-center align-items-center">
-                            {content.map(item => 
-                                <div className='d-flex flex-column justify-content-center align-items-center p-3 each-feature'>
+                            {content.map((item, index) => 
+                                <div className={`d-flex flex-column justify-content-center align-items-center p-3 each-feature service-item-wrapper ${
+                                    showItemsRef.current[index] ? "show" : ""
+                                  }`}>
                                     <span className='fs-1 primary-color-text'>{item.icon}</span>
                                     <h6>{item.main}</h6>
                                     <small>{item.sub}</small>
