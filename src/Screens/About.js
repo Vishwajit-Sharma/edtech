@@ -13,18 +13,19 @@ const About = () => {
 
   const headingContainerContent = {
     topic: "About Us",
-    subTopic: "Welcome to eLEARNING",
-    socialVisible: true,
+    subTopic: "Welcome to Vishwa EdTech",
+    socialVisible: false,
     readMoreVisible: false,
-    para1: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors", 
-    bulletPoints2: "Skilled Instructors",  
-    bulletPoints3: "Skilled Instructors",  
-    bulletPoints4: "Skilled Instructors",  
-    bulletPoints5: "Skilled Instructors",  
-    bulletPoints6: "Skilled Instructors",  
-    img: headingImage
+    para1: "Welcome to Vishwa EdTech, a leading software training institute in India that offers comprehensive and industry-relevant courses to help you advance your career.",
+    para2: "Our mission is to empower aspiring software professionals with the skills and knowledge they need to succeed in today's fast-paced and competitive job market. Whether you're a fresh graduate or a working professional looking to upskill, we've got the perfect course for you.",
+    bulletPoints1: "Industry-relevant curriculum", 
+    bulletPoints2: "Experienced faculty",  
+    bulletPoints3: "Flexible learning options",  
+    bulletPoints4: "Placement Assistance",  
+    bulletPoints5: "Affordable pricing",  
+    bulletPoints6: "Community Buliding",  
+    img: headingImage,
+    para3: "Join us today and take the first step towards a successful career in software.",
   }
 
   useEffect(() => {

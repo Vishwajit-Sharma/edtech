@@ -6,7 +6,6 @@ import Footer from '../Components/Footer'
 import PopularCourses from '../Components/PopularCourses'
 import HeadingContainer from '../Common/HeadingContainer'
 import Testimonial from '../Components/Testimonial'
-// import Process from '../Components/Process'
 import  LazyLoad  from 'react-lazyload';
 import headingImage from '../Assets/about.jpg'
 
@@ -16,26 +15,26 @@ const Home = () => {
   
   const headingContainerContent = {
     topic: "About Us",
-    socialVisible: true,
+    subTopic: "Welcome to Vishwa EdTech",
+    socialVisible: false,
     readMoreVisible: true,
-    para1: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors", 
-    bulletPoints2: "Skilled Instructors",  
-    bulletPoints3: "Skilled Instructors",  
-    bulletPoints4: "Skilled Instructors",  
-    bulletPoints5: "Skilled Instructors",  
-    bulletPoints6: "Skilled Instructors",  
-    img: headingImage
+    para1: "Welcome to Vishwa EdTech, a leading software training institute in India that offers comprehensive and industry-relevant courses to help you advance your career.",
+    para2: "Our mission is to empower aspiring software professionals with the skills and knowledge they need to succeed in today's fast-paced and competitive job market. Whether you're a fresh graduate or a working professional looking to upskill, we've got the perfect course for you.",
+    bulletPoints1: "Industry-relevant curriculum", 
+    bulletPoints2: "Experienced faculty",  
+    bulletPoints3: "Flexible learning options",  
+    bulletPoints4: "Placement Assistance",  
+    bulletPoints5: "Affordable pricing",  
+    bulletPoints6: "Community Buliding",  
+    img: headingImage,
+    para3: "Join us today and take the first step towards a successful career in software.",
   }
 
   return (
     <div>
         <MyCarousel/>
 
-        {/* <LazyLoad height={200} offset={20}> */}
-          <HeadingContainer headingContainerContent={headingContainerContent}/>
-        {/* </LazyLoad> */}
+        <HeadingContainer headingContainerContent={headingContainerContent}/>
 
         <LazyLoad height={200} offset={20}>
         <ServiceCard />
@@ -48,14 +47,10 @@ const Home = () => {
         <LazyLoad height={200} offset={20}>
         <Features/>
         </LazyLoad>
-        
-        {/* <LazyLoad height={200} offset={20}>
-        <Process/>
-        </LazyLoad> */}
        
-        <LazyLoad height={200} offset={20}>
+        {/* <LazyLoad height={200} offset={20}>
         <Testimonial/>
-        </LazyLoad>
+        </LazyLoad> */}
         
        
         

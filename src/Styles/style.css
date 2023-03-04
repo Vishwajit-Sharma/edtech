@@ -547,6 +547,13 @@
   /* .request-form button {
     width: auto;
   } */
+
+  .bullet-points:hover{
+    letter-spacing: 1px;
+    color: var(--primary);
+    transition: 0.4s;
+    user-select: none;
+  }
   
 
 

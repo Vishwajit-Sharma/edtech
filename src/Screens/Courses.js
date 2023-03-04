@@ -10,7 +10,8 @@ import Footer from '../Components/Footer'
 import LazyLoad from 'react-lazyload';
 import courseImgDevelopment1 from '../Assets/course-2.jpg'
 import courseImgDevelopment2 from '../Assets/course-3.jpg'
-import { FaGraduationCap, FaGlobe } from "react-icons/fa";
+import {  FaStar, FaStarHalfAlt, FaRegStar, FaReact , FaPalette , FaCodeBranch,FaServer   } from "react-icons/fa";
+import { DiPython, DiJava, DiJsBadge  } from 'react-icons/di';
 import { Element } from 'react-scroll';
 import FreeDemoForm from '../Common/FreeDemoForm'
 import MoreButton from '../Common/MoreButton'
@@ -19,18 +20,21 @@ import MoreButton from '../Common/MoreButton'
 const Courses = () => {
 
   const headingContainerContent = {
-    topic: "Courses",
+    topic: "Our Courses",
+    subTopic: "Welcome to the Best Courses Available",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors",
-    bulletPoints2: "Skilled Instructors",
-    bulletPoints3: "Skilled Instructors",
-    bulletPoints4: "Skilled Instructors",
-    bulletPoints5: "Skilled Instructors",
-    bulletPoints6: "Skilled Instructors",
-    img: headingImage
+    para1: "At Vishwa Edtech, we offer a wide range of software training courses to help you acquire the skills and knowledge you need to succeed in the tech industry. All our courses are designed to be practical and hands-on, with a focus on real-world applications.",
+    //para2: "Our mission is to empower aspiring software professionals with the skills and knowledge they need to succeed in today's fast-paced and competitive job market. Whether you're a fresh graduate or a working professional looking to upskill, we've got the perfect course for you.",
+    bulletPoints1: "Comprehensive & customizable curriculum", 
+    bulletPoints2: "Experienced trainers",  
+    bulletPoints3: "Practical projects",  
+    bulletPoints4: "Placement Assistance",  
+    bulletPoints5: "Affordable pricing",  
+    bulletPoints6: "Community support",  
+    img: headingImage,
+    para3: "Choose from our range of courses today and take the first step towards a successful career in software. Whether you're looking to start a new career, upskill in your current job, or just explore a new area of interest, we've got the perfect course for you.",
+
   }
 
   const cardContentDevelopment1 = {
@@ -38,8 +42,9 @@ const Courses = () => {
     courseName: "Web Designing",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
-    icon: <FaGlobe />,
+    icon: <FaPalette />,
     bgColor: "bgColorFoundation",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStarHalfAlt/>],
     
   }
   const cardContentDevelopment2 = {
@@ -47,48 +52,54 @@ const Courses = () => {
     courseName: "Front End Development",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
-    icon: <FaGraduationCap />,
-    bgColor: "bgColorFoundation"
+    icon: <FaCodeBranch  />,
+    bgColor: "bgColorFoundation",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentDevelopment3 = {
     img: courseImgDevelopment2,
     courseName: "Back End Development",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
-    icon: <FaGraduationCap />,
-    bgColor: "bgColorFoundation"
+    icon: <FaServer  />,
+    bgColor: "bgColorFoundation",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentlanguages1 = {
     img: courseImgDevelopment2,
     courseName: "Java",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
-    icon: <FaGraduationCap />,
-    bgColor: "bgColorProfessional"
+    icon: <DiJava  />,
+    bgColor: "bgColorProfessional",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentlanguages2 = {
     img: courseImgDevelopment2,
     courseName: "Advanced Javascript",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
-    icon: <FaGraduationCap />,
-    bgColor: "bgColorProfessional"
+    icon: <DiJsBadge  />,
+    bgColor: "bgColorProfessional",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentTrending1 = {
     img: courseImgDevelopment2,
     courseName: "React JS",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
-    icon: <FaGraduationCap />,
-    bgColor: "bgColorFramework"
+    icon: <FaReact />,
+    bgColor: "bgColorFramework",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStarHalfAlt/>],
   }
   const cardContentTrending2 = {
     img: courseImgDevelopment2,
     courseName: "Python With Machine Learning",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
-    icon: <FaGraduationCap />,
-    bgColor: "bgColorFramework"
+    icon: <DiPython />,
+    bgColor: "bgColorFramework",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
 
   useEffect(() => {

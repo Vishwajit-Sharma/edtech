@@ -34,27 +34,28 @@ const HeadingContainer = ({ headingContainerContent}) => {
                         <h1 className="mb-4">{headingContainerContent.subTopic}</h1>
                         <p className="mb-4">{headingContainerContent.para1}</p>
                         <p className="mb-4">{headingContainerContent.para2}</p>
-                        <div className="row gy-2 gx-4 mb-2">
+                        <div className="row gy-2 gx-4 mb-4">
                             <div className="col-sm-6">
-                                <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints1}</p>
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints1}</p>
                             </div>
                             <div className="col-sm-6">
 
-                                <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints2}</p>
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints2}</p>
                             </div>
                             <div className="col-sm-6">
-                                <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints3}</p>
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints3}</p>
                             </div>
                             <div className="col-sm-6">
-                                <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints4}</p>
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints4}</p>
                             </div>
                             <div className="col-sm-6">
-                                <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints5}</p>
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints5}</p>
                             </div>
                             <div className="col-sm-6">
-                                <p className="mb-0"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints6}</p>
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints6}</p>
                             </div>
                         </div>
+                        <p className="mb-4">{headingContainerContent.para3}</p>
                         {headingContainerContent.socialVisible && <div className='d-flex justify-content-between' style={{ width: "20%" }}>
                             <button className='primary-color-text social'><FaLinkedin /></button>
                             <button className='primary-color-text social'><FaInstagramSquare /></button>

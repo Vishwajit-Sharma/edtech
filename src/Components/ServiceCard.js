@@ -1,29 +1,29 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Styles/style.css';
-import { FaGraduationCap, FaGlobe, FaHome, FaBookOpen } from "react-icons/fa";
+import { FaLaptopCode, FaUserClock , FaHands , FaCode  } from "react-icons/fa";
 import HeadingTitle from '../Common/HeadingTitle';
 
 const ServiceItem = () => {
   const [content, setContent] = useState([
     {
-      icon: <FaGraduationCap />,
-      title: "title1",
-      para: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <FaCode />,
+      title: "Software Training Courses",
+      para: "Explore our range of software training courses designed to help you acquire the skills and knowledge you need to succeed in the tech industry. Our courses cover a wide range of topics, including programming languages, web development, database management, and data science.",
     },
     {
-      icon: <FaGlobe />,
-      title: "title2",
-      para: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <FaUserClock  />,
+      title: "Career Development Services",
+      para: "Our career development services are designed to help you take the next step in your career. We offer resume writing, interview coaching, job search assistance, and more. Our team of career experts will work with you to help you achieve your professional goals.",
     },
     {
-      icon: <FaHome />,
-      title: "title3",
-      para: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <FaHands />,
+      title: "Hands-On Training Courses",
+      para: "Our hands-on training courses provide students with practical, real-world experience that they can apply to their jobs immediately. Our courses include coding exercises, group projects, and case studies to help students learn by doing.",
     },
     {
-      icon: <FaBookOpen />,
-      title: "title4",
-      para: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      icon: <FaLaptopCode />,
+      title: "Software Development Services",
+      para: "We offer a wide range of software development services, including web application development, mobile app development, software maintenance, and more",
     },
   ]);
   
@@ -61,7 +61,7 @@ const ServiceItem = () => {
                 showItemsRef.current[index] ? "show" : ""
               }`}
             >
-              <div className="service-item text-center pt-3">
+              <div className="service-item text-center pt-3 h-100">
                 <div className="p-4">
                   <span className="primary-color-text icon-font">
                     {item.icon}

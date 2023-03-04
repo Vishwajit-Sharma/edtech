@@ -3,20 +3,21 @@ import '../Styles/style.css'
 import HeadingTitle from '../Common/HeadingTitle'
 import FreeDemoForm from '../Common/FreeDemoForm'
 import LazyLoad from 'react-lazyload';
-import { GiSkills } from "react-icons/gi";
+import { GiGraduateCap  } from "react-icons/gi";
+import { FaMoneyBillAlt  , FaClock , FaHandsHelping , FaComments , FaSuitcase , FaUserEdit , FaCertificate , FaCommentDots } from "react-icons/fa";
 
 const Features = () => {
 
     const [content, setContent] = useState([
-        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
-        {icon: <GiSkills/>, main: "Project Driven Sessions", sub: "Less theory, more practical"},
-        {icon: <GiSkills/>, main: "Reward Based Learning", sub: "Get rewarded for performance"},
-        {icon: <GiSkills/>, main: "Mock Interviews", sub: "Crack interviews"},
-        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
-        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
-        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
-        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
-        {icon: <GiSkills/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <FaMoneyBillAlt/>, main: "100% Moneyback Gauarantee", sub: "No question asked"},
+        {icon: <FaHandsHelping/>, main: "Project Driven Sessions", sub: "Less theory, more practical"},
+        {icon: <GiGraduateCap />, main: "Reward Based Learning", sub: "Get rewarded for performance"},
+        {icon: <FaSuitcase />, main: "Job Placement Assistance", sub: "Get help finding your dream job"},
+        {icon: <FaClock />, main: "Flexible Scheduling", sub: "Study at your own pace"},
+        {icon: <FaComments  />, main: "Interactive Learning", sub: "Engage in interactive discussions and activities"},
+        {icon: <FaUserEdit />, main: "Personalized Learning", sub: "Tailored to your learning style and needs"},
+        {icon: <FaCertificate />, main: "Professional Certificate", sub: "Earn a certificate upon completion"},
+        {icon: <FaCommentDots />, main: "Support and Feedback", sub: "Support and feedback from instructors and peers"},
     ])
 
     const showItemsRef = useRef(Array(content.length).fill(false));
@@ -51,7 +52,7 @@ const Features = () => {
                     <div className="row features py-3">
                         <div className="col-lg-7 col-12 p-0 d-flex flex-wrap justify-content-center align-items-center">
                             {content.map((item, index) => 
-                                <div className={`d-flex flex-column justify-content-center align-items-center p-3 each-feature service-item-wrapper ${
+                                <div className={`d-flex flex-column justify-content-center align-items-center px-3 pb-3 m-2 each-feature service-item-wrapper ${
                                     showItemsRef.current[index] ? "show" : ""
                                   }`}>
                                     <span className='fs-1 primary-color-text'>{item.icon}</span>

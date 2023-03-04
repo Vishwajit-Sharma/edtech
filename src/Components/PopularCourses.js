@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Styles/style.css';
-import { FaGraduationCap, FaGlobe, FaHome, FaBookOpen } from "react-icons/fa";
+import { FaReact , FaPalette , FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { GiDuration } from "react-icons/gi";
+import { DiPython } from 'react-icons/di';
 import HeadingTitle from '../Common/HeadingTitle';
 import img1 from '../Assets/course-1.jpg'
 import img2 from '../Assets/course-2.jpg'
@@ -14,25 +16,25 @@ const PopularCourses = () => {
 
   const [content, setContent] = useState([
     {
-      icon: <FaGraduationCap />,
+      icon: <FaReact  />,
       courseName: "React JS",
       description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
       img: img1,
-      time: "1 Month"
+      time: "2 Months"
     },
     {
-      icon: <FaGlobe />,
+      icon: <FaPalette  />,
       courseName: "Web Designing",
       description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
       img: img2,
-      time: "1 Month"
+      time: "2 Months"
     },
     {
-      icon: <FaHome />,
+      icon: <DiPython />,
       courseName: "Python With Machine Learning",
       description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
       img: img3,
-      time: "1 Month"
+      time: "2 Months"
     },
    
   ]);
@@ -74,20 +76,20 @@ const PopularCourses = () => {
               <div className="course-item">
                 <div className="position-relative overflow-hidden">
                      <img className="img-fluid" src={item.img} alt="" />
-                    <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                    <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-3">
                         <button className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }} onClick={() => navigate(`/courses/${item.courseName.toLowerCase()}`)}>Read More</button>
                         <button className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }} onClick={() => navigate(`/courses/${item.courseName.toLowerCase()}/join`)}>Join Now</button>
                     </div>
                 </div>
                 <div className="text-center p-4 pb-0">
-                    <h3 className="mb-3 primary-color-text">{item.icon}</h3>
+                    <h1 className="mb-3 primary-color-text">{item.icon}</h1>
                     <h5 className="mb-3">{item.courseName}</h5>
                     <p className='mb-4'>{item.description}</p>
                 </div>
                 <div className="d-flex border-top">
-                    <small className="flex-fill text-center border-end py-2"><i className="fa fa-user-tie text-primary me-2" />John Doe</small>
-                    <small className="flex-fill text-center border-end py-2"><span className="text-primary me-2"> <FaBookOpen/></span> {item.time}</small>
-                    <small className="flex-fill text-center py-2"><span className="text-primary me-2"> <FaBookOpen/></span> 30 Students</small>
+                    <small className="flex-fill text-center border-end py-2 text-warning"><FaStar/><FaStar/><FaStar/><FaStar/><FaStarHalfAlt/></small>
+                    <small className="flex-fill text-center border-end py-2"><span className="text-primary me-2"> <GiDuration/></span> {item.time}</small>
+                    {/* <small className="flex-fill text-center py-2"><span className="text-primary me-2"> <FaBookOpen/></span> 30 Students</small> */}
                 </div>
             </div>
             </div>
