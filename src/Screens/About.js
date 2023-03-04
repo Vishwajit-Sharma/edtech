@@ -3,7 +3,7 @@ import HeadingWallpaper from '../Common/HeadingWallpaper'
 import img from '../Assets/carousel-1.jpg'
 import HeadingContainer from '../Common/HeadingContainer'
 import Footer from '../Components/Footer'
-import Team from '../Components/Team'
+import OurTeam from '../Components/OurTeam'
 import LazyLoad from 'react-lazyload'
 import headingImage from '../Assets/about.jpg'
 import OurPurpose from '../Components/OurPurpose'
@@ -41,9 +41,9 @@ const About = () => {
 
       <LazyLoad ><OurPurpose /></LazyLoad>
 
-      <LazyLoad  height={200} offset={20}><Team /></LazyLoad>
+      <LazyLoad ><OurTeam /></LazyLoad>
 
-      <LazyLoad height={200} offset={20}> <Footer /></LazyLoad>
+      <LazyLoad > <Footer /></LazyLoad>
 
     </div>
   )
