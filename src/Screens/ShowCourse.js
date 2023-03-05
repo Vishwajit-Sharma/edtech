@@ -252,6 +252,25 @@ const ShowCourse = () => {
     { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
   ];
 
+  const faqReact = [
+    {
+      question: 'What is React?',
+      answer: 'React is a JavaScript library for building user interfaces.',
+    },
+    {
+      question: 'What are the key features of React?',
+      answer: 'React allows developers to create reusable UI components and provides a virtual DOM for fast rendering.',
+    },
+    {
+      question: 'What are the advantages of using React?',
+      answer: 'React provides high performance, easy maintenance, and great developer experience.',
+    },
+    {
+      question: 'How can I get started with React?',
+      answer: 'You can get started with React by learning the basics of HTML, CSS, and JavaScript, and then following some React tutorials and building small projects.',
+    },
+  ]
+
   return (
     <div>
       <HeadingWallpaper img={img} heading={courseCapitalise} headLink={courseCapitalise} isCourses={true} />
@@ -287,13 +306,13 @@ const ShowCourse = () => {
 
       <LazyLoad><Process />
         <div className="container-xxl ">
-          <div className="container d-flex justify-content-center">
+          <div className="container d-flex justify-content-center pb-4">
             <MoreButton text="Join Now"  navigateTo={`courses/${course}/join`}/>
           </div>
         </div>
       </LazyLoad>
 
-    <LazyLoad><FAQ/></LazyLoad>
+    {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>}
     <LazyLoad><Footer/></LazyLoad>
 
     </div>

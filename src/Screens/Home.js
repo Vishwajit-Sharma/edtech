@@ -8,7 +8,7 @@ import HeadingContainer from '../Common/HeadingContainer'
 //import Testimonial from '../Components/Testimonial'
 import  LazyLoad  from 'react-lazyload';
 import headingImage from '../Assets/about.jpg'
-
+import FAQ from '../Components/FAQ'
 
 
 const Home = () => {
@@ -30,6 +30,25 @@ const Home = () => {
     para3: "Join us today and take the first step towards a successful career in software.",
   }
 
+  const faq = [
+    {
+      question: 'What is React?',
+      answer: 'React is a JavaScript library for building user interfaces.',
+    },
+    {
+      question: 'What are the key features of React?',
+      answer: 'React allows developers to create reusable UI components and provides a virtual DOM for fast rendering.',
+    },
+    {
+      question: 'What are the advantages of using React?',
+      answer: 'React provides high performance, easy maintenance, and great developer experience.',
+    },
+    {
+      question: 'How can I get started with React?',
+      answer: 'You can get started with React by learning the basics of HTML, CSS, and JavaScript, and then following some React tutorials and building small projects.',
+    },
+  ]
+
   return (
     <div>
         <MyCarousel/>
@@ -46,6 +65,10 @@ const Home = () => {
 
         <LazyLoad height={200} offset={20}>
         <Features/>
+        </LazyLoad>
+
+        <LazyLoad height={200} offset={20}>
+        <FAQ faqs={faq}/>
         </LazyLoad>
        
         {/* <LazyLoad height={200} offset={20}>

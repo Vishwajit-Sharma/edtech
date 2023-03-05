@@ -1139,6 +1139,16 @@
     display: block;
     background-color: var(--light);
   }
+
+  .view-more{
+    outline: none;
+    background-color: transparent;
+    color: var(--primary) !important;
+    font-weight: 500;
+  }
+  .view-more:hover{
+    color: #0b5ed7;
+  }
   
 
   /* Enrollment form */
