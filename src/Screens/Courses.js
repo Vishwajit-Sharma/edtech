@@ -71,7 +71,7 @@ const Courses = () => {
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <DiJava  />,
-    bgColor: "bgColorProfessional",
+    bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentlanguages2 = {
@@ -80,7 +80,7 @@ const Courses = () => {
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <DiJsBadge  />,
-    bgColor: "bgColorProfessional",
+    bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentTrending1 = {
@@ -89,7 +89,7 @@ const Courses = () => {
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <FaReact />,
-    bgColor: "bgColorFramework",
+    bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStarHalfAlt/>],
   }
   const cardContentTrending2 = {
@@ -98,7 +98,7 @@ const Courses = () => {
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
     icon: <DiPython />,
-    bgColor: "bgColorFramework",
+    bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
 

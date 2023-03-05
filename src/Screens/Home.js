@@ -5,7 +5,7 @@ import Features from '../Components/Features'
 import Footer from '../Components/Footer'
 import PopularCourses from '../Components/PopularCourses'
 import HeadingContainer from '../Common/HeadingContainer'
-import Testimonial from '../Components/Testimonial'
+//import Testimonial from '../Components/Testimonial'
 import  LazyLoad  from 'react-lazyload';
 import headingImage from '../Assets/about.jpg'
 
@@ -51,11 +51,9 @@ const Home = () => {
         {/* <LazyLoad height={200} offset={20}>
         <Testimonial/>
         </LazyLoad> */}
-        
-       
-        
-       
-        <Footer/>
+               
+        <LazyLoad><Footer/></LazyLoad>
+
     </div>
   )
 }

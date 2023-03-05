@@ -38,25 +38,26 @@
 .quote{
     background-color: #181d38;
     color: #06BBCC;
-    padding: 20px 10px;
+    padding: 15px 10px;
     width: 100%;
-    font-size: large;
+    font-size: medium;
     font-family: cursive;
     letter-spacing: 1px;
 
 }
 @media (max-width: 576px) {
     .quote{
-        font-size: small;
+        font-size: x-small;
     }
   }
-  @media (max-width: 767.98px) {
+  /* @media (max-width: 767.98px) {
     .quote{
         font-size: medium;
     }
-}
+} */
     @media (max-width: 450px) {
         .quote{
+          display: none;
             font-size: x-small;
             padding: 10px;
         }
@@ -175,6 +176,11 @@
 }
 .navbar-brand{
     margin-right: 0 !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 var(--primary) !important;
+  outline: 1px solid var(--primary) !important;
 }
 
 
@@ -924,6 +930,7 @@
   }
   @media (max-width: 576px) {
     .back-to-top{
+      display: none;
         padding: 0.3rem 0.5rem;
     }
     .back-to-top span {
@@ -1164,7 +1171,7 @@
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid gainsboro;
     background-color: #ffffff;
     font-size: 16px;
     font-family: inherit;
@@ -1217,7 +1224,8 @@
   .wa__btn {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    /* left: 20px; */
+    padding-left: 10px;
     z-index: 999;
     background-color: transparent;
     border: none;
@@ -1231,6 +1239,11 @@
     transition: 0.5s;
   }
   @media (max-width: 576px) {
+    .wa__btn{ 
+      position: fixed;
+      bottom: 20px;
+      right: 20px ;
+    }
     .wa__btn img{
       width: 30px;
       height: 30px;
