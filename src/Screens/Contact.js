@@ -5,6 +5,7 @@ import HeadingWallpaper from '../Common/HeadingWallpaper'
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import '../Styles/style.css'
 import Footer from '../Components/Footer';
+import Modal from 'react-bootstrap/Modal';
 
 const Contact = () => {
 
@@ -13,6 +14,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [show, setShow] = useState(false);
 
   const handleChange = (event) => {
     setFormData({
@@ -23,8 +25,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
-    // TODO: Add code to send form data to backend or display success message
+    setShow(true)
   };
   return (
     <>
@@ -62,6 +63,21 @@ const Contact = () => {
       </div>
     </div>
     <Footer/>
+    <Modal
+        show={show}
+        onHide={()=>setShow(false)}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Thank you for your request</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Hey <strong>{formData.name}</strong>, 
+          <p>Your Message <strong>"{formData.message}" </strong>is successfully received. Our team will reach back to you soon.</p>
+
+        </Modal.Body>
+      </Modal>
     </>
   );
 };

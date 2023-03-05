@@ -1359,3 +1359,13 @@
   .purpose-card:hover *, .our-method:hover *{
     color: white;
   }
+
+.modal-header{
+  background-color: var(--primary);
+  color: white;
+  
+}
+.modal-body{
+  background-color: var(--light);
+  letter-spacing: 1px;
+}

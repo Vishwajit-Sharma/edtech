@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import "../Styles/style.css"
+import Modal from 'react-bootstrap/Modal';
 
 const EnrollmentForm = ({course}) => {
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [select, setSelect] = useState(course ? course : "");
 
+  const [show, setShow] = useState(false);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`Name: ${name}, Email: ${email}, Mobile: ${mobile}, Course: ${select}`);
+    setShow(true)
   };
 
   const options = [
@@ -25,6 +29,7 @@ const EnrollmentForm = ({course}) => {
   ];
 
   return (
+    <>
     <form className="enrollment-form" onSubmit={handleSubmit}>
       <h2>Enrollment Form</h2>
       <div className="form-control">
@@ -52,6 +57,23 @@ const EnrollmentForm = ({course}) => {
       <div className="d-flex justify-content-center pt-4"><button type="submit" className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn">Submit</button></div>
       
     </form>
+
+    <Modal
+        show={show}
+        onHide={()=>setShow(false)}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Congratulations {name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Thank you for showing faith in us.</p>
+         <p>You have successfully enrolled for <strong>{select}</strong> Course. Get ready to take your career to newer heights.</p>
+         <p>Our team will reach back to you soon.</p>
+        </Modal.Body>
+      </Modal>
+    </>
   );
 };
 

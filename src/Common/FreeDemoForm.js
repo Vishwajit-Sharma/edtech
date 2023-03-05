@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../Styles/style.css'
+import Modal from 'react-bootstrap/Modal';
 
 const courses = [
   "Course A",
@@ -14,6 +15,8 @@ const FreeDemoForm = ({title, isCourse}) => {
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
   const [selectedCourse, setSelectedCourse] = useState("");
+
+  const [show, setShow] = useState(false);
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -33,10 +36,13 @@ const FreeDemoForm = ({title, isCourse}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("Submitted");
+    setShow(true)
+    
   };
 
+
   return (
+    <>
     <form className="request-form" onSubmit={handleSubmit}>
       <h3 className="mb-4 text-center primary-color-text">{title}</h3>
       <input
@@ -84,6 +90,21 @@ const FreeDemoForm = ({title, isCourse}) => {
       </select>}
       <button type="submit" className="btn btn-light">Submit</button>
     </form>
+
+    <Modal
+        show={show}
+        onHide={()=>setShow(false)}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Thank you for your request</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Hey <strong>{name}</strong>, Your request is successfully received. Our team will reach back to you soon.
+        </Modal.Body>
+      </Modal>
+    </>
   );
 };
 
