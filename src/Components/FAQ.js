@@ -6,7 +6,7 @@ const FAQ = ({faqs}) => {
 
   const [activeIndex, setActiveIndex] = useState(-1);
   const [more, setMore] = useState(true);
-  const [showCount, setShowCount] = useState(2);
+  const [showCount, setShowCount] = useState(4);
 
   const toggle = (index) => {
     setActiveIndex(activeIndex === index ? -1 : index);

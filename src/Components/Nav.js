@@ -25,7 +25,7 @@ const Nav = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <NavLink to="/" className="navbar-brand d-flex align-items-center px-3 px-md-4 px-lg-5">
-                <h2 className="m-0 primary-color-text"><span className='me-2'><GiSkills /></span>Vishwa EdTech</h2>
+                <h2 className="m-0 primary-color-text"><span className='me-2'><GiSkills /></span>TechnoShaala</h2>
             </NavLink>
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav ms-auto p-4 p-lg-0">

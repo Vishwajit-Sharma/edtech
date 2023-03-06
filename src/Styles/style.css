@@ -493,7 +493,11 @@
 
   /*** Features ***/
 
-  .features{
+  /* .features{
+    background-color: var(--light);
+  } */
+
+  .each-feature {
     background-color: var(--light);
   }
   .each-feature:hover{
@@ -1360,6 +1364,8 @@
     color: white;
   }
 
+
+/***Modal***/
 .modal-header{
   background-color: var(--primary);
   color: white;

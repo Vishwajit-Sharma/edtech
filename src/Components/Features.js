@@ -45,12 +45,12 @@ const Features = () => {
         <div className='container-xxl py-5'>
             <div className="container">
                 <LazyLoad height={200} offset={20}>
-                    <HeadingTitle title="Features" mainTitle="Our Features" />
+                    <HeadingTitle title="Our USP" mainTitle="Why Choose Us" />
                 </LazyLoad>
 
                 <LazyLoad height={200} offset={20}>
                     <div className="row features py-3">
-                        <div className="col-lg-7 col-12 p-0 d-flex  justify-content-center align-items-center">
+                        <div className="col-lg-7 col-12 p-0 ">
                           <div className="row g-3">
                             {content.map((item, index) => 
                                 <div className={`col-sm-6 col-12 d-flex flex-column justify-content-center align-items-center px-3 pb-3 each-feature service-item-wrapper ${
