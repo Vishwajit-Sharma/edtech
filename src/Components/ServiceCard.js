@@ -7,7 +7,7 @@ const ServiceItem = () => {
   const [content, setContent] = useState([
     {
       icon: <FaCode />,
-      title: "Software Training Courses",
+      title: "Live Instructor Based Training Courses",
       para: "Explore our range of software training courses designed to help you acquire the skills and knowledge you need to succeed in the tech industry. Our courses cover a wide range of topics, including programming languages, web development, database management, and data science.",
     },
     {
@@ -17,7 +17,7 @@ const ServiceItem = () => {
     },
     {
       icon: <FaHands />,
-      title: "Hands-On Training Courses",
+      title: "Hands-On Project Based Courses",
       para: "Our hands-on training courses provide students with practical, real-world experience that they can apply to their jobs immediately. Our courses include coding exercises, group projects, and case studies to help students learn by doing.",
     },
     {

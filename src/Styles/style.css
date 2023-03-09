@@ -553,10 +553,13 @@
     margin-top: 30px;
     /* margin-bottom: 0; */
   }
-  
-  /* .request-form button {
-    width: auto;
-  } */
+  .request-form input:focus,
+  .request-form  select:focus{
+    border-bottom: 3px solid var(--primary);
+    /* transition: 0.5s; */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
 
   .bullet-points:hover{
     letter-spacing: 1px;
