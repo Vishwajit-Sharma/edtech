@@ -32,6 +32,16 @@ const Home = () => {
 
   const faq = [
     {
+      question: `How to enrol in any course?`,
+      answer: `You go to that particular course page which you want to enrol. Then, click on Join Now button. A new Enrollment page will open. 
+      Simply, fill the form and submit. Our representative will get in touch with you within 6 hours. That's it.`,
+    },
+    {
+      question: `How to request for free demo?`,
+      answer: `For free demo request, you need to fill up the form provided on home page or the course page. 
+      Once, you submit the form, our representative will get in touch with you and schedule your demo with the instructor. `,
+    },
+    {
       question: `How would be the flow of the course?`,
       answer: `You need to Enrol in the Level-1 of the course of your choice. Usually, Level-1 Course content would be one-third of the
       total course content. During the Level-1 course, you need to attend the sessions, pass the evaluation, clear the mock interview 
@@ -75,6 +85,13 @@ const Home = () => {
       related things.`,
     },
     {
+      question: `What are your timings for the course sessions and how long each session would be?`,
+      answer: `It depends on the availability of instructor and the students. Mostly, we provide weekends and weekdays batches. 
+      For weekends, timings are flexible as per the mutual understanding of the students and instructor. And as far as Weekdays batch is concerned, usually it is the morning or late night. 
+      As far as duration is concerned, it depends on the specific course. 
+      Usually, 1.5-2 hour session is there. So,  For precise timing details about a particular course, kindly contact us.`,
+    },
+    {
       question: `What about your communication skills session?`,
       answer: `You'll be provided with 2 Communication Skills session as per the avialability of the trainer during the Level-2 of the course tenure.
       It's completely free and optional. However, we'll recommend you to attend those two sessions as they will help you crack the interviews and 
@@ -84,6 +101,19 @@ const Home = () => {
       question: `What if I miss any session due to any personal reasons?`,
       answer: `Don't worry. Each of our sessions are recorded. So, you'll get the recording of the session if you miss any. Also, if you'll face any difficulty
       in understanding any of the missed concept, we'll schedule your time with the trainer. You can clear your doubts.`,
+    },
+    {
+      question: `How is your placement assistance program? Do you guarantee job after completing course?`,
+      answer: `Our placement assistance program includes your Resume building, Mock interviews(Technical+Non technical), Naukari and LinkedIn profile etc. After course completion, you'll be dedicatedly focused on these aspects.
+      As far as Job guarantee is concerned, we believe in quality education. That's why, we came with Level based approach. Our course is designed in such a way that when you complete it, including all assessments, Projects and Mocks, 
+      you yourself become capable in cracking any job interview. So, our goal is to make you Super capable enough to go ahead in your career. Not, to give you any false hope. 
+      Remember, there are no Guarantees and warranties in life, only possibilities and opportunities are. And, we assure a career full of possibilities and opportunities for you.`,
+    },
+    {
+      question: `What is your refund policy? If i am not satisfied with your course, do you have any money back policy ?`,
+      answer: `As we already stated that we believe in Quality Education. Nothing less than that. So, be assured about our courses. 
+      To help you decide, we provide free demo as well. But, still if you wish to get refund, you'll need to inform us before completion of  3 sessions of the course Level. 
+      You'll get 100% money-back before 3 sessions. After that, no refund will be provided.`,
     },
     
   ]

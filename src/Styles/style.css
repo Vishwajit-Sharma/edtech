@@ -449,7 +449,8 @@
 
   @media (max-width: 767.98px) {
     .read-btn{
-        width: 50% !important;
+        width: 40% !important;
+        font-size: small;
     }
 }
 

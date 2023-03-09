@@ -19,10 +19,11 @@ const HeadingContainer = ({ headingContainerContent}) => {
     }, []);
 
 
+
     return (
 
             <div className= {`container-xxl py-5 service-item-wrapper ${showContent ? 'show': ''}`}>
-            <div className="container ">
+            <div className="container pb-4">
                 <div className="row g-5 ">
                     <div className="col-lg-6" style={{ minHeight: '400px' }}>
                         <div className="position-relative h-100 ">
@@ -64,6 +65,7 @@ const HeadingContainer = ({ headingContainerContent}) => {
                         <div className="row justify-content-lg-start justify-content-center mt-3">
                         {headingContainerContent.readMoreVisible && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick={()=>navigate('/about')}>Read More</button>}
                         {headingContainerContent.btn && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick={()=>navigate(headingContainerContent.navigateTo)}>Join Now</button>}
+                        
     </div>
                     </div>
                 </div>

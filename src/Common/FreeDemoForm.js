@@ -3,13 +3,13 @@ import '../Styles/style.css'
 import Modal from 'react-bootstrap/Modal';
 
 const courses = [
-  "Course A",
+  "React Js",
   "Course B",
   "Course C",
   "Course D",
 ];
 
-const FreeDemoForm = ({title, isCourse}) => {
+  const FreeDemoForm = ({title, isCourse, course}) => {
 
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
@@ -37,7 +37,10 @@ const FreeDemoForm = ({title, isCourse}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setShow(true)
-    
+    setName("")
+    setEmail("")
+    setMobile("")
+    setSelectedCourse("")
   };
 
 
@@ -76,7 +79,7 @@ const FreeDemoForm = ({title, isCourse}) => {
         id="course"
         name="course"
         placeholder="Select a Course *"
-        value={selectedCourse}
+        value={course ? course : selectedCourse}
         onChange={handleCourseChange}
         required
         className="text-light"
