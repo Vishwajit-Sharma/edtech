@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../Styles/style.css'
 import Modal from 'react-bootstrap/Modal';
+import { useForm } from '@formspree/react';
 
 const courses = [
   "React Js",
@@ -14,9 +15,10 @@ const courses = [
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
+  const [show, setShow] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState("");
 
-  const [show, setShow] = useState(false);
+  const [state, handleSubmit] = useForm("mgebybez");
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -34,19 +36,24 @@ const courses = [
     setSelectedCourse(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+
+  const handleSubmitForm = async(event) =>{
+    
     event.preventDefault();
-    setShow(true)
+
+    await handleSubmit(event);
+
+    setShow(true);
     setName("")
     setEmail("")
     setMobile("")
     setSelectedCourse("")
-  };
+  }
 
 
   return (
     <>
-    <form className="request-form" onSubmit={handleSubmit}>
+    <form className="request-form" onSubmit={handleSubmitForm}>
       <h3 className="mb-4 text-center primary-color-text">{title}</h3>
       <input
         type="text"
@@ -91,22 +98,22 @@ const courses = [
           </option>
         ))}
       </select>}
-      <button type="submit" className="btn btn-light">Submit</button>
+      <button type="submit" className="btn btn-light" disabled={state.submitting}>Submit</button>
     </form>
 
     <Modal
-        show={show}
-        onHide={()=>setShow(false)}
-        backdrop="static"
-        keyboard={false}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Thank you for your request</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          Hey <strong>{name}</strong>, Your request is successfully received. Our team will reach back to you soon.
-        </Modal.Body>
-      </Modal>
+      show={show}
+      onHide={()=>setShow(false)}
+      backdrop="static"
+      keyboard={false}
+    >
+      <Modal.Header closeButton>
+        <Modal.Title>Thank you for your request</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        Hey <strong>{name}</strong>, Your request is successfully received. Our team will reach back to you soon.
+      </Modal.Body>
+    </Modal>   
     </>
   );
 };
