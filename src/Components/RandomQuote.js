@@ -7,13 +7,17 @@ function RandomQuote() {
   useEffect(() => {
     const interval = setInterval(() => {
       const quotes = [
-        "The best way to predict the future is to invent it. - Alan Kay",
-        "JavaScript is the only language that I'm aware of that people feel they don't need to learn before they start using it. - Douglas Crockford",
-        "I'm not a great programmer; I'm just a good programmer with great habits. - Kent Beck",
-        "React is not a framework, it's a library. - Dan Abramov",
-        "The joy of coding Python should be in seeing short, concise, readable classes that express a lot of action in a small amount of clear code. - Guido van Rossum",
-        "The most important skill a programmer can learn is to write clean code. - Robert C. Martin",
-        "The best error message is the one that never shows up. - Thomas Fuchs"
+        `"The web is more a social creation than a technical one. I designed it for a social effect — to help people work together — and not as a technical toy." - Tim Berners-Lee`,
+        `"Good web design is about the character of the content, not the character of the designer." - Jeffrey Zeldman`,
+        `"The strength of JavaScript is that you can do anything. The weakness is that you will." - Reg Braithwaite`,
+        `"JavaScript is a language with a very simple syntax, yet a very complex semantics." - Douglas Crockford`,
+        `"Java is a great language for building scalable, distributed, networked applications." - Jonathan Schwartz`,
+        `"Python is the second best language for anything." - Anonymous`,
+        `"The web is constantly changing, and front-end development is leading the charge." - Shawn Wildermuth`,
+        `"Front-end development is about creating rich, interactive experiences for people browsing the web." - Addy Osmani`,
+        `"Back-end development is the foundation that the web is built on." - Matt Stauffer`,
+        `"Web design is where aesthetics meets functionality." - Anonymous`,
+
       ];
       const randomIndex = Math.floor(Math.random() * quotes.length);
       setQuote(quotes[randomIndex]);

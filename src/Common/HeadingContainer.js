@@ -22,13 +22,14 @@ const HeadingContainer = ({ headingContainerContent}) => {
 
     return (
 
-            <div className= {`container-xxl py-5 service-item-wrapper ${showContent ? 'show': ''}`}>
-            <div className="container pb-4">
-                <div className="row g-5 ">
-                    <div className="col-lg-6" style={{ minHeight: '400px' }}>
-                        <div className="position-relative h-100 ">
-                            <img className="img-fluid position-absolute w-100 h-100 grayScale" src={headingContainerContent.img} alt="" style={{ objectFit: 'cover' }} />
-                        </div>
+            <div className= {`container-xxl pb-5 pt-5 service-item-wrapper ${showContent ? 'show': ''}`}>
+            <div className="container">
+                <div className="row g-3 m-0">
+                    <div className="col-lg-6 p-0 mt-0 " style={{ minHeight: '220px' }}>
+                        {/* <div className="position-relative h-100 "> */}
+                            {/* <img className="img-fluid position-absolute w-100 h-100 grayScale" src={headingContainerContent.img} alt="" style={{ objectFit: 'cover' }} /> */}
+                            <div className='animation-lottie'>{headingContainerContent.anim}</div>
+                        {/* </div> */}
                     </div>
                     <div className="col-lg-6 " >
                         <h6 className="section-title bg-white text-start primary-color-text pe-3">{headingContainerContent.topic}</h6>

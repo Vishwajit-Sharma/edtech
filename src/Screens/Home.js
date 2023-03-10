@@ -9,6 +9,7 @@ import  LazyLoad  from 'react-lazyload';
 import headingImage from '../Assets/about.jpg'
 import FAQ from '../Components/FAQ'
 import OurUSP from '../Components/OurUSP'
+import { Player } from '@lottiefiles/react-lottie-player';
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
     bulletPoints6: "Community Buliding",  
     img: headingImage,
     para3: "Join us today and take the first step towards a successful career in software.",
+    anim: <Player autoplay loop speed="2" src="https://assets1.lottiefiles.com/packages/lf20_ikvz7qhc.json" style={{ height: '500px', width: '550px' }}/>
   }
 
   const faq = [

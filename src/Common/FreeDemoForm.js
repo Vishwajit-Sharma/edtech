@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import '../Styles/style.css'
 import Modal from 'react-bootstrap/Modal';
-import { useForm } from '@formspree/react';
+import emailjs from 'emailjs-com';
 
 const courses = [
   "React Js",
@@ -15,13 +15,16 @@ const courses = [
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
   const [email, setEmail] = useState("");
-  const [show, setShow] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState("");
+  const [nameModal, setNameModal] = useState("");
 
-  const [state, handleSubmit] = useForm("mgebybez");
+  const [show, setShow] = useState(false);
+
+  const form = useRef();
 
   const handleNameChange = (event) => {
     setName(event.target.value);
+    setNameModal(event.target.value);
   };
 
   const handleMobileChange = (event) => {
@@ -37,23 +40,27 @@ const courses = [
   };
 
 
-  const handleSubmitForm = async(event) =>{
+  const handleSubmit = (e) =>{
     
-    event.preventDefault();
+    e.preventDefault();
+    emailjs.sendForm('service_kl0is4d', 'template_lqgo7vt', form.current, 'Bs5nHUY1KHBmvIaLV')
+    .then((result) => {
+      setShow(true)
+      setName("")
+      setEmail("")
+      setMobile("")
+      setSelectedCourse("")
 
-    await handleSubmit(event);
-
-    setShow(true);
-    setName("")
-    setEmail("")
-    setMobile("")
-    setSelectedCourse("")
+    }, (error) => {
+      console.log(error.text);
+    });
+  
   }
 
 
   return (
     <>
-    <form className="request-form" onSubmit={handleSubmitForm}>
+    <form className="request-form" ref={form} onSubmit={handleSubmit}>
       <h3 className="mb-4 text-center primary-color-text">{title}</h3>
       <input
         type="text"
@@ -98,7 +105,7 @@ const courses = [
           </option>
         ))}
       </select>}
-      <button type="submit" className="btn btn-light" disabled={state.submitting}>Submit</button>
+      <button type="submit" className="btn btn-light" >Submit</button>
     </form>
 
     <Modal
@@ -111,7 +118,7 @@ const courses = [
         <Modal.Title>Thank you for your request</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        Hey <strong>{name}</strong>, Your request is successfully received. Our team will reach back to you soon.
+        Hey <strong>{nameModal}</strong>, Your request is successfully received. Our team will reach back to you soon.
       </Modal.Body>
     </Modal>   
     </>

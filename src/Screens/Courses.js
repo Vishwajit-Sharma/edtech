@@ -15,6 +15,7 @@ import { DiPython, DiJava, DiJsBadge  } from 'react-icons/di';
 import { Element } from 'react-scroll';
 import FreeDemoForm from '../Common/FreeDemoForm'
 import MoreButton from '../Common/MoreButton'
+import { Player } from '@lottiefiles/react-lottie-player';
 
 
 const Courses = () => {
@@ -34,7 +35,7 @@ const Courses = () => {
     bulletPoints6: "Community support",  
     img: headingImage,
     para3: "Choose from our range of courses today and take the first step towards a successful career in software. Whether you're looking to start a new career, upskill in your current job, or just explore a new area of interest, we've got the perfect course for you.",
-
+    anim: <Player autoplay loop speed="1" src="https://assets1.lottiefiles.com/packages/lf20_hzfmxrr7.json"  background="transparent" style={{ height: '500px', width: '550px' }}/>
   }
 
   const cardContentDevelopment1 = {

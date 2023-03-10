@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../Styles/style.css"
 import Modal from 'react-bootstrap/Modal';
+import emailjs from 'emailjs-com';
 
 const EnrollmentForm = ({course}) => {
 
@@ -8,13 +9,30 @@ const EnrollmentForm = ({course}) => {
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [select, setSelect] = useState(course ? course : "");
+  const [nameModal, setNameModal] = useState("");
 
   const [show, setShow] = useState(false);
 
+  const form = useRef();
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+    setNameModal(event.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShow(true)
+    emailjs.sendForm('service_kl0is4d', 'template_lqgo7vt', form.current, 'Bs5nHUY1KHBmvIaLV')
+    .then((result) => {
+      setShow(true)
+      setName("")
+      setEmail("")
+      setMobile("")
+      setSelect("")
+
+    }, (error) => {
+      console.log(error.text);
+    });
   };
 
   const options = [
@@ -30,11 +48,11 @@ const EnrollmentForm = ({course}) => {
 
   return (
     <>
-    <form className="enrollment-form" onSubmit={handleSubmit}>
+    <form className="enrollment-form" ref={form}  onSubmit={handleSubmit}>
       <h2>Enrollment Form</h2>
       <div className="form-control">
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
+        <input type="text" id="name" value={name} onChange={handleNameChange} required />
       </div>
       <div className="form-control">
         <label htmlFor="email">Email:</label>
@@ -65,7 +83,7 @@ const EnrollmentForm = ({course}) => {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Congratulations {name}</Modal.Title>
+          <Modal.Title>Congratulations {nameModal}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>Thank you for showing faith in us.</p>
