@@ -8,8 +8,13 @@ import CourseCard from '../Common/CourseCard'
 import HeadingTitle from '../Common/HeadingTitle'
 import Footer from '../Components/Footer'
 import LazyLoad from 'react-lazyload';
-import courseImgDevelopment1 from '../Assets/course-2.jpg'
-import courseImgDevelopment2 from '../Assets/course-3.jpg'
+import webDesignImg from '../Assets/webDesign.png'
+import reactImg from '../Assets/react.jpg'
+import javascriptImg from '../Assets/javascript.jpg'
+import pythonImg from '../Assets/python.jpg'
+import frontendImg from '../Assets/frontend.png'
+import backendImg from '../Assets/backend.png'
+import javaImg from '../Assets/java.jpg'
 import {  FaStar, FaStarHalfAlt, FaRegStar, FaReact , FaPalette , FaCodeBranch,FaServer   } from "react-icons/fa";
 import { DiPython, DiJava, DiJsBadge  } from 'react-icons/di';
 import { Element } from 'react-scroll';
@@ -39,7 +44,7 @@ const Courses = () => {
   }
 
   const cardContentDevelopment1 = {
-    img: courseImgDevelopment1,
+    img: webDesignImg,
     courseName: "Web Designing",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
@@ -49,7 +54,7 @@ const Courses = () => {
     
   }
   const cardContentDevelopment2 = {
-    img: courseImgDevelopment2,
+    img: frontendImg,
     courseName: "Front End Development",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
@@ -58,7 +63,7 @@ const Courses = () => {
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentDevelopment3 = {
-    img: courseImgDevelopment2,
+    img: backendImg,
     courseName: "Back End Development",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
@@ -67,7 +72,7 @@ const Courses = () => {
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentlanguages1 = {
-    img: courseImgDevelopment2,
+    img: javaImg,
     courseName: "Java",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
@@ -76,7 +81,7 @@ const Courses = () => {
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentlanguages2 = {
-    img: courseImgDevelopment2,
+    img: javascriptImg,
     courseName: "Advanced Javascript",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
@@ -85,7 +90,7 @@ const Courses = () => {
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
   const cardContentTrending1 = {
-    img: courseImgDevelopment2,
+    img: reactImg,
     courseName: "React JS",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",
@@ -94,7 +99,7 @@ const Courses = () => {
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStarHalfAlt/>],
   }
   const cardContentTrending2 = {
-    img: courseImgDevelopment2,
+    img: pythonImg,
     courseName: "Python With Machine Learning",
     description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
     time: "2 Month",

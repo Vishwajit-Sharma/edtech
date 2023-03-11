@@ -4,10 +4,14 @@ import Modal from 'react-bootstrap/Modal';
 import emailjs from 'emailjs-com';
 
 const courses = [
-  "React Js",
-  "Course B",
-  "Course C",
-  "Course D",
+  { value: '', label: '-- Select a course --' },
+  { value: 'Web Designing', label: 'Web Designing' },
+  { value: 'Front End Development', label: 'Front End Development' },
+  { value: 'Back End Development', label: 'Back End Development' },
+  { value: 'Advanced Javascript', label: 'Advanced Javascript' },
+  { value: 'Java', label: 'Java' },
+  { value: 'React Js', label: 'React Js' },
+  { value: 'Python With Machine Learning', label: 'Python With Machine Learning' },
 ];
 
   const FreeDemoForm = ({title, isCourse, course}) => {
@@ -98,10 +102,10 @@ const courses = [
         required
         className="text-light"
       >
-        <option value="" className="bg-dark">Select a course</option>
+        {/* <option value="" className="bg-dark">Select a course</option> */}
         {courses.map((course) => (
-          <option key={course} value={course} className="bg-dark">
-            {course}
+          <option key={course.value} value={course.value} className="bg-dark">
+            {course.label}
           </option>
         ))}
       </select>}
