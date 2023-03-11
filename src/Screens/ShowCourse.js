@@ -11,6 +11,7 @@ import CourseContent from '../Components/CourseContent';
 import FAQ from '../Components/FAQ';
 import Footer from '../Components/Footer';
 import MoreButton from '../Common/MoreButton';
+import { Player } from '@lottiefiles/react-lottie-player';
  
 const ShowCourse = () => {
 
@@ -34,7 +35,7 @@ const ShowCourse = () => {
     img: img,
     btn: true, 
     navigateTo: `/courses/${course}/join`,
-    
+    anim: <Player autoplay loop speed="1" src="https://assets8.lottiefiles.com/packages/lf20_jd8ofsrz.json" style={{ height: '500px', width: '550px' }}/>
   }
 
   const pythonOverview = {
@@ -52,7 +53,8 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
-    navigateTo: `/courses/${course}/join`
+    navigateTo: `/courses/${course}/join`,
+    anim: <Player autoplay loop speed="1.5" src="https://assets10.lottiefiles.com/packages/lf20_2znxgjyt.json" style={{ height: '500px', width: '550px' }}/>
   }
   const frontEndOverview = {
     topic: "Course Overview",
@@ -69,7 +71,8 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
-    navigateTo: `/courses/${course}/join`
+    navigateTo: `/courses/${course}/join`,
+    anim: <Player autoplay loop speed="2" src="https://assets6.lottiefiles.com/private_files/lf30_obidsi0t.json" style={{ height: '500px', width: '550px' }}/>
   }
   const backEndOverview = {
     topic: "Course Overview",
@@ -86,7 +89,8 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
-    navigateTo: `/courses/${course}/join`
+    navigateTo: `/courses/${course}/join`,
+    anim: <Player autoplay loop speed="1" src="https://assets6.lottiefiles.com/private_files/lf30_wqypnpu5.json" style={{ height: '500px', width: '550px' }}/>
   }
   const reactOverview = {
     topic: "Course Overview",
@@ -103,7 +107,8 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: true, 
-    navigateTo: `/courses/${course}/join`
+    navigateTo: `/courses/${course}/join`,
+    anim: <Player autoplay loop speed="1.5" src="https://assets9.lottiefiles.com/datafiles/fab7172a9302d416bcdb8ac7e1c71123/data.json" style={{ height: '600px', width: '650px' }}/>
   }
   const javascriptOverview = {
     topic: "Course Overview",
@@ -120,7 +125,8 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
-    navigateTo: `/courses/${course}/join`
+    navigateTo: `/courses/${course}/join`,
+    anim: <Player autoplay loop speed="1" src="https://assets3.lottiefiles.com/packages/lf20_s7p6xmHfio.json" style={{ height: '600px', width: '600px' }}/>
   }
   const javaOverview = {
     topic: "Course Overview",
@@ -137,7 +143,8 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
-    navigateTo: `/courses/${course}/join`
+    navigateTo: `/courses/${course}/join`,
+    anim: <Player autoplay loop speed="2" src="https://assets2.lottiefiles.com/packages/lf20_zh6xtlj9.json" style={{ height: '500px', width: '550px' }}/>
   }
 
   const duration = {
@@ -312,6 +319,7 @@ const ShowCourse = () => {
           </div>
         </div>
       </LazyLoad>
+      
 
     {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>}
     <LazyLoad><Footer/></LazyLoad>

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import HeadingTitle from '../Common/HeadingTitle'
 import '../Styles/style.css'
 import { GiSkills } from "react-icons/gi";
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const OurMethodology = () => {
 
@@ -37,12 +38,34 @@ const OurMethodology = () => {
         <div className="container-xxl py-5 category">
             <div className="container">
                 <HeadingTitle title="Methods" mainTitle="Our Methodology" />
-                {content.map((item,index) => <div className={`row g-3 my-3 d-flex flex-column justify-content-center our-method p-4 service-item-wrapper ${
+                <div className="row">
+                <div className="col-lg-5 p-0 mt-0 d-block d-lg-none" style={{ minHeight: '220px' }}>
+                       <div className='animation-lottie h-100 d-flex justify-content-center align-items-center'>
+                       <Player autoplay loop speed="1.5" src="https://assets9.lottiefiles.com/packages/lf20_8cxcnczq.json" style={{ height: '500px', width: '550px' }}/>
+                        </div>  
+                  </div>
+                  <div className="col-lg-7">
+                  {content.map((item,index) => <div className={`row my-3 d-flex flex-column justify-content-center our-method p-2 service-item-wrapper ${
                         showItemsRef.current[index] ? "show" : ""
                       }`}>
                     <h3 className='d-flex justify-content-between primary-color-text mb-0'><span>{item.step}: {item.main}</span> <span className='fs-1'>{item.icon}</span></h3>
                     <p>{item.sub}</p>
                 </div>)}
+                  </div>
+                  <div className="col-lg-5 p-0 mt-0 d-none d-lg-block" style={{ minHeight: '220px' }}>
+                       <div className='animation-lottie h-100 d-flex justify-content-center align-items-center'>
+                       <Player autoplay loop speed="1.5" src="https://assets9.lottiefiles.com/packages/lf20_8cxcnczq.json" style={{ height: '500px', width: '550px' }}/>
+                        </div> 
+
+                        {/* <div className="row"><div className='animation-lottie h-100 d-flex justify-content-center align-items-center px-3'>
+                       <Player autoplay loop speed="1.5" src="https://assets9.lottiefiles.com/packages/lf20_vsiy6ziu.json"  style={{ height: '500px', width: '550px' }}/>
+                        </div></div>
+                    <div className="row"><div className='animation-lottie h-100 d-flex justify-content-center align-items-center'>
+                       <Player autoplay loop speed="1.5" src="https://assets9.lottiefiles.com/packages/lf20_8cxcnczq.json" style={{ height: '500px', width: '550px' }}/>
+                        </div></div>  */}
+                  </div>
+                </div>
+                
             </div>
         </div>
     )

@@ -15,10 +15,10 @@ const About = () => {
 
   const headingContainerContent = {
     topic: "About Us",
-    subTopic: "Welcome to Vishwa EdTech",
+    subTopic: "Welcome to TechnoShaala",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "Welcome to Vishwa EdTech, a leading software training institute in India that offers comprehensive and industry-relevant courses to help you advance your career.",
+    para1: "Welcome to TechnoShaala, a leading software training institute in India that offers comprehensive and industry-relevant courses to help you advance your career.",
     para2: "Our mission is to empower aspiring software professionals with the skills and knowledge they need to succeed in today's fast-paced and competitive job market. Whether you're a fresh graduate or a working professional looking to upskill, we've got the perfect course for you.",
     bulletPoints1: "Industry-relevant curriculum", 
     bulletPoints2: "Experienced faculty",  

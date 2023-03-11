@@ -9,6 +9,7 @@ import img2 from '../Assets/course-2.jpg'
 import img3 from '../Assets/course-3.jpg'
 import MoreButton from '../Common/MoreButton';
 import { useNavigate } from 'react-router-dom';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const PopularCourses = () => {
 
@@ -26,6 +27,7 @@ const PopularCourses = () => {
       icon: <FaPalette  />,
       courseName: "Web Designing",
       description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      // img: <Player autoplay loop speed="2" src="https://assets4.lottiefiles.com/packages/lf20_5gN08dgRQd.json" style={{ height: '300px', width: '300px' }}/>,
       img: img2,
       time: "2 Months"
     },
@@ -75,6 +77,7 @@ const PopularCourses = () => {
             >
               <div className="course-item">
                 <div className="position-relative overflow-hidden">
+                  {/* <div>{item.img}</div> */}
                      <img className="img-fluid" src={item.img} alt="" />
                     <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-3">
                         <button className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }} onClick={() => navigate(`/courses/${item.courseName.toLowerCase()}`)}>Read More</button>
