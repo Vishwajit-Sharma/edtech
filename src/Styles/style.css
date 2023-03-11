@@ -580,11 +580,14 @@
 .course-item img {
     transition: .5s;
 }
+.category a:hover img{
+  cursor: pointer;
+}
 
 .category a:hover img,
 .course-item:hover img {
-    transform: scale(1.1);
-    cursor: pointer;
+    transform: scale(1.1);  
+    transition: 0.4s;
 }
 
 .more-btn{
@@ -599,6 +602,7 @@
     color: white !important;
     transition: 0.5s;
 }
+
 
 @media (max-width: 576px) {
     .course-item p{
