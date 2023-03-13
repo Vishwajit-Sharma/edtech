@@ -19,21 +19,21 @@ const PopularCourses = () => {
     {
       icon: <FaReact  />,
       courseName: "React JS",
-      description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      description: "ES-6 + JSX + Components + Hooks + Performance Optimization",
       img: img1,
       time: "2 Months"
     },
     {
       icon: <FaPalette  />,
       courseName: "Web Designing",
-      description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      description: "HTML/HTML5 + CSS/CSS3 + Basic Javascript + DOM Manipulation",
       img: img2,
       time: "2 Months"
     },
     {
       icon: <DiPython />,
       courseName: "Python With Machine Learning",
-      description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+      description: "Data Types + Loops + Functions + OOPS + Panda + Numpy",
       img: img3,
       time: "2 Months"
     },

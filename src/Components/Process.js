@@ -13,7 +13,7 @@ function Process() {
             <div className="flowchart px-2">
                 <div className="box">
                     <h3>Step 1</h3>
-                    <p>Enroll in the Level 1 of the course</p>
+                    <p>Enroll in the course</p>
                    
                     <h2 className='text-center mb-3 primary-color-text'><BsFillSkipStartCircleFill/></h2>
                 </div>
@@ -31,7 +31,7 @@ function Process() {
                 </div>
                 <div className="box">
                     <h3>Step 3</h3>
-                    <p>Enroll in the Level 2 of the Course</p>
+                    <p>Start with the Level 2 of the Course</p>
                     <h2 className='text-center mb-3 primary-color-text'><GiLevelEndFlag/></h2>
                 </div>
                 <div className="arrow-container">

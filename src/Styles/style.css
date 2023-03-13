@@ -156,7 +156,8 @@
     margin-left: 8px;
 }
 .nav-bg{
-    background-color: rgb(243, 239, 239);
+    /* background-color: rgb(243, 239, 239); */
+    background-color: white;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -483,7 +484,7 @@
 
 .service-item-wrapper {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
     transition: all 0.2s ease-out;
   }
   
@@ -503,7 +504,7 @@
   }
   .each-feature:hover{
     background-color: var(--primary);
-    transform: scaley(1.2);
+    transform: scale(1.05);
     transition: 0.5s;
   }
   .each-feature:hover *{
@@ -1364,7 +1365,7 @@
   }
   .purpose-card:hover, .our-method:hover{
     background-color: var(--primary);
-    transform: scaleY(1.1);
+    transform: scale(1.05);
     transition: 0.5s;
     
   }

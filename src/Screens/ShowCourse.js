@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import HeadingWallpaper from '../Common/HeadingWallpaper';
 import img from '../Assets/carousel-1.jpg'
@@ -18,6 +18,10 @@ const ShowCourse = () => {
   const { course } = useParams();
 
   const courseCapitalise = course.replace(/(^|\s)\S/g, (match) => match.toUpperCase());
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const webDesigningOverview = {
     topic: "Course Overview",
@@ -313,6 +317,7 @@ const ShowCourse = () => {
       {course === "java" && <LazyLoad><CourseContent courseContentL1={javaL1} courseContentL2={javaL2}/></LazyLoad>}
 
       <LazyLoad><Process />
+      
         <div className="container-xxl ">
           <div className="container d-flex justify-content-center pb-4">
             <MoreButton text="Join Now"  navigateTo={`courses/${course}/join`}/>

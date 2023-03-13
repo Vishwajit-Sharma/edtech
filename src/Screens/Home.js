@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import ServiceCard from '../Components/ServiceCard'
 import MyCarousel from '../Components/MyCarousel'
 import Footer from '../Components/Footer'
@@ -13,6 +13,10 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const headingContainerContent = {
     topic: "About Us",
@@ -45,16 +49,16 @@ const Home = () => {
     },
     {
       question: `How would be the flow of the course?`,
-      answer: `You need to Enrol in the Level-1 of the course of your choice. Usually, Level-1 Course content would be one-third of the
+      answer: `As you Enrol in the course of your choice, your Level-1 starts.  Usually, Level-1 Course content would be one-third of the
       total course content. During the Level-1 course, you need to attend the sessions, pass the evaluation, clear the mock interview 
-      and complete the project. Once, our Instructor get satisfied that you're good to go for the next Level. Then, you enrol with the 
+      and complete the project. Once, our Instructor get satisfied that you're good to go for the next Level. Then, start your learning for the 
       Level-2 of the course. Here, also, you need to complete the course curriculum as expected. Then, we'll certify you.`,
     },
     {
       question: 'What is Level Based Approach?',
-      answer: `Each of our courses are divided into two levels. First you'll get enrolled with Level-1 of the course. 
-      Then, after learning all the contents of Level-1, you'll clear Level-1 evaluation and project. then and only, you can get enrolled with Level-2.
-      Once you enrol with Level-2, you'll be required to complete the course Project and evaluation. After that only, we'll certify you`,
+      answer: `Each of our courses are divided into two levels. As you enrolled with the course, Level-1 starts. 
+      Then, after learning all the contents of Level-1, you'll clear Level-1 evaluation and project. After that only, you can proceed with the Level-2.
+      Once our instructor clears you for Level-2, then your Level-2 begins. Here, you'll be required to complete the course Project and evaluation. After that only, we'll certify you`,
     },
     {
       question: 'Why these Levels? Why not simply you provide all the content in one go?',

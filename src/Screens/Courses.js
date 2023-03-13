@@ -13,7 +13,7 @@ import reactImg from '../Assets/react.jpg'
 import javascriptImg from '../Assets/javascript.jpg'
 import pythonImg from '../Assets/python.jpg'
 import frontendImg from '../Assets/frontend.png'
-import backendImg from '../Assets/backend.png'
+import backendImg from '../Assets/backend.jpg'
 import javaImg from '../Assets/java.jpg'
 import {  FaStar, FaStarHalfAlt, FaRegStar, FaReact , FaPalette , FaCodeBranch,FaServer   } from "react-icons/fa";
 import { DiPython, DiJava, DiJsBadge  } from 'react-icons/di';
@@ -24,6 +24,10 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 
 const Courses = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const headingContainerContent = {
     topic: "Our Courses",
@@ -46,7 +50,7 @@ const Courses = () => {
   const cardContentDevelopment1 = {
     img: webDesignImg,
     courseName: "Web Designing",
-    description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    description: "HTML/HTML5 + CSS/CSS3 + Basic Javascript + DOM Manipulation",
     time: "2 Month",
     icon: <FaPalette />,
     bgColor: "bgColorFoundation",
@@ -56,7 +60,7 @@ const Courses = () => {
   const cardContentDevelopment2 = {
     img: frontendImg,
     courseName: "Front End Development",
-    description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    description: "HTML-CSS-Javascript + Bootstrap/Materialize/Tailwind CSS + React JS ",
     time: "2 Month",
     icon: <FaCodeBranch  />,
     bgColor: "bgColorFoundation",
@@ -65,7 +69,7 @@ const Courses = () => {
   const cardContentDevelopment3 = {
     img: backendImg,
     courseName: "Back End Development",
-    description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    description: "HTML-CSS + Advanced Javascript + Node Js + Mongo DB",
     time: "2 Month",
     icon: <FaServer  />,
     bgColor: "bgColorFoundation",
@@ -83,7 +87,7 @@ const Courses = () => {
   const cardContentlanguages2 = {
     img: javascriptImg,
     courseName: "Advanced Javascript",
-    description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    description: "Hoisting + Closures + Loops + ES-6 + Promises",
     time: "2 Month",
     icon: <DiJsBadge  />,
     bgColor: "bgColorFoundation",
@@ -92,7 +96,7 @@ const Courses = () => {
   const cardContentTrending1 = {
     img: reactImg,
     courseName: "React JS",
-    description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    description: "ES-6 + JSX + Components + Hooks + Performance Optimization",
     time: "2 Month",
     icon: <FaReact />,
     bgColor: "bgColorFoundation",
@@ -101,7 +105,7 @@ const Courses = () => {
   const cardContentTrending2 = {
     img: pythonImg,
     courseName: "Python With Machine Learning",
-    description: "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
+    description: "Data Types + Loops + Functions + OOPS + Panda + Numpy",
     time: "2 Month",
     icon: <DiPython />,
     bgColor: "bgColorFoundation",

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "../Styles/style.css"
 import img from '../Assets/join-now.jpg'
 import Footer from '../Components/Footer';
@@ -9,6 +9,10 @@ function JoinNowPage() {
 
   const { course } = useParams();
   const courseCapitalise = course.replace(/(^|\s)\S/g, (match) => match.toUpperCase());
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className='container-fluid p-0'>

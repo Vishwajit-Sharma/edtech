@@ -1,4 +1,4 @@
-import React,{useState, useRef} from 'react'
+import React,{useState, useRef, useEffect} from 'react'
 import img from '../Assets/carousel-1.jpg'
 import img1 from '../Assets/contact.png'
 import HeadingWallpaper from '../Common/HeadingWallpaper'
@@ -47,6 +47,10 @@ const Contact = () => {
     });
 
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
