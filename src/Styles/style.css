@@ -1160,7 +1160,7 @@
     font-weight: 500;
   }
   .view-more:hover{
-    color: #0b5ed7;
+    color: #0b5ed7 !important;
   }
   
 
@@ -1426,5 +1426,28 @@
 } 
 
 
+/*** Why this course***/
+.why-course ul{
+  column-count: 2;
+  column-gap: 50px;
+}
+.why-course ul li{
+  break-inside: avoid-column;
+}
+.why-course ul li:hover{
+  background-color: var(--primary);
+  color: white;
+  transform: scale(1.03);
+  transition: 0.4s;
+
+} 
+::marker{
+  color: var(--primary);
+}
+@media (max-width: 576.9px) {
+  .why-course ul{
+    column-count: 1;
+  }
+} 
 
 

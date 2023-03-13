@@ -59,6 +59,12 @@ const HeadingContainer = ({ headingContainerContent}) => {
                             <div className="col-sm-6">
                                 <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints6}</p>
                             </div>
+                            {headingContainerContent.bulletPoints7 && <div className="col-sm-6">
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints7}</p>
+                            </div>}
+                           {headingContainerContent.bulletPoints8 && <div className="col-sm-6">
+                                <p className="mb-0 bullet-points"><span className='primary-color-text me-2'><FaArrowRight /></span>{headingContainerContent.bulletPoints8}</p>
+                            </div>}
                         </div>
                         <p className="mb-4">{headingContainerContent.para3}</p>
                         {headingContainerContent.socialVisible && <div className='d-flex justify-content-between' style={{ width: "20%" }}>

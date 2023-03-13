@@ -13,7 +13,7 @@ function Process() {
             <div className="flowchart px-2">
                 <div className="box">
                     <h3>Step 1</h3>
-                    <p>Enroll in the course</p>
+                    <p>Enroll in the course of Your Choice</p>
                    
                     <h2 className='text-center mb-3 primary-color-text'><BsFillSkipStartCircleFill/></h2>
                 </div>

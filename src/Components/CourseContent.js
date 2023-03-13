@@ -24,7 +24,7 @@ const CourseContent = ({courseContentL1, courseContentL2}) => {
         <div className='row py-1' key={index}>
           <div className='col-12'>
             <div className='accordion-item '>
-              <h5 className='accordion-header' onClick={() => toggleAccordion1(index)}>
+              <h6 className='accordion-header' onClick={() => toggleAccordion1(index)}>
               <span>
                  {index+1}. {content.title}
                 </span>
@@ -34,7 +34,7 @@ const CourseContent = ({courseContentL1, courseContentL2}) => {
                   <HiOutlinePlus className='d-inline' />
                 )}
                
-              </h5>
+              </h6>
               <div className={`accordion-collapse ${activeAccordion1 === index ? 'show' : ''}`}>
                 <div className='accordion-body'>
                   <ul className='d-flex flex-column'>{content.details.map(item => <li>{item}</li>)}</ul>               
@@ -50,7 +50,7 @@ const CourseContent = ({courseContentL1, courseContentL2}) => {
         <div className='row' key={index}>
           <div className='col-12'>
             <div className='accordion-item '>
-              <h5 className='accordion-header' onClick={() => toggleAccordion2(index)}>
+              <h6 className='accordion-header' onClick={() => toggleAccordion2(index)}>
               <span>
                  {index+1}. {content.title}
                 </span>
@@ -60,9 +60,11 @@ const CourseContent = ({courseContentL1, courseContentL2}) => {
                   <HiOutlinePlus className='d-inline' />
                 )}
                
-              </h5>
+              </h6>
               <div className={`accordion-collapse ${activeAccordion2 === index ? 'show' : ''}`}>
-                <div className='accordion-body'>{content.details}</div>
+                <div className='accordion-body'>
+                  <ul className='d-flex flex-column'>{content.details.map(item => <li>{item}</li>)}</ul>      
+                </div>
               </div>
             </div>
           </div>

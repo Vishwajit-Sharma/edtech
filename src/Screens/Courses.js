@@ -15,7 +15,8 @@ import pythonImg from '../Assets/python.jpg'
 import frontendImg from '../Assets/frontend.png'
 import backendImg from '../Assets/backend.jpg'
 import javaImg from '../Assets/java.jpg'
-import {  FaStar, FaStarHalfAlt, FaRegStar, FaReact , FaPalette , FaCodeBranch,FaServer   } from "react-icons/fa";
+import marketImg from '../Assets/market.png'
+import {  FaStar, FaStarHalfAlt, FaRegStar, FaReact , FaPalette , FaCodeBranch, FaServer , FaChartBar   } from "react-icons/fa";
 import { DiPython, DiJava, DiJsBadge  } from 'react-icons/di';
 import { Element } from 'react-scroll';
 import FreeDemoForm from '../Common/FreeDemoForm'
@@ -96,7 +97,7 @@ const Courses = () => {
   const cardContentTrending1 = {
     img: reactImg,
     courseName: "React JS",
-    description: "ES-6 + JSX + Components + Hooks + Performance Optimization",
+    description: "ES-6 + JSX + Components + Hooks + Performance Optimization + Redux/Redux Toolkit",
     time: "2 Month",
     icon: <FaReact />,
     bgColor: "bgColorFoundation",
@@ -111,6 +112,16 @@ const Courses = () => {
     bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
+  const cardContentDifferent1 = {
+    img: marketImg,
+    courseName: "Market Research",
+    description: "market research topic main points to be entered",
+    time: "2 Month",
+    icon: <FaChartBar  />,
+    bgColor: "bgColorFoundation",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+  }
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -123,7 +134,7 @@ const Courses = () => {
 
       <LazyLoad ><CoursesCategory /></LazyLoad>
 
-      <Element name="foundation">
+      <Element name="development">
         <LazyLoad >
           {<div className="container-xxl py-5" >
             <div className="container">
@@ -151,7 +162,7 @@ const Courses = () => {
         </LazyLoad>
       </Element>
 
-      <Element name="framework">
+      <Element name="trending">
         <LazyLoad >
           {<div className="container-xxl py-5">
             <div className="container">
@@ -159,6 +170,19 @@ const Courses = () => {
               <div className="row g-4 justify-content-center">
                 <CourseCard cardContent={cardContentTrending1} />
                 <CourseCard cardContent={cardContentTrending2} />
+              </div>
+            </div>
+          </div>}
+        </LazyLoad>
+      </Element>
+
+      <Element name="different">
+        <LazyLoad >
+          {<div className="container-xxl py-5">
+            <div className="container">
+              <HeadingTitle title="Try Something Different" mainTitle="Different Courses" />
+              <div className="row g-4 justify-content-center">
+                <CourseCard cardContent={cardContentDifferent1} />
               </div>
             </div>
           </div>}

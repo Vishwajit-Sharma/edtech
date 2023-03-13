@@ -11,6 +11,7 @@ import CourseContent from '../Components/CourseContent';
 import FAQ from '../Components/FAQ';
 import Footer from '../Components/Footer';
 import MoreButton from '../Common/MoreButton';
+import WhyThisCourse from '../Components/WhyThisCourse';
 import { Player } from '@lottiefiles/react-lottie-player';
  
 const ShowCourse = () => {
@@ -25,17 +26,17 @@ const ShowCourse = () => {
 
   const webDesigningOverview = {
     topic: "Course Overview",
-    subTopic: "The Best Course Available",
+    subTopic: "Web Designing",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors",
-    bulletPoints2: "Skilled Instructors",
-    bulletPoints3: "Skilled Instructors",
-    bulletPoints4: "Skilled Instructors",
-    bulletPoints5: "Skilled Instructors",
-    bulletPoints6: "Skilled Instructors",
+    para1: "In this web designing course, you'll learn the essential skills and techniques needed to create beautiful, responsive and user-friendly websites. You'll gain a deep understanding of web design principles and learn how to use popular design tools to bring your ideas to life. ",
+    para2: "By the end of the course, you'll have a solid foundation in web design and be able to create professional websites that are both aesthetically pleasing and functional.",
+    bulletPoints1: "HTML, CSS, JavaScript",
+    bulletPoints2: "Responsive Design",
+    bulletPoints3: "Color & Typography",
+    bulletPoints4: "Portfolio Development",
+    bulletPoints5: "Layout Design",
+    bulletPoints6: "Web Performance Optimization",
     img: img,
     btn: true, 
     navigateTo: `/courses/${course}/join`,
@@ -161,7 +162,7 @@ const ShowCourse = () => {
     java: "8-9 weeks / 8-9 weekends",
   }
   const preRequisites = {
-    webDesign: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    webDesign: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage.", "Obviously, PC or Laptop must be there"],
     python: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
     frontEnd: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
     backEnd: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
@@ -179,16 +180,19 @@ const ShowCourse = () => {
     java: ["3 Mini Projects", "1 Major Project"],
   }
   const webDesignL1 = [
-    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Web Design', details: ["Project Overview","A Website Postmortem","Building Blocks of a Website"] },
+    { title: 'Introduction to HTML-4', details:  ["HTML Basic","HTML Links","HTML Lists","HTML Tables", "HTML Forms"] },
+    { title: 'Introduction to HTML-5', details:  ["Introduction of HTML5","New Semantic Tags","HTML Audio/Video"] },
+    { title: 'Introduction to CSS', details:  ["CSS Basics","Color, Text, Spacing Properties","Inline and Block Elements","Box Model", "Positioning"] },
+    { title: 'Start with Project', details:  ["Design Selection","Things to do", "Learning Outcome", "Review"] },
   ];
   const webDesignL2 = [
-    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+    { title: 'CSS Flexbox & Grid', details:  ["Flex properties","Grid Properties"] },
+    { title: 'Advanced CSS (CSS-3)', details:  ["Backgrounds","Gradients","Shadow","Animations"] },
+    { title: 'CSS Media Queries', details:  ["What & Why Media Queries","Breakpoints","How to Use it"] },
+    { title: 'Introduction to JavaScript', details: ["Javascript Intro","Datatypes & Operators","Conditional Statements and Loops","Functions"] },
+    { title: 'Javascript - One Step More', details:  ["Javascript Dates","DOM Manipulation","Form Events","Mouse Events", "Javascript Validation"] },
+    { title: 'Start with a Mega Project', details:  ["Theme Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const pythonL1 = [
     { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
@@ -262,6 +266,26 @@ const ShowCourse = () => {
     { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
     { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
   ];
+  const whyWebDesign = [
+    `Web design is a high-demand skill in today's digital world, with businesses of all sizes needing well-designed websites to establish an online presence.`,
+    `With a strong foundation in web design principles, you can create beautiful, functional websites that are user-friendly and easy to navigate.`,
+    `A web designing course can help you develop the skills you need to become a professional web designer or freelancer.`,
+    `Learning web design can give you a competitive edge in the job market and open up new career opportunities.`,
+    `Understanding web design can help you collaborate more effectively with developers, marketers, and other professionals in a team setting.`,
+    `Web design skills are transferable and can be applied to a variety of industries, including e-commerce, marketing, and technology.`,
+    `Our web designing course can teach you how to create responsive websites that work well on all devices, including desktops, tablets, and smartphones.`,
+    `You can develop a portfolio of work through a web designing course, which can help you showcase your skills and attract potential clients or employers.`,
+    `By mastering web design principles, you can create websites that are both aesthetically pleasing and functional, resulting in a better user experience for your audience.`,
+    `We offer personalized feedback and support from experienced instructors, helping you improve your skills and develop your own design style.`,
+    `Our course includes real-world projects and assignments, allowing you to apply your skills to practical scenarios and build a professional portfolio.`,
+    `We provide opportunities for networking and collaboration with other students, giving you a chance to learn from your peers and develop your teamwork skills.`,
+    `We emphasize the importance of good design principles, such as visual hierarchy and color theory, helping you create websites that are both aesthetically pleasing and functional.`,
+    `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
+    `We'll assist you in website hosting after Project Completion.`,
+    `We provide back up classes, in case you miss any classes.`,
+    `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
+
+  ]
 
   const faqReact = [
     {
@@ -316,15 +340,15 @@ const ShowCourse = () => {
       {course === "advanced javascript" && <LazyLoad><CourseContent courseContentL1={javascriptL1} courseContentL2={javascriptL2}/></LazyLoad>}
       {course === "java" && <LazyLoad><CourseContent courseContentL1={javaL1} courseContentL2={javaL2}/></LazyLoad>}
 
-      <LazyLoad><Process />
+      <LazyLoad><Process />  </LazyLoad>
       
-        <div className="container-xxl ">
+        <LazyLoad><div className="container-xxl ">
           <div className="container d-flex justify-content-center pb-4">
             <MoreButton text="Join Now"  navigateTo={`courses/${course}/join`}/>
           </div>
-        </div>
-      </LazyLoad>
-      
+        </div></LazyLoad>
+    
+        <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>
 
     {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>}
     <LazyLoad><Footer/></LazyLoad>

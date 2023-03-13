@@ -1,16 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react'
 import HeadingTitle from '../Common/HeadingTitle'
 import '../Styles/style.css'
-import { GiSkills } from "react-icons/gi";
+
+import { FaChalkboardTeacher, FaLaptopCode } from "react-icons/fa";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { BsBook } from 'react-icons/bs';
 import { Player } from '@lottiefiles/react-lottie-player';
 
 const OurMethodology = () => {
 
     const [content, setContent] = useState([
-        {step: "Step 1", icon: <GiSkills/>, main: "Identify Career Goals", sub:"We work with each student to identify their long-term career goals and determine the specific skills they need to achieve them. By aligning their training with their career objectives, our students are better prepared to succeed in their chosen field."},
-        {step: "Step 2", icon: <GiSkills/>, main: "Customize Curriculum", sub:"Based on the student's career goals and skill level, we customize a curriculum that includes both technical and soft skills training. Our comprehensive curriculum ensures that our students are well-rounded and equipped to succeed in today's competitive job market."},
-        {step: "Step 3", icon: <GiSkills/>, main: "Industry Experts as Instructors", sub:"All of our courses are taught by industry experts with years of experience in their respective fields. Our instructors bring real-world experience and practical knowledge to the classroom, making our courses relevant and valuable for our students."},
-        {step: "Step 4", icon: <GiSkills/>, main: "Hands-On Projects", sub:"Our courses include hands-on projects that allow students to apply what they have learned in a real-world setting. These projects are designed to simulate actual job responsibilities and help our students build a portfolio of work to showcase their skills to potential employers."},
+        {step: "Step 1", icon: <HiOutlineLightBulb  />, main: "Identify Career Goals", sub:"We work with each student to identify their long-term career goals and determine the specific skills they need to achieve them. By aligning their training with their career objectives, our students are better prepared to succeed in their chosen field."},
+        {step: "Step 2", icon: <BsBook />, main: "Customize Curriculum", sub:"Based on the student's career goals and skill level, we customize a curriculum that includes both technical and soft skills training. Our comprehensive curriculum ensures that our students are well-rounded and equipped to succeed in today's competitive job market."},
+        {step: "Step 3", icon: <FaChalkboardTeacher />, main: "Industry Experts as Instructors", sub:"All of our courses are taught by industry experts with years of experience in their respective fields. Our instructors bring real-world experience and practical knowledge to the classroom, making our courses relevant and valuable for our students."},
+        {step: "Step 4", icon: <FaLaptopCode />, main: "Hands-On Projects", sub:"Our courses include hands-on projects that allow students to apply what they have learned in a real-world setting. These projects are designed to simulate actual job responsibilities and help our students build a portfolio of work to showcase their skills to potential employers."},
     ])
 
     const showItemsRef = useRef(Array(content.length).fill(false));

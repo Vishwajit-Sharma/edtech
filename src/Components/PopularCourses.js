@@ -9,7 +9,6 @@ import img2 from '../Assets/webDesign.png'
 import img3 from '../Assets/python.jpg'
 import MoreButton from '../Common/MoreButton';
 import { useNavigate } from 'react-router-dom';
-import { Player } from '@lottiefiles/react-lottie-player';
 
 const PopularCourses = () => {
 
@@ -19,7 +18,7 @@ const PopularCourses = () => {
     {
       icon: <FaReact  />,
       courseName: "React JS",
-      description: "ES-6 + JSX + Components + Hooks + Performance Optimization",
+      description: "ES-6 + JSX + Components + Hooks + Performance Optimization + Redux/Redux Toolkit",
       img: img1,
       time: "2 Months"
     },
