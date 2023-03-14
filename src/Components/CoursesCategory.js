@@ -2,7 +2,7 @@ import React from 'react'
 import HeadingTitle from '../Common/HeadingTitle'
 import '../Styles/style.css'
 import { Link } from 'react-scroll';
-import {Link as RouterLink} from 'react-router-dom'
+//import {Link as RouterLink} from 'react-router-dom'
 import img1 from '../Assets/cat-1.jpg'
 import img2 from '../Assets/cat-2.jpg'
 import img3 from '../Assets/cat-3.jpg'

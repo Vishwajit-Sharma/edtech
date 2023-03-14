@@ -1,7 +1,6 @@
 import React from 'react'
 import HeadingTitle from '../Common/HeadingTitle'
 import '../Styles/style.css'
-import MoreButton from '../Common/MoreButton'
 
 const WhyThisCourse = ({course, why}) => {
 

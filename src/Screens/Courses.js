@@ -35,7 +35,7 @@ const Courses = () => {
     subTopic: "Welcome to the Best Courses Available",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "At Vishwa Edtech, we offer a wide range of software training courses to help you acquire the skills and knowledge you need to succeed in the tech industry. All our courses are designed to be practical and hands-on, with a focus on real-world applications.",
+    para1: "At TechnoShaala, we offer a wide range of software training courses to help you acquire the skills and knowledge you need to succeed in the tech industry. All our courses are designed to be practical and hands-on, with a focus on real-world applications.",
     //para2: "Our mission is to empower aspiring software professionals with the skills and knowledge they need to succeed in today's fast-paced and competitive job market. Whether you're a fresh graduate or a working professional looking to upskill, we've got the perfect course for you.",
     bulletPoints1: "Comprehensive & customizable curriculum", 
     bulletPoints2: "Experienced trainers",  

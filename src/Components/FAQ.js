@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../Styles/style.css"
 import HeadingTitle from '../Common/HeadingTitle';
+import { Element } from 'react-scroll';
 
 const FAQ = ({faqs}) => {
 
@@ -18,7 +19,9 @@ const FAQ = ({faqs}) => {
   }
 
   return (
-   <div className="conatiner-xxl py-5">
+ 
+    <Element name='faq'>
+   <div className="conatiner-xxl py-5" id="faq">
      <div className="container pt-0">
         <HeadingTitle title="FAQ's" mainTitle="Frequently Asked Questions"/>
       <div className="faq-container">
@@ -37,7 +40,7 @@ const FAQ = ({faqs}) => {
       </div>
     </div>
    </div>
-
+   </Element>
   );
 };
 

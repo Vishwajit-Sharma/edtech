@@ -12,10 +12,13 @@ import OurUSP from '../Components/OurUSP'
 import { Player } from '@lottiefiles/react-lottie-player';
 
 
+
 const Home = () => {
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (window.location.hash !== "#faq") {
+      window.scrollTo(0, 0);
+    } 
   }, []);
   
   const headingContainerContent = {
@@ -142,9 +145,11 @@ const Home = () => {
         <OurUSP/>
         </LazyLoad>
 
+
         <LazyLoad height={200} offset={20}>
         <FAQ faqs={faq}/>
         </LazyLoad>
+
        
         {/* <LazyLoad height={200} offset={20}>
         <Testimonial/>
