@@ -10,7 +10,7 @@ const WhyThisCourse = ({course, why}) => {
         <HeadingTitle title= "Course Features" mainTitle={`Why "${course}"`} />
         <div className="row g-3">
             <div className={`col-12 why-course bgColorFoundation py-3`}>
-                <ul className=''>{why.map(item => <li className='mb-3 fs-5 p-2'>{item}</li>)}</ul> 
+                <ul className=''>{why.map(item => <li className='mb-3 fs-6 p-2'>{item}</li>)}</ul> 
             </div>
         </div>
         {/* <div className="row my-4">

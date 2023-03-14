@@ -106,7 +106,7 @@ const Courses = () => {
   const cardContentTrending2 = {
     img: pythonImg,
     courseName: "Python With Machine Learning",
-    description: "Data Types + Loops + Functions + OOPS + Panda + Numpy",
+    description: "Syntax + Basics + Control Flow + Functions + OOPS + Data preprocessing + ML Libraries",
     time: "2 Month",
     icon: <DiPython />,
     bgColor: "bgColorFoundation",

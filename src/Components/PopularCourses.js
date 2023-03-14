@@ -32,7 +32,7 @@ const PopularCourses = () => {
     {
       icon: <DiPython />,
       courseName: "Python With Machine Learning",
-      description: "Data Types + Loops + Functions + OOPS + Panda + Numpy",
+      description: "Syntax + Basics + Control Flow + Functions + OOPS + Data preprocessing + ML Libraries",
       img: img3,
       time: "2 Months"
     },

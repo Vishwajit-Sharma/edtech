@@ -1,14 +1,15 @@
 import React, {useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import HeadingWallpaper from '../Common/HeadingWallpaper';
-import img from '../Assets/carousel-1.jpg'
+import wp1 from '../Assets/wp1.jpg'
+import wp2 from '../Assets/wp2.jpg'
 import HeadingTitle from '../Common/HeadingTitle';
 import HeadingContainer from '../Common/HeadingContainer';
 import LazyLoad from 'react-lazyload';
 import Process from '../Components/Process'
 import CourseOutline from '../Components/CourseOutline';
 import CourseContent from '../Components/CourseContent';
-import FAQ from '../Components/FAQ';
+//import FAQ from '../Components/FAQ';
 import Footer from '../Components/Footer';
 import MoreButton from '../Common/MoreButton';
 import WhyThisCourse from '../Components/WhyThisCourse';
@@ -23,6 +24,13 @@ const ShowCourse = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  let img;
+ if(course === "web designing"){
+  img = wp1
+ } else if(course === "python with machine learning"){
+  img= wp2
+ }
 
   const webDesigningOverview = {
     topic: "Course Overview",
@@ -45,17 +53,18 @@ const ShowCourse = () => {
 
   const pythonOverview = {
     topic: "Course Overview",
-    subTopic: "The Best Course Available",
+    subTopic: "Python With Machine Learning",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors",
-    bulletPoints2: "Skilled Instructors",
-    bulletPoints3: "Skilled Instructors",
-    bulletPoints4: "Skilled Instructors",
-    bulletPoints5: "Skilled Instructors",
-    bulletPoints6: "Skilled Instructors",
+    para1: "Python has become the preferred programming language for Machine Learning (ML) and Artificial Intelligence (AI) applications. It is a versatile language that offers a wide range of libraries and tools for data manipulation, visualization, and modeling.",
+    para2: "Python with machine learning course is designed to help learners understand the fundamentals of Python programming language and its use in machine learning algorithms.",
+    bulletPoints1: "Python syntax and basics",
+    bulletPoints2: "Overview of machine learning",
+    bulletPoints3: "Data preprocessing and cleaning",
+    bulletPoints4: "Building and evaluating models",
+    bulletPoints5: "Practical industry applications",
+    bulletPoints6: "Hands-on coding exercises",
+    para3: "If you are interested in learning ML and AI, Python is definitely the way to go.",
     img: img,
     btn: "Join Now", 
     navigateTo: `/courses/${course}/join`,
@@ -195,16 +204,22 @@ const ShowCourse = () => {
     { title: 'Start with a Mega Project', details:  ["Theme Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const pythonL1 = [
-    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Python Introduction', details: ["Project Overview","Software Installation","Python Usage & Applications"] },
+    { title: 'Python Basic Programming Concepts', details:  ["Variables & their Types","Operators","String & Boolean Operations","Control Flow"] },
+    { title: 'Python Functions', details:  ["Defining & Calling Functions","Parameters & Arguments","Returning Values from Functions","Lambda Functions"] },
+    { title: 'Data Structures', details: ["Lists & List Operations","Tuples & Tuple Operations","Sets & Set Operations","Dictionaries & Dictionary Operations"] },
+    { title: 'Machine Learning Introduction', details: ["Machine Learning","Today's World with Machine Learning","Applications of Machine Learning", "Python Libraries for Machine Learning"] },
+    { title: 'Start with Project', details:  ["Project Selection","Things to do", "Learning Outcome", "Review"] },
   ];
   const pythonL2 = [
-    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+    { title: 'Object Oriented Programming with Python', details:  ["Classes & objects","Inheritance","Polymorphism","Encapsulation", "Abstraction"] },
+    { title: 'Exceptions & Error Handling in Python', details:  ["Catching Exceptions","Handling Exceptions","Raising Exceptions"] },
+    { title: 'Advanced Python', details:  ["File Handling","Regular Expressions","Multithreading","Database Handling"] },
+    { title: 'Data Pre-Processing', details:  ["Data Cleaning","Data Integration","Data Transformation","Data Reduction"] },
+    { title: 'Regression', details:  ["Linear Regression","Polynomial Regression","Multiple Regression","Logistic Regression"] },
+    { title: 'Classification', details:  ["K-Nearest Neighbours(KNN)","Decision Trees","Naive Bayes","Random Forests"] },
+    { title: 'Clustering', details:  ["K-Means Clustering","Hierarchical Clustering","Density-Based Clustering","Expectation-Maximization(EM) Clustering"] },
+    { title: 'Start with a Mega Project', details:  ["Theme Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const frontEndL1 = [
     { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
@@ -270,15 +285,11 @@ const ShowCourse = () => {
     `Web design is a high-demand skill in today's digital world, with businesses of all sizes needing well-designed websites to establish an online presence.`,
     `With a strong foundation in web design principles, you can create beautiful, functional websites that are user-friendly and easy to navigate.`,
     `A web designing course can help you develop the skills you need to become a professional web designer or freelancer.`,
-    `Learning web design can give you a competitive edge in the job market and open up new career opportunities.`,
-    `Understanding web design can help you collaborate more effectively with developers, marketers, and other professionals in a team setting.`,
-    `Web design skills are transferable and can be applied to a variety of industries, including e-commerce, marketing, and technology.`,
     `Our web designing course can teach you how to create responsive websites that work well on all devices, including desktops, tablets, and smartphones.`,
     `You can develop a portfolio of work through a web designing course, which can help you showcase your skills and attract potential clients or employers.`,
     `By mastering web design principles, you can create websites that are both aesthetically pleasing and functional, resulting in a better user experience for your audience.`,
     `We offer personalized feedback and support from experienced instructors, helping you improve your skills and develop your own design style.`,
     `Our course includes real-world projects and assignments, allowing you to apply your skills to practical scenarios and build a professional portfolio.`,
-    `We provide opportunities for networking and collaboration with other students, giving you a chance to learn from your peers and develop your teamwork skills.`,
     `We emphasize the importance of good design principles, such as visual hierarchy and color theory, helping you create websites that are both aesthetically pleasing and functional.`,
     `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
     `We'll assist you in website hosting after Project Completion.`,
@@ -286,25 +297,42 @@ const ShowCourse = () => {
     `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
 
   ]
+  const whyPython = [
+    `Python has a simple and easy-to-read syntax, which makes it easy to learn even for beginners.`,
+    `Python has a large and supportive community of developers and users who contribute to the development of various libraries and tools. This means that you can easily find solutions to your problems and get help when you need it.`,
+    `Python has numerous libraries and tools for ML, such as NumPy, Pandas, Matplotlib, Scikit-Learn, TensorFlow, and PyTorch. These libraries provide powerful functionalities for data manipulation, visualization, and modeling.`,
+    `Python is a versatile language that can be used for a wide range of applications, from web development to data science and machine learning.`,
+    `Our instructors are experienced professionals who have real-world experience in ML and AI applications. They will provide you with practical knowledge and skills that you can apply to real-world problems.`,
+    `Our course is designed to provide you with hands-on experience in using Python libraries and tools for ML. You will work on real-world projects that will help you build your portfolio and enhance your skills.`,
+    `We offer a customized curriculum that is tailored to your specific needs and goals. Whether you are a beginner or an advanced learner, we have a course that will suit your needs.`,
+    `Our platform provides a supportive learning environment where you can ask questions, get feedback, and interact with other learners. We are committed to your success and will provide you with the resources and support you need to achieve your goals.`,
+    `We offer personalized feedback and support from experienced instructors, helping you improve your skills and develop your own style.`,
+    `We provide opportunities for networking and collaboration with other students, giving you a chance to learn from your peers and develop your teamwork skills.`,
+    `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
+    `We'll assist you in website hosting after Project Completion.`,
+    `We provide back up classes, in case you miss any classes.`,
+    `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
 
-  const faqReact = [
-    {
-      question: 'What is React?',
-      answer: 'React is a JavaScript library for building user interfaces.',
-    },
-    {
-      question: 'What are the key features of React?',
-      answer: 'React allows developers to create reusable UI components and provides a virtual DOM for fast rendering.',
-    },
-    {
-      question: 'What are the advantages of using React?',
-      answer: 'React provides high performance, easy maintenance, and great developer experience.',
-    },
-    {
-      question: 'How can I get started with React?',
-      answer: 'You can get started with React by learning the basics of HTML, CSS, and JavaScript, and then following some React tutorials and building small projects.',
-    },
   ]
+
+  // const faqReact = [
+  //   {
+  //     question: 'What is React?',
+  //     answer: 'React is a JavaScript library for building user interfaces.',
+  //   },
+  //   {
+  //     question: 'What are the key features of React?',
+  //     answer: 'React allows developers to create reusable UI components and provides a virtual DOM for fast rendering.',
+  //   },
+  //   {
+  //     question: 'What are the advantages of using React?',
+  //     answer: 'React provides high performance, easy maintenance, and great developer experience.',
+  //   },
+  //   {
+  //     question: 'How can I get started with React?',
+  //     answer: 'You can get started with React by learning the basics of HTML, CSS, and JavaScript, and then following some React tutorials and building small projects.',
+  //   },
+  // ]
 
 
   return (
@@ -348,9 +376,10 @@ const ShowCourse = () => {
           </div>
         </div></LazyLoad>
     
-        <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>
+        {course === "web designing" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>}
+        {course === "python with machine learning" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyPython}/>  </LazyLoad>}
 
-    {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>}
+    {/* {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>} */}
     <LazyLoad><Footer/></LazyLoad>
 
     </div>

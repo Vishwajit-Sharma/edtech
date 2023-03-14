@@ -348,7 +348,7 @@
     /*** Heading Wallpaper ***/
 
     .heading-container{
-        height: 60vh;
+        height: 55vh;
         margin: 0;
         padding: 0;
         /* margin-top: 63px !important; */
@@ -374,15 +374,24 @@
         color: var(--light);
     }
     .heading-content h1{
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-family: "Heebo",sans-serif
     }
+    @media (max-width: 767.98px) {
+      .heading-container{
+        height: 45vh;
+    }
+    .heading-content h1{
+      font-size: 2rem;
+
+  }
+  }
     @media (max-width: 575.98px) {
         .heading-container{
             height: 30vh;
         }
         .heading-content h1{
-            font-size: 28px;
+            font-size: 23px;
 
         }
     }
@@ -1433,6 +1442,8 @@
 }
 .why-course ul li{
   break-inside: avoid-column;
+ letter-spacing: 1px;
+ font-weight: 500;
 }
 .why-course ul li:hover{
   background-color: var(--primary);

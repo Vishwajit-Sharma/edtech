@@ -1,7 +1,8 @@
 import React from 'react'
 import '../Styles/style.css';
 import { useNavigate } from 'react-router-dom';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedinIn, FaInstagram, FaFacebookF} from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope} from "react-icons/fa";
+//import { FaLinkedinIn, FaInstagram, FaFacebookF} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
@@ -19,7 +20,7 @@ const navigate = useNavigate()
               <button className="btn btn-link" onClick={()=>navigate('/contact')}>Contact Us</button>
               <button className="btn btn-link" onClick={()=>navigate('/courses/selectcourse/join')}>Join Now</button>
               <button className="btn btn-link" onClick={()=>navigate('/')}>Terms &amp; Condition</button>
-              <Link className="text-decoration-none" to='/#faq' smooth={true} duration={500}> <a className="btn btn-link" >FAQs &amp; Help</a>   </Link>
+              <Link className="text-decoration-none" to='/#faq' smooth={true} duration={500}> <button className="btn btn-link" >FAQs &amp; Help</button>   </Link>
             </div>
             <div className="col-lg-3 col-sm-6">
               <h4 className="text-white mb-3">Contact</h4>
