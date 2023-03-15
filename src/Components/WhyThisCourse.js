@@ -8,20 +8,17 @@ const WhyThisCourse = ({course, why}) => {
     <div className="container-xxl py-5 category">
     <div className="container">
         <HeadingTitle title= "Course Features" mainTitle={`Why "${course}"`} />
-        <div className="row g-3">
-            <div className={`col-12 why-course bgColorFoundation py-3`}>
-                <ul className=''>{why.map(item => <li className='mb-3 fs-6 p-2'>{item}</li>)}</ul> 
-            </div>
-        </div>
-        {/* <div className="row my-4">
-        <div className="col-sm-7 col-12 d-flex justify-content-center ">       
-                <h2 className='text-center primary-color-text mb-4'>Still Confused ?</h2>
-                
-              </div>
-              <div className="col-sm-5 col-12 d-flex justify-content-center ">       
-                <span className='d-flex justify-content-center fs-6 mt-sm-5 mt-4'><MoreButton text="Contact Us" navigateTo="contact"/></span>
-              </div>
-        </div> */}
+            
+                <ul className='bgColorFoundation py-3'>
+                  {why.map((item, index) => {
+                    if(index%2 === 0){
+                      return ( <div key={index} className="row  why-course px-2">
+                        <div key={index} className='col-md-6 mb-3 '><li className='fs-6 p-2 '>{item}</li></div>
+                        <div key={index+1} className='col-md-6 mb-3 '><li className='fs-6 p-2'>{why[index+1]}</li></div>
+                      </div> )
+                    }
+                  })}
+                </ul> 
     </div>
 </div>
   )

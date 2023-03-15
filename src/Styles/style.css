@@ -1437,18 +1437,18 @@
 
 /*** Why this course***/
 .why-course ul{
-  column-count: 2;
-  column-gap: 50px;
+  /* column-count: 2;
+  column-gap: 50px; */
 }
-.why-course ul li{
-  break-inside: avoid-column;
+.why-course li{
+  /* break-inside: avoid-column; */
  letter-spacing: 1px;
  font-weight: 500;
 }
-.why-course ul li:hover{
+.why-course li:hover{
   background-color: var(--primary);
   color: white;
-  transform: scale(1.03);
+  transform: scale(1.01);
   transition: 0.4s;
 
 } 
@@ -1456,9 +1456,9 @@
   color: var(--primary);
 }
 @media (max-width: 576.9px) {
-  .why-course ul{
+  /* .why-course ul{
     column-count: 1;
-  }
+  } */
 } 
 
 

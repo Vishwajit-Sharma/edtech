@@ -116,7 +116,7 @@ const ShowCourse = () => {
     socialVisible: false,
     readMoreVisible: false,
     para1: "React is a popular JavaScript library for building user interfaces. It was developed by Facebook and is widely used by developers to create web applications. React is based on a component-based architecture, which allows developers to create reusable UI components and build complex user interfaces more easily.",
-    para2: "React provides many benefits for developing large-scale web applications, including improved performance, modular code, and easier maintenance. It is also highly customizable, allowing developers to use a variety of libraries and tools to enhance the development process.",
+    //para2: "React provides many benefits for developing large-scale web applications, including improved performance, modular code, and easier maintenance. It is also highly customizable, allowing developers to use a variety of libraries and tools to enhance the development process.",
     bulletPoints1: "ES6 Concepts",
     bulletPoints2: "Components & JSX",
     bulletPoints3: "Using Hooks",
@@ -305,7 +305,6 @@ const ShowCourse = () => {
     `We emphasize the importance of good design principles, such as visual hierarchy and color theory, helping you create websites that are both aesthetically pleasing and functional.`,
     `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
     `We'll assist you in website hosting after Project Completion.`,
-    `We provide back up classes, in case you miss any classes.`,
     `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
 
   ]
@@ -321,8 +320,21 @@ const ShowCourse = () => {
     `We offer personalized feedback and support from experienced instructors, helping you improve your skills and develop your own style.`,
     `We provide opportunities for networking and collaboration with other students, giving you a chance to learn from your peers and develop your teamwork skills.`,
     `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
-    `We'll assist you in website hosting after Project Completion.`,
-    `We provide back up classes, in case you miss any classes.`,
+    `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
+
+  ]
+  const whyReact = [
+    `React is one of the most popular front-end libraries in use today, and learning it can greatly enhance your career prospects.`,
+    `Our React course offers comprehensive coverage of all the essential React concepts and features, including hooks, context, and performance optimization.`,
+    `Our course is designed to be beginner-friendly, with hands-on exercises and practical examples to help you gain a solid understanding of React.`,
+    `We offer a flexible learning environment, with self-paced learning options and access to experienced instructors who can provide support and guidance as needed.`,
+    `Our course includes real-world projects and case studies, allowing you to apply your React skills in practical settings and build a portfolio of work to showcase to potential employers.`,
+    `We cover advanced React concepts and optimization techniques, including lazy loading, code splitting, and server-side rendering, to help you create high-performing applications.`,
+    `Our course offers a comprehensive overview of the React ecosystem, including popular tools and libraries like Redux, React Router, and material-ui.`,
+    `Our instructors are experienced React developers who have worked on a wide range of React projects, and can provide valuable insights and guidance to help you become a proficient React developer.`,
+    `Our course is constantly updated to reflect the latest changes and updates to the React library, ensuring that you have access to the most up-to-date information and techniques.`,
+    `We provide opportunities for networking and collaboration with other students, giving you a chance to learn from your peers and develop your teamwork skills.`,
+    `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
     `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
 
   ]
@@ -390,6 +402,7 @@ const ShowCourse = () => {
     
         {course === "web designing" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>}
         {course === "python with machine learning" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyPython}/>  </LazyLoad>}
+        {course === "react js" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyReact}/>  </LazyLoad>}
 
     {/* {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>} */}
     <LazyLoad><Footer/></LazyLoad>
