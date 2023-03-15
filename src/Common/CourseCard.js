@@ -1,10 +1,12 @@
 import React from 'react';
 import '../Styles/style.css';
 import { GiDuration } from "react-icons/gi";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const CourseCard = ({cardContent}) => {
+
+  const navigate = useNavigate()
    
 
   return (
@@ -12,10 +14,14 @@ const CourseCard = ({cardContent}) => {
     <div className={`course-item ${cardContent.bgColor}`}>
       <div className="position-relative overflow-hidden">
            <img className="img-fluid" src={cardContent.img} alt="" />
-          <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-3">
+          {cardContent.comingSoon ? <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-3">
+              <button className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }} onClick={()=>navigate('/coming-soon')}>Read More</button>
+              <button className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }} onClick={()=>navigate('/coming-soon')}>Join Now</button>
+          </div> : 
+            <div className="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-3">
               <Link className="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: '30px 0 0 30px' }} to={`/courses/${cardContent.courseName.toLowerCase()}`}>Read More</Link>
               <Link className="flex-shrink-0 btn btn-sm btn-primary px-3" style={{ borderRadius: '0 30px 30px 0' }} to={`/courses/${cardContent.courseName.toLowerCase()}/join`}>Join Now</Link>
-          </div>
+          </div>}
       </div>
       <div className="text-center p-4 pb-0">
           <h1 className="mb-3 primary-color-text">{cardContent.icon}</h1>

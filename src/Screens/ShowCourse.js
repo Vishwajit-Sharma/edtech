@@ -4,6 +4,7 @@ import HeadingWallpaper from '../Common/HeadingWallpaper';
 import wp1 from '../Assets/wp1.jpg'
 import wp2 from '../Assets/wp2.jpg'
 import wp3 from '../Assets/wp3.jpg'
+import wp4 from '../Assets/wp4.jpg'
 import HeadingTitle from '../Common/HeadingTitle';
 import HeadingContainer from '../Common/HeadingContainer';
 import LazyLoad from 'react-lazyload';
@@ -34,6 +35,9 @@ const ShowCourse = () => {
  }
  else if(course === "react js"){
   img= wp3
+ }
+ else if(course === "advanced javascript"){
+  img= wp4
  }
 
   const webDesigningOverview = {
@@ -131,17 +135,17 @@ const ShowCourse = () => {
   }
   const javascriptOverview = {
     topic: "Course Overview",
-    subTopic: "The Best Course Available",
+    subTopic: "Advanced Javascript",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors",
-    bulletPoints2: "Skilled Instructors",
-    bulletPoints3: "Skilled Instructors",
-    bulletPoints4: "Skilled Instructors",
-    bulletPoints5: "Skilled Instructors",
-    bulletPoints6: "Skilled Instructors",
+    para1: "The Advanced JavaScript course is designed to take your programming skills to the next level. You will learn advanced concepts of JavaScript such as functional programming, closures, async/await, and more. The course will also cover best practices for writing clean and efficient code.",
+    para3: "By the end of the course, you will have a deeper understanding of JavaScript and be able to write more efficient and powerful code.",
+    bulletPoints1: "Functional Programming",
+    bulletPoints2: "Closures",
+    bulletPoints3: "Asynchronous JavaScript",
+    bulletPoints4: "Promises and Async/Await",
+    bulletPoints5: "Error Handling",
+    bulletPoints6: "JS Engine Architecture",
     img: img,
     btn: "Join Now", 
     navigateTo: `/courses/${course}/join`,
@@ -270,16 +274,19 @@ const ShowCourse = () => {
     { title: 'Start with Building a production-ready app Project', details:  ["App Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const javascriptL1 = [
-    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to JavaScript', details: ["Hello, world!","Variables & Data types","Interaction: alert, prompt, confirm","Basic operators and expressions", "Comparisons"] },
+    { title: 'Javascript Fundamentals', details:  ["Control structures","Functions","Objects","Callbacks"] },
+    { title: 'Array & string Methods', details:  ["Array methods","String methods"] },
+    { title: 'Document Object Model (DOM) Basics', details: ["Introduction to the DOM","Accessing and modifying elements","Creating and deleting elements","Handling events", "Styling elements", "Traversing the DOM"] },
+    { title: 'Start with Project', details:  ["Project Selection","Things to do", "Learning Outcome", "Review"] },
   ];
   const javascriptL2 = [
-    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+    { title: 'Modern Javascript', details:  ["ES6 syntax and features","Promises and async/await","Destructuring","Arrow Functions","Template literals", "Spread and Rest operators"] },
+    { title: 'Deep Dive into Javascript', details:  ["Hoisting","Closures","Scope chain","This keyword","Call/apply/bind", "Scheduling: setTimeout and setInterval", "Prototypal inheritance","Error handling - try...catch"] },
+    { title: 'Asynchronous Programming in JavaScript', details:  ["Definition of asynchronous programming","Callback functions and their use in handling asynchronous code","JavaScript Event Loop","Call stack & Task queue", "Promises & Promises chaining","Async/await"] },
+    { title: 'Introduction to Events', details:  ["Introduction to browser events","Event delegation","Bubbling and capturing","Mouse events", "Form events"] },
+    { title: 'Storing data in the browser', details:  ["Cookies,","Local Storage","Session Storage"] },
+    { title: 'Start with Building a Project', details:  ["Project Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const javaL1 = [
     { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
@@ -333,6 +340,21 @@ const ShowCourse = () => {
     `Our course offers a comprehensive overview of the React ecosystem, including popular tools and libraries like Redux, React Router, and material-ui.`,
     `Our instructors are experienced React developers who have worked on a wide range of React projects, and can provide valuable insights and guidance to help you become a proficient React developer.`,
     `Our course is constantly updated to reflect the latest changes and updates to the React library, ensuring that you have access to the most up-to-date information and techniques.`,
+    `We provide opportunities for networking and collaboration with other students, giving you a chance to learn from your peers and develop your teamwork skills.`,
+    `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
+    `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
+
+  ]
+  const whyJavascript = [
+    `JavaScript is the most widely used programming language for web development, making it a valuable skill to have in today's job market.`,
+    `Advanced JavaScript concepts such as functional programming and closures are becoming more commonly used in modern web development.`,
+    `Knowing advanced JavaScript will make you stand out from other web developers and give you a competitive edge in the job market.`,
+    `Learning advanced JavaScript will help you better understand and utilize JavaScript libraries and frameworks such as React and Angular.`,
+    `Advanced JavaScript skills can help you solve complex programming problems and make you a more versatile developer.`,
+    `Our course will provide hands-on coding exercises and real-world examples to help you solidify your understanding of advanced JavaScript concepts.`,
+    `You will have access to personalized feedback and support from experienced instructors throughout the course.`,
+    `Our course is designed to be beginner-friendly, with clear explanations of advanced concepts and practical examples to help you apply what you learn.`,
+    `We provide personalized career guidance to help you apply your advanced JavaScript skills in the job market and succeed as a web developer.`,
     `We provide opportunities for networking and collaboration with other students, giving you a chance to learn from your peers and develop your teamwork skills.`,
     `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
     `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
@@ -403,6 +425,7 @@ const ShowCourse = () => {
         {course === "web designing" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>}
         {course === "python with machine learning" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyPython}/>  </LazyLoad>}
         {course === "react js" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyReact}/>  </LazyLoad>}
+        {course === "advanced javascript" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyJavascript}/>  </LazyLoad>}
 
     {/* {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>} */}
     <LazyLoad><Footer/></LazyLoad>

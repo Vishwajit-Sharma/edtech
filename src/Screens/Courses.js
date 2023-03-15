@@ -82,6 +82,7 @@ const Courses = () => {
     icon: <DiJava  />,
     bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+    comingSoon: true
   }
   const cardContentlanguages2 = {
     img: javascriptImg,

@@ -15,6 +15,7 @@ import BackToTop from "./Components/BackToTop";
 import ShowCourse from "./Screens/ShowCourse";
 import JoinNowPage from "./Screens/JoinNowPage";
 import WhatsAppButton from "./Components/WhatsAppButton";
+import ComingSoon from "./Screens/ComingSoon";
 
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
         <Route path="/courses/:course" element={<ShowCourse />}/>
         <Route path="/contact" element={<Contact  />}/>
         <Route path="/courses/:course/join" element={<JoinNowPage  />}/>
+        <Route path="/coming-soon" element={<ComingSoon  />}/>
        
       </Routes>
       </AnimatedWrapper>
