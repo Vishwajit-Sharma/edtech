@@ -44,6 +44,7 @@ const EnrollmentForm = ({course}) => {
     { value: 'Java', label: 'Java' },
     { value: 'React Js', label: 'React Js' },
     { value: 'Python With Machine Learning', label: 'Python With Machine Learning' },
+    {value: 'Market Research', label: 'Market Research'}
   ];
 
   return (

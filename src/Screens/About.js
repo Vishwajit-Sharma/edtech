@@ -5,7 +5,6 @@ import HeadingContainer from '../Common/HeadingContainer'
 import Footer from '../Components/Footer'
 import OurTeam from '../Components/OurTeam'
 import LazyLoad from 'react-lazyload'
-import headingImage from '../Assets/about.jpg'
 import OurPurpose from '../Components/OurPurpose'
 import OurMethodology from '../Components/OurMethodology'
 import { Player } from '@lottiefiles/react-lottie-player';
@@ -26,7 +25,6 @@ const About = () => {
     bulletPoints4: "Placement Assistance",  
     bulletPoints5: "Affordable pricing",  
     bulletPoints6: "Community Buliding",  
-    img: headingImage,
     para3: "Join us today and take the first step towards a successful career in software.",
     anim: <Player autoplay loop speed="2" src="https://assets1.lottiefiles.com/packages/lf20_ikvz7qhc.json" style={{ height: '500px', width: '550px' }}/>
   }

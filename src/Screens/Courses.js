@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import HeadingWallpaper from '../Common/HeadingWallpaper'
 import img from '../Assets/carousel-2.jpg'
 import CoursesCategory from '../Components/CoursesCategory'
-import headingImage from '../Assets/about.jpg'
 import HeadingContainer from '../Common/HeadingContainer'
 import CourseCard from '../Common/CourseCard'
 import HeadingTitle from '../Common/HeadingTitle'
@@ -43,7 +42,6 @@ const Courses = () => {
     bulletPoints4: "Placement Assistance",  
     bulletPoints5: "Affordable pricing",  
     bulletPoints6: "Community support",  
-    img: headingImage,
     para3: "Choose from our range of courses today and take the first step towards a successful career in software. Whether you're looking to start a new career, upskill in your current job, or just explore a new area of interest, we've got the perfect course for you.",
     anim: <Player autoplay loop speed="1" src="https://assets1.lottiefiles.com/packages/lf20_hzfmxrr7.json"  background="transparent" style={{ height: '500px', width: '550px' }}/>
   }

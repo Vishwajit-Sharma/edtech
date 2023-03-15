@@ -43,7 +43,7 @@ const OurTeam = () => {
         {content.map((item, index) =>  <div className={`col-md-6 col-lg-3 p-0 service-item-wrapper ${
                         showItemsRef.current[index] ? "show" : ""
                       }`}>
-            <div className='d-flex flex-column  align-items-center our-team mx-2 p-4 h-100'>
+            <div className='d-flex flex-column align-items-center our-team mx-2 p-4 h-100'>
             <h1 className='primary-color-text'>{item.icon}</h1>
             <h4>{item.title}</h4>
             <p>{item.para}</p>

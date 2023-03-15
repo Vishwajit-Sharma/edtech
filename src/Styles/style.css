@@ -641,7 +641,7 @@
 }
 .our-team:hover{
   background-color: var(--primary);
-  transform: scaleY(1.1);
+  transform: translateY(-15px);
   transition: 0.5s;
 }
 .our-team:hover *{

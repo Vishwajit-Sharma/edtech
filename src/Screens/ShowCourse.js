@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import HeadingWallpaper from '../Common/HeadingWallpaper';
 import wp1 from '../Assets/wp1.jpg'
 import wp2 from '../Assets/wp2.jpg'
+import wp3 from '../Assets/wp3.jpg'
 import HeadingTitle from '../Common/HeadingTitle';
 import HeadingContainer from '../Common/HeadingContainer';
 import LazyLoad from 'react-lazyload';
@@ -30,6 +31,9 @@ const ShowCourse = () => {
   img = wp1
  } else if(course === "python with machine learning"){
   img= wp2
+ }
+ else if(course === "react js"){
+  img= wp3
  }
 
   const webDesigningOverview = {
@@ -108,17 +112,18 @@ const ShowCourse = () => {
   }
   const reactOverview = {
     topic: "Course Overview",
-    subTopic: "The Best Course Available",
+    subTopic: "React JS",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors",
-    bulletPoints2: "Skilled Instructors",
-    bulletPoints3: "Skilled Instructors",
-    bulletPoints4: "Skilled Instructors",
-    bulletPoints5: "Skilled Instructors",
-    bulletPoints6: "Skilled Instructors",
+    para1: "React is a popular JavaScript library for building user interfaces. It was developed by Facebook and is widely used by developers to create web applications. React is based on a component-based architecture, which allows developers to create reusable UI components and build complex user interfaces more easily.",
+    para2: "React provides many benefits for developing large-scale web applications, including improved performance, modular code, and easier maintenance. It is also highly customizable, allowing developers to use a variety of libraries and tools to enhance the development process.",
+    bulletPoints1: "ES6 Concepts",
+    bulletPoints2: "Components & JSX",
+    bulletPoints3: "Using Hooks",
+    bulletPoints4: "React Router Dom",
+    bulletPoints5: "Axios/Fetch for API's",
+    bulletPoints6: "State management with Redux",
+    para3: "React has become a popular choice for web development due to its ease of use, powerful features, and ability to create complex user interfaces with ease. Whether you're building a simple website or a complex web application, React is a great choice for your development needs.",
     img: img,
     btn: true, 
     navigateTo: `/courses/${course}/join`,
@@ -246,16 +251,23 @@ const ShowCourse = () => {
     { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
   ];
   const reactL1 = [
-    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to React', details: ["What is React","React vs. other frameworks","Setting up a development environment","Creating a React component", "JSX & JSX syntax", "How to use CSS"] },
+    { title: 'Javascript ES-6 Concepts', details:  ["Let and const","Arrow Function","Template literals","Destructuring", "Spread and rest operators","Promises", "Most commonly used Methods"] },
+    { title: 'Props and State', details:  ["Props and their usage","State and its usage","Changing state and props","Conditional rendering", "Handling events"] },
+    { title: 'Component Lifecycle & Intro to Hooks', details: ["Class vs Functional Components","Component lifecycle methods","useState Hook","useEffect Hook", "Using lifecycle methods with useEffect Hook"] },
+    { title: 'Forms and Input', details:  ["Controlled and uncontrolled components","Handling form data","Validating input","Using third-party form libraries"] },
+    { title: 'Start with Project', details:  ["Project Selection","Things to do", "Learning Outcome", "Review"] },
   ];
   const reactL2 = [
-    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+    { title: 'Routing with React-router-dom', details:  ["Setting up routes","Route parameters","Nested routes","Creating a Nav Bar based on routing",] },
+    { title: 'Most Commonly Used Libraries', details:  ["React-icons","React-toastify","React-modals","React-bootstrap/material-UI"] },
+    { title: 'Forms Management with Formik', details:  ["Setting up Formik","Handling form data","Validation with Yup","Customizing forms"] },
+    { title: 'Working with APIs', details:  ["Using Axios & Fetch","Making API calls","Async and await","Handling responses", "Error handling"] },
+    { title: 'Context API', details:  ["Prop drilling","State Management","Create Context","Provide Context", "Consume Context","useContext Hook"] },
+    { title: 'Performance Optimization', details:  ["Pure component","Reducing unnecessary re-renders","Memoization with React.memo ","Memoization with useMemo and useCallback hooks", "Implementing lazy loading and code splitting"] },
+    { title: 'Advanced React concepts', details:  ["Higher-order components","State Lifting","React reconciliation process","React-Query", "Error boundaries"] },
+    { title: 'State Management with Redux', details:  ["Redux architecture","Redux basics and concepts","Setting up Redux","Redux-toolkit & implementation"] },
+    { title: 'Start with Building a production-ready app Project', details:  ["App Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const javascriptL1 = [
     { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
