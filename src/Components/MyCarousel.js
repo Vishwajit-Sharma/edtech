@@ -3,15 +3,16 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../Styles/style.css'
 import { useNavigate  } from 'react-router-dom';
-import img1 from '../Assets/carousel-1.jpg'
-import img2 from '../Assets/carousel-2.jpg'
+import img1 from '../Assets/carousel1.jpg'
+import img2 from '../Assets/carousel2.jpg'
+import img3 from '../Assets/carousel3.jpg'
 
 function MyCarousel() {
 
   const navigate = useNavigate()
 
   return (
-    <div className="container-fluid p-0 mb-5">
+    <div className="container-fluid p-0 mt-0 mb-5">
       <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay>
         <div className=''>
           <img src={img1} alt="Cat 1" />
@@ -46,7 +47,7 @@ function MyCarousel() {
           </div>
         </div>
         <div className=''>
-          <img src={img1} alt="Cat 1" />
+          <img src={img3} alt="Cat 1" />
           <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style={{ background: 'rgba(24, 29, 56, .7)' }}>
             <div className="container">
               <div className="row justify-content-start">

@@ -1,5 +1,5 @@
 import React,{useState, useRef, useEffect} from 'react'
-import img from '../Assets/carousel-1.jpg'
+import img from '../Assets/contact.jpg'
 import img1 from '../Assets/contact.png'
 import HeadingWallpaper from '../Common/HeadingWallpaper'
 import { FaPhone, FaEnvelope } from 'react-icons/fa';

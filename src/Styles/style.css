@@ -138,13 +138,19 @@
 }
 .join-now{
     font-size: 16px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     letter-spacing: 1px;
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
+    /* margin-right: 40px !important; */
+    /* padding-top: 25px !important;
+    padding-bottom: 25px !important; */
+}
+.join-now:hover{
+ transform: translateX(10px);
+  color: var(--primary) !important;
+  transition: 0.4s;
 }
 .activateBtn{
-  background-color: #0b5ed7 !important;
+  color: #0b5ed7 !important;
 }
 
 /*** Navbar ***/
@@ -187,33 +193,21 @@
 
 @media (max-width: 1199.98px) {
     .navbar-light .navbar-nav .nav-link  {
-        margin-right: 15px;
+        margin-right: 10px;
         padding: 0 0;
     }
     .join-now{
         font-size: 14px !important;
         
     }
-    .navbar-light .navbar-brand,
-.navbar-light a.btn {
-    height: 69px;
-}
+
 }
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
-        margin-right: 5px;
+        margin-right: 0px;
         padding: 0 0;
         font-size: 14px;
     }
-    .navbar-light .navbar-brand,
-.navbar-light a.btn {
-    height: 65px;
-}
-.join-now{
-    padding-top: 25px !important;
-    padding-bottom: 25px !important;
-}
-
 }
 @media (max-width: 767.98px) {
     .navbar-light .navbar-nav .nav-link  {
@@ -224,10 +218,7 @@
     .join-now{
         font-size: 12px !important;
     }
-    .navbar-light .navbar-brand,
-.navbar-light a.btn {
-    height: 62px;
-}
+
      .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
@@ -348,7 +339,7 @@
     /*** Heading Wallpaper ***/
 
     .heading-container{
-        height: 55vh;
+        height: 60vh;
         margin: 0;
         padding: 0;
         /* margin-top: 63px !important; */

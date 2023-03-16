@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import HeadingWallpaper from '../Common/HeadingWallpaper'
-import img from '../Assets/carousel-2.jpg'
+import img from '../Assets/courses.jpg'
 import CoursesCategory from '../Components/CoursesCategory'
 import HeadingContainer from '../Common/HeadingContainer'
 import CourseCard from '../Common/CourseCard'
