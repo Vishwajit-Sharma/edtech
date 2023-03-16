@@ -5,6 +5,7 @@ import wp1 from '../Assets/wp1.jpg'
 import wp2 from '../Assets/wp2.jpg'
 import wp3 from '../Assets/wp3.jpg'
 import wp4 from '../Assets/wp4.jpg'
+import wp5 from '../Assets/wp5.jpg'
 import HeadingTitle from '../Common/HeadingTitle';
 import HeadingContainer from '../Common/HeadingContainer';
 import LazyLoad from 'react-lazyload';
@@ -38,6 +39,9 @@ const ShowCourse = () => {
  }
  else if(course === "advanced javascript"){
   img= wp4
+ }
+ else if(course === "front end development"){
+  img= wp5
  }
 
   const webDesigningOverview = {
@@ -80,17 +84,17 @@ const ShowCourse = () => {
   }
   const frontEndOverview = {
     topic: "Course Overview",
-    subTopic: "The Best Course Available",
+    subTopic: "Front End Development",
     socialVisible: false,
     readMoreVisible: false,
-    para1: "Are you creative? Think out of the box? The web designing course is a very exciting career option for you. Our Web designing classes consists of HTML/HTML5, CSS/CSS3, JavaScript, jQuery, BootStrap these are used to organize the website layout and define the look and feel of WebPages, and we teach all these using Dreamweaver, which is a most popular professional web Development tool. Our special design course covers the latest designing tools like Adobe Photoshop and flash. We also cover real-time projects starting from domain registration to hosting your website.",
-    para2: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
-    bulletPoints1: "Skilled Instructors",
-    bulletPoints2: "Skilled Instructors",
-    bulletPoints3: "Skilled Instructors",
-    bulletPoints4: "Skilled Instructors",
-    bulletPoints5: "Skilled Instructors",
-    bulletPoints6: "Skilled Instructors",
+    para1: "The Front End Development course is designed to provide you with the skills and knowledge to become a proficient front end developer. You will learn the fundamentals of HTML, CSS, and JavaScript, as well as popular front end framework such as React. The course will also cover best practices for creating responsive and accessible web applications.",
+    para3: "By the end of the course, you will have a solid understanding of front end development and be able to build responsive and accessible web applications using React JS.",
+    bulletPoints1: "HTML basics and structure",
+    bulletPoints2: "CSS styling and layout",
+    bulletPoints3: "JavaScript fundamentals and DOM manipulation",
+    bulletPoints4: "Bootstrap & CSS Preprocessor (SASS)",
+    bulletPoints5: "Responsive web design techniques",
+    bulletPoints6: "React JS",
     img: img,
     btn: "Join Now", 
     navigateTo: `/courses/${course}/join`,
@@ -173,7 +177,7 @@ const ShowCourse = () => {
   const duration = {
     webDesign: "8-9 weeks / 8-9 weekends",
     python: "8-9 weeks / 8-9 weekends",
-    frontEnd: "8-9 weeks / 8-9 weekends",
+    frontEnd: "12-14 weeks / 12-14 weekends",
     backEnd: "8-9 weeks / 8-9 weekends",
     react: "8-9 weeks / 8-9 weekends",
     javascript: "8-9 weeks / 8-9 weekends",
@@ -184,7 +188,7 @@ const ShowCourse = () => {
     python: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
     frontEnd: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
     backEnd: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
-    react: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
+    react: ["Knowledge of HTMl, CSS & Basic Javascript is must", ],
     javascript: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
     java: ["There is no such Prerequisites for this course.", "Basic computer knowledge will be advantage."],
   }
@@ -208,7 +212,7 @@ const ShowCourse = () => {
     { title: 'CSS Flexbox & Grid', details:  ["Flex properties","Grid Properties"] },
     { title: 'Advanced CSS (CSS-3)', details:  ["Backgrounds","Gradients","Shadow","Animations"] },
     { title: 'CSS Media Queries', details:  ["What & Why Media Queries","Breakpoints","How to Use it"] },
-    { title: 'Introduction to JavaScript', details: ["Javascript Intro","Datatypes & Operators","Conditional Statements and Loops","Functions"] },
+    { title: 'Introduction to JavaScript', details: ["Javascript Intro","Datatypes & Operators","Conditional Statements and Loops","Functions","String & Array Methods"] },
     { title: 'Javascript - One Step More', details:  ["Javascript Dates","DOM Manipulation","Form Events","Mouse Events", "Javascript Validation"] },
     { title: 'Start with a Mega Project', details:  ["Theme Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
@@ -231,16 +235,31 @@ const ShowCourse = () => {
     { title: 'Start with a Mega Project', details:  ["Theme Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const frontEndL1 = [
-    { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to HTML4 and HTML5', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to CSS and CSS3', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to JavaScript', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
+    { title: 'Introduction to Front End Development', details: ["Front End vs Back End","Front end Road map","Career Growth","Project Overview",] },
+    { title: 'Introduction to HTML-4 & HTML-5', details:  ["HTML Basic","HTML Links","HTML Lists","HTML Tables", "HTML Forms", "New Semantic Tags","HTML Audio/Video"] },
+    { title: 'Introduction to CSS & CSS3', details:  ["CSS Basics","Color, Text, Spacing Properties","Inline and Block Elements","Box Model", "Positioning","Animations"] },
+    { title: 'Advanced CSS', details:  ["CSS Flex properties","CSS Grid Properties", "CSS Media Queries", "Introduction to CSS Preprocessor - SASS"] },
+    { title: 'Introduction to JavaScript', details: ["Javascript Intro","Datatypes & Operators","Conditional Statements and Loops","Functions", "String & Array Methods"] },
+    { title: 'Javascript - One Step More', details:  ["Javascript Dates","DOM Manipulation","Form Events","Mouse Events", "Javascript Validation"] },
+    { title: 'Start with Project', details:  ["Design Selection","Things to do", "Learning Outcome", "Review"] },
+   
   ];
   const frontEndL2 = [
-    { title: 'Introduction to Advanced JavaScript', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to jQuery', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to AJAX', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
-    { title: 'Introduction to Bootstrap', details:  ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] }
+    { title: 'CSS Framework - Bootstrap', details:  ["Introduction to Bootstrap","Bootstrap Grid Layout","Text, Color, Spacing, button, Flex & other Classes",] },
+    { title: 'Introduction to SASS/SCSS', details:  ["Introduction to CSS Preprocessors","Benefits of using SCSS","Declaring and using variables", "Nesting","Mixins","Controls and Functions","Extending and Inheritance" ] },
+    { title: 'Modern Javascript', details:  ["Let and const","Arrow Function","Template literals","Destructuring", "Spread and rest operators","Promises", "Most commonly used Methods"]},
+    { title: 'Introduction to Javascript Frameworks- React', details:  ["What is React","React vs. other frameworks","Setting up a development environment", "Creating a First React App"] },
+    { title: 'React Basics', details:  ["Components","JSX & JSX syntax", "Styling React component","Props and their usage","State and its usage","Changing state and props","Conditional rendering", "Handling events"] },
+    { title: 'Component Lifecycle & Intro to Hooks', details: ["Class vs Functional Components","Component lifecycle methods","useState Hook","useEffect Hook", "Using lifecycle methods with useEffect Hook"] },
+    { title: 'How to Deal with Forms & Inputs', details:  ["Controlled and uncontrolled components","Handling form data","Forms Management with Formik"] },
+    { title: 'Routing with React-router-dom', details:  ["Setting up routes","Route parameters","Nested routes","Creating a Nav Bar based on routing",] },
+    { title: 'Most Commonly Used Libraries', details:  ["React-icons","React-toastify","React-modals","React-bootstrap/material-UI"] },
+    { title: 'Working with APIs', details:  ["Using Axios & Fetch","Making API calls","Async and await","Handling responses", "Error handling"] },
+    { title: 'Context API', details:  ["Prop drilling","State Management","Create Context","Provide Context", "Consume Context","useContext Hook"] },
+    { title: 'Performance Optimization', details:  ["Pure component","Reducing unnecessary re-renders","Memoization with React.memo ","Memoization with useMemo and useCallback hooks", "Implementing lazy loading and code splitting"] },
+    { title: 'Advanced React concepts', details:  ["Higher-order components","State Lifting","React reconciliation process","React-Query", "Error boundaries"] },
+    { title: 'State Management with Redux', details:  ["Redux architecture","Redux basics and concepts","Setting up Redux","Redux-toolkit & implementation"] },
+    { title: 'Start with Building a production-ready app Project', details:  ["App Selection","Things to do", "Learning Outcome", "Review-1", "Review-2", "Review-3"] },
   ];
   const backtEndL1 = [
     { title: 'Introduction to Web Design', details: ["Introduction","Browser Details","hTML5","css3/5", "Welcome to the world"] },
@@ -360,6 +379,21 @@ const ShowCourse = () => {
     `We provide Career assistance in terms of Resume building, Mock interviews, 1:1 mentorship etc.`,
 
   ]
+  const whyFrontEnd = [
+    `Front end development is a crucial part of modern web development, focusing on the user interface and user experience of web applications.`,
+    `It is a highly sought-after skill in today's job market, with many job opportunities available in a variety of industries.`,
+    `Front end development allows you to work on a wide range of projects, from small websites to large web applications and mobile apps.`,
+    `Front end development is constantly evolving, with new technologies and frameworks emerging all the time, making it a dynamic and exciting field to work in.`,
+    `It provides a great opportunity for freelancing and entrepreneurship, allowing you to work remotely and build your own web applications and websites.`,
+    `It allows you to be creative and use your design skills, while also utilizing technical skills to create functional and intuitive web applications.`,
+    `Our course provides hands-on experience with the most popular front end framework today i.e React.`,
+    `Our course includes personalized feedback and support from experienced instructors to help you progress and improve your skills.`,
+    `Our course offers personalized career guidance to help you succeed in the job market as a front end developer, including resume and portfolio review, and interview preparation.`,
+    `Our course offers a comprehensive curriculum that covers both the technical and design aspects of front end development.`,
+    `In this Course, you'll get complete hands-on exposure through 3 Mini projects and 1 Mega Project.`,
+    `Our course includes mentorship and networking opportunities to help you connect with other professionals in the industry and grow your career.`,
+
+  ]
 
   // const faqReact = [
   //   {
@@ -426,6 +460,7 @@ const ShowCourse = () => {
         {course === "python with machine learning" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyPython}/>  </LazyLoad>}
         {course === "react js" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyReact}/>  </LazyLoad>}
         {course === "advanced javascript" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyJavascript}/>  </LazyLoad>}
+        {course === "front end development" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyFrontEnd}/>  </LazyLoad>}
 
     {/* {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>} */}
     <LazyLoad><Footer/></LazyLoad>

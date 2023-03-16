@@ -59,8 +59,8 @@ const Courses = () => {
   const cardContentDevelopment2 = {
     img: frontendImg,
     courseName: "Front End Development",
-    description: "HTML-CSS-Javascript + Bootstrap/Materialize/Tailwind CSS + React JS ",
-    time: "2 Month",
+    description: "HTML-CSS-Javascript + CSS preprocessor(SASS) + Bootstrap/Materialize/Tailwind CSS  + Modern Javascript + React JS ",
+    time: "3 Months",
     icon: <FaCodeBranch  />,
     bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
@@ -73,6 +73,7 @@ const Courses = () => {
     icon: <FaServer  />,
     bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+    comingSoon: true
   }
   const cardContentlanguages1 = {
     img: javaImg,
