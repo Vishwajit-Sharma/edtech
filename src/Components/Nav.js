@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import '../Styles/style.css'
-import { GiSkills } from "react-icons/gi";
 import { FaArrowRight } from "react-icons/fa";
 import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 import logo from '../Assets/logo.png'

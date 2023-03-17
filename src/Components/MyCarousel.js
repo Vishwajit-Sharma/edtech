@@ -21,8 +21,8 @@ function MyCarousel() {
               <div className="row justify-content-start">
                 <div className="col-sm-10 col-lg-8">
                   <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Grow Your Skills</h5>
-                  <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Best Online Learning Platform</h1>
-                  <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                  <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Best Live Instructor Based Training Platform</h1>
+                  <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Live, interactive training led by experienced instructors with progressive evaluation & personalized feedback.</p>
                   <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3" onClick={()=>navigate("/courses/selectcourse/join")}>Join Now</button>
                   <button className="btn btn-light py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3" onClick={() => navigate('/courses')}>Explore</button>
                 </div>
@@ -36,9 +36,9 @@ function MyCarousel() {
             <div className="container">
               <div className="row justify-content-start">
                 <div className="col-sm-10 col-lg-8">
-                  <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Grow Your Skills</h5>
-                  <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Best Online Learning Platform</h1>
-                  <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                  <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Climb Your Career Ladder</h5>
+                  <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Most Genuine Learning Platform</h1>
+                  <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Authentic, credible, and transparent learning experience only focussing on career growth of students.</p>
                   <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3 " onClick={()=>navigate("/courses/selectcourse/join")}>Join Now</button>
                   <button className="btn btn-light py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3" onClick={() => navigate('/courses')}>Explore</button>
                 </div>
@@ -52,9 +52,9 @@ function MyCarousel() {
             <div className="container">
               <div className="row justify-content-start">
                 <div className="col-sm-10 col-lg-8">
-                  <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Grow Your Skills</h5>
-                  <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Best Online Learning Platform</h1>
-                  <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
+                  <h5 className="primary-color-text text-uppercase mb-3 carousel-main-heading">Boost Your Income By 3X</h5>
+                  <h1 className=" text-white mb-sm-3 mb-4 carousel-heading">The Unmatched Quality Education Services</h1>
+                  <p className="text-white mb-4 pb-2 d-none d-sm-block carousel-para">Exceptional education services that are unmatched in terms of quality, value, and innovation.</p>
                   <button className="btn btn-primary py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3 me-3 " onClick={()=>navigate("/courses/selectcourse/join")}>Join Now</button>
                   <button className="btn btn-light py-md-3 py-sm-2 py-2 px-md-5 px-sm-4 px-3" onClick={() => navigate('/courses')}>Explore</button>
                 </div>

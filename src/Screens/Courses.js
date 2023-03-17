@@ -120,6 +120,7 @@ const Courses = () => {
     icon: <FaChartBar  />,
     bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+    comingSoon: true
   }
 
 
@@ -180,7 +181,7 @@ const Courses = () => {
         <LazyLoad >
           {<div className="container-xxl py-5">
             <div className="container">
-              <HeadingTitle title="Try Something Different" mainTitle="Different Courses" />
+              <HeadingTitle title="Add-ON" mainTitle="Add-On Courses" />
               <div className="row g-4 justify-content-center">
                 <CourseCard cardContent={cardContentDifferent1} />
               </div>
