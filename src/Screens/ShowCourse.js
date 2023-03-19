@@ -206,6 +206,7 @@ const ShowCourse = () => {
     { title: 'Introduction to HTML-4', details:  ["HTML Basic","HTML Links","HTML Lists","HTML Tables", "HTML Forms"] },
     { title: 'Introduction to HTML-5', details:  ["Introduction of HTML5","New Semantic Tags","HTML Audio/Video"] },
     { title: 'Introduction to CSS', details:  ["CSS Basics","Color, Text, Spacing Properties","Inline and Block Elements","Box Model", "Positioning"] },
+    { title: 'Introduction to Version Control System - Git & Github', details:  ["Version Control Basics","Git Basics", "GitHub Basics", "Integrate Github to VS Code"] },
     { title: 'Start with Project', details:  ["Design Selection","Things to do", "Learning Outcome", "Review"] },
   ];
   const webDesignL2 = [
@@ -241,6 +242,7 @@ const ShowCourse = () => {
     { title: 'Advanced CSS', details:  ["CSS Flex properties","CSS Grid Properties", "CSS Media Queries", "Introduction to CSS Preprocessor - SASS"] },
     { title: 'Introduction to JavaScript', details: ["Javascript Intro","Datatypes & Operators","Conditional Statements and Loops","Functions", "String & Array Methods"] },
     { title: 'Javascript - One Step More', details:  ["Javascript Dates","DOM Manipulation","Form Events","Mouse Events", "Javascript Validation"] },
+    { title: 'Introduction to Version Control System - Git & Github', details:  ["Version Control Basics","Git Basics", "GitHub Basics", "Integrate Github to VS Code"] },
     { title: 'Start with Project', details:  ["Design Selection","Things to do", "Learning Outcome", "Review"] },
    
   ];
@@ -417,7 +419,7 @@ const ShowCourse = () => {
 
   return (
     <div>
-      <HeadingWallpaper img={img} heading={courseCapitalise} headLink={courseCapitalise} isCourses={true} />
+      <HeadingWallpaper img={img} heading={courseCapitalise} headLink={courseCapitalise} isCourses={true} isShare={true}/>
 
       {course === "web designing" && <HeadingContainer headingContainerContent={webDesigningOverview} />}
       {course === "python with machine learning" && <HeadingContainer headingContainerContent={pythonOverview} />}

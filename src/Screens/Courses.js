@@ -63,7 +63,7 @@ const Courses = () => {
     time: "3 Months",
     icon: <FaCodeBranch  />,
     bgColor: "bgColorFoundation",
-    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStarHalfAlt/>],
   }
   const cardContentDevelopment3 = {
     img: backendImg,

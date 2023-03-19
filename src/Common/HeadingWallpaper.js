@@ -1,8 +1,9 @@
 import React from 'react'
 import '../Styles/style.css'
 import { NavLink } from 'react-router-dom'
+import ShareCourse from '../Common/ShareCourse'
 
-const HeadingWallpaper = ({ img, heading, headLink, isCourses}) => {
+const HeadingWallpaper = ({ img, heading, headLink, isCourses, isShare}) => {
     return (
         <div className='container-fluid mx-0 px-0 mb-0 heading-container'>
             <img src={img} alt="" className='heading-img' />
@@ -15,7 +16,7 @@ const HeadingWallpaper = ({ img, heading, headLink, isCourses}) => {
                         <li className="breadcrumb-item text-white active" aria-current="page">{headLink}</li>
                     </ol>
                 </nav>
-
+                {isShare && <ShareCourse heading= {heading}/>}
             </div>
         </div>
     )

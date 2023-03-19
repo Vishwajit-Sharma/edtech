@@ -36,11 +36,12 @@ const navigate = useNavigate()
             </div>
             <div className="col-lg-3 col-sm-6">
             <h4 className="text-white mb-3">Popular Courses</h4>
-              <button className="btn btn-link" onClick={()=>navigate('/courses/web designing')}>Web Designing</button>
               <button className="btn btn-link" onClick={()=>navigate('/courses/react js')}>Reacts Js</button>
+              <button className="btn btn-link" onClick={()=>navigate('/courses/front end development')}> Front End Development</button>
               <button className="btn btn-link" onClick={()=>navigate('/courses/python with machine learning')}>Python With Machine Learning</button>
               <button className="btn btn-link" onClick={()=>navigate('/courses/javascript')}>Javascript</button>
-              <button className="btn btn-link" onClick={()=>navigate('/courses/java')}> Java</button>
+              <button className="btn btn-link" onClick={()=>navigate('/courses/web designing')}>Web Designing</button>
+
             </div>
             <div className="col-lg-3 col-sm-6">
               <h4 className="text-white mb-3">Newsletter</h4>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Styles/style.css';
-import { FaReact , FaPalette , FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaReact , FaStar, FaStarHalfAlt , FaCodeBranch} from "react-icons/fa";
 import { GiDuration } from "react-icons/gi";
 import { DiPython } from 'react-icons/di';
 import HeadingTitle from '../Common/HeadingTitle';
 import img1 from '../Assets/react.jpg'
-import img2 from '../Assets/webDesign.png'
+import img2 from '../Assets/frontend.png'
 import img3 from '../Assets/python.jpg'
 import MoreButton from '../Common/MoreButton';
 import { useNavigate } from 'react-router-dom';
@@ -23,11 +23,13 @@ const PopularCourses = () => {
       time: "2 Months"
     },
     {
-      icon: <FaPalette  />,
-      courseName: "Web Designing",
-      description: "HTML/HTML5 + CSS/CSS3 + Basic Javascript + DOM Manipulation",
-      img: img2,
-      time: "2 Months"
+     
+    icon: <FaCodeBranch  />,
+    courseName: "Front End Development",
+    description: "HTML-CSS-Javascript + CSS preprocessor(SASS) + Bootstrap/Materialize/Tailwind CSS  + Modern Javascript + React JS ",
+    img: img2,
+    time: "3 Months",
+       
     },
     {
       icon: <DiPython />,
