@@ -59,6 +59,7 @@ const ShowCourse = () => {
     bulletPoints6: "Web Performance Optimization",
     img: img,
     btn: true, 
+    isShare:true,
     navigateTo: `/courses/${course}/join`,
     anim: <Player autoplay loop speed="1" src="https://assets8.lottiefiles.com/packages/lf20_jd8ofsrz.json" style={{ height: '500px', width: '550px' }}/>
   }
@@ -79,6 +80,7 @@ const ShowCourse = () => {
     para3: "If you are interested in learning ML and AI, Python is definitely the way to go.",
     img: img,
     btn: "Join Now", 
+    isShare:true,
     navigateTo: `/courses/${course}/join`,
     anim: <Player autoplay loop speed="1.5" src="https://assets10.lottiefiles.com/packages/lf20_2znxgjyt.json" style={{ height: '500px', width: '550px' }}/>
   }
@@ -97,6 +99,7 @@ const ShowCourse = () => {
     bulletPoints6: "React JS",
     img: img,
     btn: "Join Now", 
+    isShare:true,
     navigateTo: `/courses/${course}/join`,
     anim: <Player autoplay loop speed="2" src="https://assets6.lottiefiles.com/private_files/lf30_obidsi0t.json" style={{ height: '500px', width: '550px' }}/>
   }
@@ -115,6 +118,7 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
+    isShare:true,
     navigateTo: `/courses/${course}/join`,
     anim: <Player autoplay loop speed="1" src="https://assets6.lottiefiles.com/private_files/lf30_wqypnpu5.json" style={{ height: '500px', width: '550px' }}/>
   }
@@ -133,7 +137,8 @@ const ShowCourse = () => {
     bulletPoints6: "State management with Redux",
     para3: "React has become a popular choice for web development due to its ease of use, powerful features, and ability to create complex user interfaces with ease. Whether you're building a simple website or a complex web application, React is a great choice for your development needs.",
     img: img,
-    btn: true, 
+    btn: "Join Now", 
+    isShare:true,
     navigateTo: `/courses/${course}/join`,
     anim: <Player autoplay loop speed="1.5" src="https://assets9.lottiefiles.com/datafiles/fab7172a9302d416bcdb8ac7e1c71123/data.json" style={{ height: '600px', width: '650px' }}/>
   }
@@ -152,6 +157,7 @@ const ShowCourse = () => {
     bulletPoints6: "JS Engine Architecture",
     img: img,
     btn: "Join Now", 
+    isShare:true,
     navigateTo: `/courses/${course}/join`,
     anim: <Player autoplay loop speed="1" src="https://assets3.lottiefiles.com/packages/lf20_s7p6xmHfio.json" style={{ height: '600px', width: '600px' }}/>
   }
@@ -170,6 +176,7 @@ const ShowCourse = () => {
     bulletPoints6: "Skilled Instructors",
     img: img,
     btn: "Join Now", 
+    isShare:true,
     navigateTo: `/courses/${course}/join`,
     anim: <Player autoplay loop speed="2" src="https://assets2.lottiefiles.com/packages/lf20_zh6xtlj9.json" style={{ height: '500px', width: '550px' }}/>
   }

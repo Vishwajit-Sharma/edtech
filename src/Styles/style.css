@@ -450,9 +450,14 @@
 
   @media (max-width: 767.98px) {
     .read-btn{
-        width: 40% !important;
         font-size: small;
     }
+}
+@media (max-width: 425px) {
+  .read-btn{
+      width: 40% !important;
+      font-size: small;
+  }
 }
 
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../Styles/style.css';
 import { FaArrowRight, FaLinkedin, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 
 const HeadingContainer = ({ headingContainerContent}) => {
@@ -19,6 +20,10 @@ const HeadingContainer = ({ headingContainerContent}) => {
     }, []);
 
 
+    function handleWhatsAppShare() {
+        const url = `whatsapp://send?text=${encodeURIComponent(`Check out this Amazing ${headingContainerContent.subTopic} Course : `) + ' ' + encodeURIComponent('https://your-course-page-url.com')}`;
+        window.open(url);
+      }
 
     return (
 
@@ -72,9 +77,10 @@ const HeadingContainer = ({ headingContainerContent}) => {
                             <button className='primary-color-text social'><FaInstagramSquare /></button>
                             <button className='primary-color-text social'><FaFacebookSquare /></button>
                         </div>}
-                        <div className="row justify-content-lg-start justify-content-center mt-3">
+                        <div className="row justify-content-start ps-3 mt-3">
                         {headingContainerContent.readMoreVisible && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick={()=>navigate('/about')}>Read More</button>}
-                        {headingContainerContent.btn && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-4 read-btn" onClick={()=>navigate(headingContainerContent.navigateTo)}>Join Now</button>}
+                        {headingContainerContent.btn && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-2 read-btn" onClick={()=>navigate(headingContainerContent.navigateTo)}>Join Now</button>}
+                        {headingContainerContent.isShare && <button className=" py-md-3 py-sm-2 py-2 px-lg-4 px-md-3 px-sm-4 px-2 ms-3 read-btn" onClick={handleWhatsAppShare}>Share Course <AiOutlineWhatsApp/></button>}
                         
     </div>
                     </div>
