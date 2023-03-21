@@ -457,7 +457,7 @@ const ShowCourse = () => {
       {course === "advanced javascript" && <LazyLoad offset={20}><CourseContent courseContentL1={javascriptL1} courseContentL2={javascriptL2}/></LazyLoad>}
       {course === "java" && <LazyLoad offset={20}><CourseContent courseContentL1={javaL1} courseContentL2={javaL2}/></LazyLoad>}
 
-      <LazyLoad offset={20}><Process />  </LazyLoad>
+      <LazyLoad offset={20}><Process /></LazyLoad>
       
         <LazyLoad offset={20}><div className="container-xxl ">
           <div className="container d-flex justify-content-center pb-4">
@@ -465,11 +465,11 @@ const ShowCourse = () => {
           </div>
         </div></LazyLoad>
     
-        {course === "web designing" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>}
-        {course === "python with machine learning" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyPython}/>  </LazyLoad>}
-        {course === "react js" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyReact}/>  </LazyLoad>}
-        {course === "advanced javascript" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyJavascript}/>  </LazyLoad>}
-        {course === "front end development" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyFrontEnd}/>  </LazyLoad>}
+        {course === "web designing" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/></LazyLoad>}
+        {course === "python with machine learning" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyPython}/></LazyLoad>}
+        {course === "react js" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyReact}/></LazyLoad>}
+        {course === "advanced javascript" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyJavascript}/></LazyLoad>}
+        {course === "front end development" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyFrontEnd}/></LazyLoad>}
 
     {/* {course === "react js" && <LazyLoad offset={20}><FAQ faqs={faqReact}/></LazyLoad>} */}
     <LazyLoad offset={20}><Footer/></LazyLoad>
