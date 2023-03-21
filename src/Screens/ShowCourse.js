@@ -8,7 +8,7 @@ import wp4 from '../Assets/wp4.jpg'
 import wp5 from '../Assets/wp5.jpg'
 import HeadingTitle from '../Common/HeadingTitle';
 import HeadingContainer from '../Common/HeadingContainer';
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazy-load';
 import Process from '../Components/Process'
 import CourseOutline from '../Components/CourseOutline';
 import CourseContent from '../Components/CourseContent';
@@ -439,40 +439,40 @@ const ShowCourse = () => {
 
       <HeadingTitle title="Course Description" mainTitle="Course Outline" />
       
-      {course === "web designing" && <LazyLoad><CourseOutline  duration = {duration.webDesign} preRequisites = {preRequisites.webDesign} included={included.webDesign} course={courseCapitalise}/></LazyLoad>}
-      {course === "python with machine learning" && <LazyLoad><CourseOutline  duration = {duration.python} preRequisites = {preRequisites.python} included={included.python} course={courseCapitalise}/></LazyLoad>}
-      {course === "front end development" && <LazyLoad><CourseOutline  duration = {duration.frontEnd} preRequisites = {preRequisites.frontEnd} included={included.frontEnd} course={courseCapitalise}/></LazyLoad>}
-      {course === "back end development" && <LazyLoad><CourseOutline  duration = {duration.backEnd} preRequisites = {preRequisites.backEnd} included={included.backEnd} course={courseCapitalise}/></LazyLoad>}
-      {course === "react js" && <LazyLoad><CourseOutline  duration = {duration.react} preRequisites = {preRequisites.react} included={included.react} course={courseCapitalise}/></LazyLoad>}
-      {course === "advanced javascript" && <LazyLoad><CourseOutline  duration = {duration.javascript} preRequisites = {preRequisites.javascript} included={included.javascript} course={courseCapitalise}/></LazyLoad>}
-      {course === "java" && <LazyLoad><CourseOutline  duration = {duration.java} preRequisites = {preRequisites.java} included={included.java} course={courseCapitalise}/></LazyLoad>}
+      {course === "web designing" && <LazyLoad offset={20}><CourseOutline  duration = {duration.webDesign} preRequisites = {preRequisites.webDesign} included={included.webDesign} course={courseCapitalise}/></LazyLoad>}
+      {course === "python with machine learning" && <LazyLoad offset={20}><CourseOutline  duration = {duration.python} preRequisites = {preRequisites.python} included={included.python} course={courseCapitalise}/></LazyLoad>}
+      {course === "front end development" && <LazyLoad offset={20}><CourseOutline  duration = {duration.frontEnd} preRequisites = {preRequisites.frontEnd} included={included.frontEnd} course={courseCapitalise}/></LazyLoad>}
+      {course === "back end development" && <LazyLoad offset={20}><CourseOutline  duration = {duration.backEnd} preRequisites = {preRequisites.backEnd} included={included.backEnd} course={courseCapitalise}/></LazyLoad>}
+      {course === "react js" && <LazyLoad offset={20}><CourseOutline  duration = {duration.react} preRequisites = {preRequisites.react} included={included.react} course={courseCapitalise}/></LazyLoad>}
+      {course === "advanced javascript" && <LazyLoad offset={20}><CourseOutline  duration = {duration.javascript} preRequisites = {preRequisites.javascript} included={included.javascript} course={courseCapitalise}/></LazyLoad>}
+      {course === "java" && <LazyLoad offset={20}><CourseOutline  duration = {duration.java} preRequisites = {preRequisites.java} included={included.java} course={courseCapitalise}/></LazyLoad>}
       
-      <LazyLoad><HeadingTitle title="Course Curriculum" mainTitle="Course Content" /></LazyLoad>
+      <LazyLoad offset={20}><HeadingTitle title="Course Curriculum" mainTitle="Course Content" /></LazyLoad>
 
-      {course === "web designing" && <LazyLoad><CourseContent courseContentL1={webDesignL1} courseContentL2={webDesignL2}/></LazyLoad>}
-      {course === "python with machine learning" && <LazyLoad><CourseContent courseContentL1={pythonL1} courseContentL2={pythonL2}/></LazyLoad>}
-      {course === "front end development" && <LazyLoad><CourseContent courseContentL1={frontEndL1} courseContentL2={frontEndL2}/></LazyLoad>}
-      {course === "back end development" && <LazyLoad><CourseContent courseContentL1={backtEndL1} courseContentL2={backtEndL2}/></LazyLoad>}
-      {course === "react js" && <LazyLoad><CourseContent courseContentL1={reactL1} courseContentL2={reactL2}/></LazyLoad>}
-      {course === "advanced javascript" && <LazyLoad><CourseContent courseContentL1={javascriptL1} courseContentL2={javascriptL2}/></LazyLoad>}
-      {course === "java" && <LazyLoad><CourseContent courseContentL1={javaL1} courseContentL2={javaL2}/></LazyLoad>}
+      {course === "web designing" && <LazyLoad offset={20}><CourseContent courseContentL1={webDesignL1} courseContentL2={webDesignL2}/></LazyLoad>}
+      {course === "python with machine learning" && <LazyLoad offset={20}><CourseContent courseContentL1={pythonL1} courseContentL2={pythonL2}/></LazyLoad>}
+      {course === "front end development" && <LazyLoad offset={20}><CourseContent courseContentL1={frontEndL1} courseContentL2={frontEndL2}/></LazyLoad>}
+      {course === "back end development" && <LazyLoad offset={20}><CourseContent courseContentL1={backtEndL1} courseContentL2={backtEndL2}/></LazyLoad>}
+      {course === "react js" && <LazyLoad offset={20}><CourseContent courseContentL1={reactL1} courseContentL2={reactL2}/></LazyLoad>}
+      {course === "advanced javascript" && <LazyLoad offset={20}><CourseContent courseContentL1={javascriptL1} courseContentL2={javascriptL2}/></LazyLoad>}
+      {course === "java" && <LazyLoad offset={20}><CourseContent courseContentL1={javaL1} courseContentL2={javaL2}/></LazyLoad>}
 
-      <LazyLoad><Process />  </LazyLoad>
+      <LazyLoad offset={20}><Process />  </LazyLoad>
       
-        <LazyLoad><div className="container-xxl ">
+        <LazyLoad offset={20}><div className="container-xxl ">
           <div className="container d-flex justify-content-center pb-4">
             <MoreButton text="Join Now"  navigateTo={`courses/${course}/join`}/>
           </div>
         </div></LazyLoad>
     
-        {course === "web designing" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>}
-        {course === "python with machine learning" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyPython}/>  </LazyLoad>}
-        {course === "react js" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyReact}/>  </LazyLoad>}
-        {course === "advanced javascript" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyJavascript}/>  </LazyLoad>}
-        {course === "front end development" && <LazyLoad><WhyThisCourse course={courseCapitalise} why={whyFrontEnd}/>  </LazyLoad>}
+        {course === "web designing" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyWebDesign}/>  </LazyLoad>}
+        {course === "python with machine learning" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyPython}/>  </LazyLoad>}
+        {course === "react js" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyReact}/>  </LazyLoad>}
+        {course === "advanced javascript" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyJavascript}/>  </LazyLoad>}
+        {course === "front end development" && <LazyLoad offset={20}><WhyThisCourse course={courseCapitalise} why={whyFrontEnd}/>  </LazyLoad>}
 
-    {/* {course === "react js" && <LazyLoad><FAQ faqs={faqReact}/></LazyLoad>} */}
-    <LazyLoad><Footer/></LazyLoad>
+    {/* {course === "react js" && <LazyLoad offset={20}><FAQ faqs={faqReact}/></LazyLoad>} */}
+    <LazyLoad offset={20}><Footer/></LazyLoad>
 
     </div>
   )

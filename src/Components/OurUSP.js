@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef }  from 'react'
 import '../Styles/style.css'
 import HeadingTitle from '../Common/HeadingTitle'
 import FreeDemoForm from '../Common/FreeDemoForm'
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazy-load';
 import { GiGraduateCap, GiLevelEndFlag  } from "react-icons/gi";
 import { FaHandsHelping , FaComments  } from "react-icons/fa";
 
@@ -40,11 +40,11 @@ const OurUSP = () => {
     return (
         <div className='container-xxl py-5'>
             <div className="container">
-                <LazyLoad height={200} offset={20}>
+                <LazyLoad  offset={20}>
                     <HeadingTitle title="Our USP" mainTitle="Why Choose Us" />
                 </LazyLoad>
 
-                <LazyLoad height={200} offset={20}>
+                <LazyLoad offset={20}>
                     <div className="row features py-3">
                         <div className="col-lg-7 col-12 p-0 ">
                         <div className="row g-3">

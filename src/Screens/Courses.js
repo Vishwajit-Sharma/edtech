@@ -6,7 +6,7 @@ import HeadingContainer from '../Common/HeadingContainer'
 import CourseCard from '../Common/CourseCard'
 import HeadingTitle from '../Common/HeadingTitle'
 import Footer from '../Components/Footer'
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazy-load';
 import webDesignImg from '../Assets/webDesign.png'
 import reactImg from '../Assets/react.jpg'
 import javascriptImg from '../Assets/javascript.jpg'
@@ -133,10 +133,10 @@ const Courses = () => {
       <HeadingWallpaper img={img} heading="Courses" headLink="Courses" />
       <HeadingContainer headingContainerContent={headingContainerContent} />
 
-      <LazyLoad ><CoursesCategory /></LazyLoad>
+      <LazyLoad offset={20}><CoursesCategory /></LazyLoad>
 
       <Element name="development">
-        <LazyLoad >
+        <LazyLoad offset={20}>
           {<div className="container-xxl py-5" >
             <div className="container">
               <HeadingTitle title="Web development" mainTitle="Web development Courses" />
@@ -150,7 +150,7 @@ const Courses = () => {
       </Element>
 
       <Element name="professional">
-        <LazyLoad >
+        <LazyLoad offset={20}>
           {<div className="container-xxl py-5">
             <div className="container">
               <HeadingTitle title="Languages" mainTitle="Programming Languages Courses" />
@@ -164,7 +164,7 @@ const Courses = () => {
       </Element>
 
       <Element name="trending">
-        <LazyLoad >
+        <LazyLoad offset={20}>
           {<div className="container-xxl py-5">
             <div className="container">
               <HeadingTitle title="Trending" mainTitle="Trending Courses" />
@@ -178,7 +178,7 @@ const Courses = () => {
       </Element>
 
       <Element name="different">
-        <LazyLoad >
+        <LazyLoad offset={20}>
           {<div className="container-xxl py-5">
             <div className="container">
               <HeadingTitle title="Add-ON" mainTitle="Add-On Courses" />
@@ -190,7 +190,7 @@ const Courses = () => {
         </LazyLoad>
       </Element>
 
-      <LazyLoad>
+      <LazyLoad offset={20}>
         {
           <div className="container-xxl py-5">
             <div className="row bgColorFoundation py-4">
@@ -211,7 +211,7 @@ const Courses = () => {
         }
       </LazyLoad>
 
-      <LazyLoad><Footer /></LazyLoad>
+      <LazyLoad offset={20}><Footer /></LazyLoad>
 
     </div>
   )

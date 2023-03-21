@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 import PopularCourses from '../Components/PopularCourses'
 import HeadingContainer from '../Common/HeadingContainer'
 //import Testimonial from '../Components/Testimonial'
-import  LazyLoad  from 'react-lazyload';
+import  LazyLoad  from 'react-lazy-load';
 import FAQ from '../Components/FAQ'
 import OurUSP from '../Components/OurUSP'
 import { Player } from '@lottiefiles/react-lottie-player';
@@ -131,20 +131,20 @@ const Home = () => {
 
         <HeadingContainer headingContainerContent={headingContainerContent}/>
 
-        <LazyLoad height={200} offset={20}>
+        <LazyLoad offset={20}>
         <ServiceCard />
         </LazyLoad>
 
-        <LazyLoad height={200} offset={20}>
+        <LazyLoad  offset={20}>
         <PopularCourses/>
         </LazyLoad>
 
-        <LazyLoad height={200} offset={20}>
+        <LazyLoad offset={20}>
         <OurUSP/>
         </LazyLoad>
 
 
-        <LazyLoad height={200} offset={20}>
+        <LazyLoad offset={20}>
         <FAQ faqs={faq}/>
         </LazyLoad>
 
@@ -153,7 +153,7 @@ const Home = () => {
         <Testimonial/>
         </LazyLoad> */}
                
-        <LazyLoad><Footer/></LazyLoad>
+        <LazyLoad offset={20}><Footer/></LazyLoad>
 
     </div>
   )

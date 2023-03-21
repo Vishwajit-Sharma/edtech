@@ -4,7 +4,7 @@ import img from '../Assets/about.jpg'
 import HeadingContainer from '../Common/HeadingContainer'
 import Footer from '../Components/Footer'
 import OurTeam from '../Components/OurTeam'
-import LazyLoad from 'react-lazyload'
+import LazyLoad from 'react-lazy-load'
 import OurPurpose from '../Components/OurPurpose'
 import OurMethodology from '../Components/OurMethodology'
 import { Player } from '@lottiefiles/react-lottie-player';
@@ -39,13 +39,13 @@ const About = () => {
 
       <HeadingContainer  headingContainerContent={headingContainerContent}/>
 
-      <LazyLoad ><OurMethodology /></LazyLoad>
+      <LazyLoad offset={20}><OurMethodology /></LazyLoad>
 
-      <LazyLoad ><OurPurpose /></LazyLoad>
+      <LazyLoad offset={20}><OurPurpose /></LazyLoad>
 
-      <LazyLoad ><OurTeam /></LazyLoad>
+      <LazyLoad offset={20}><OurTeam /></LazyLoad>
 
-      <LazyLoad > <Footer /></LazyLoad>
+      <LazyLoad offset={20}><Footer /></LazyLoad>
 
     </div>
   )
