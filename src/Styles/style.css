@@ -1139,6 +1139,7 @@
     align-items: center;
     padding: 15px;
     font-weight: bold;
+    
     cursor: pointer;
   }
   
@@ -1146,6 +1147,15 @@
     padding: 15px;
     display: none;
   }
+  @media (max-width: 576px) {
+    .faq-question{
+      font-size: 12px;
+    }
+    .faq-answer{
+      font-size: 12px;
+    }
+    
+}
   
   .faq-icon {
     margin-right: 10px;
