@@ -61,8 +61,9 @@ const Contact = () => {
           <img src={img1} alt="" />
           <div className="contact-info-box">
             <h3>Contact Information</h3>
-            <p><FaPhone className="contact-icon" /> Phone: 123-456-7890</p>
-            <p><FaEnvelope className="contact-icon" /> Email: contact@example.com</p>
+            <p><FaPhone className="contact-icon" /> Phone: +91-8087287984</p>
+            <p><FaPhone className="contact-icon" /> Phone: +91-9049220303</p>
+            {/* <p><FaEnvelope className="contact-icon" /> Email: contact@example.com</p> */}
           </div>
         </div>
         <div className="col-md-6 contact-form">

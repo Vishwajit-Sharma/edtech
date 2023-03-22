@@ -21,7 +21,7 @@ const HeadingContainer = ({ headingContainerContent}) => {
 
 
     function handleWhatsAppShare() {
-        const url = `whatsapp://send?text=${encodeURIComponent(`Check out this Amazing ${headingContainerContent.subTopic} Course : `) + ' ' + encodeURIComponent('https://your-course-page-url.com')}`;
+        const url = `whatsapp://send?text=${encodeURIComponent(`Check out this Amazing ${headingContainerContent.subTopic} Course : `) + ' ' + encodeURIComponent(`${window.location.href}`)}`;
         window.open(url);
       }
 

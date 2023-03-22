@@ -18,7 +18,8 @@ const ShareCourse = ({heading}) => {
     //   };
     
     function handleWhatsAppShare() {
-        const url = `whatsapp://send?text=${encodeURIComponent(`Check out this Amazing ${heading} Course : `) + ' ' + encodeURIComponent('https://your-course-page-url.com')}`;
+        // const url = `whatsapp://send?text=${encodeURIComponent(`Check out this Amazing ${heading} Course : `) + ' ' + encodeURIComponent('https://your-course-page-url.com')}`;
+        const url = `whatsapp://send?text=${encodeURIComponent(`Check out this Amazing ${heading} Course : `) + ' ' + encodeURIComponent(`${window.location.href}`)}`;
         window.open(url);
       }
       

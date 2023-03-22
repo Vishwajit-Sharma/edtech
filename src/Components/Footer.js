@@ -19,14 +19,15 @@ const navigate = useNavigate()
               <button className="btn btn-link" onClick={()=>navigate('/about')}>About Us</button>
               <button className="btn btn-link" onClick={()=>navigate('/contact')}>Contact Us</button>
               <button className="btn btn-link" onClick={()=>navigate('/courses/selectcourse/join')}>Join Now</button>
-              <button className="btn btn-link" onClick={()=>navigate('/')}>Terms &amp; Condition</button>
+              {/* <button className="btn btn-link" onClick={()=>navigate('/')}>Terms &amp; Condition</button> */}
               <Link className="text-decoration-none" to='/#faq' smooth={true} duration={500}> <button className="btn btn-link" >FAQs &amp; Help</button>   </Link>
             </div>
             <div className="col-lg-3 col-sm-6">
               <h4 className="text-white mb-3">Contact</h4>
               <p className="mb-2"><span className="me-3"><FaMapMarkerAlt/></span> Pune, India </p>
               <p className="mb-2"><span className="me-3"><FaPhoneAlt/></span>+91 8087287984</p>
-              <p className="mb-2"><span className="me-3"><FaEnvelope/></span>info@example.com</p>
+              <p className="mb-2"><span className="me-3"><FaPhoneAlt/></span>+91 9049220303</p>
+              {/* <p className="mb-2"><span className="me-3"><FaEnvelope/></span>info@example.com</p> */}
               {/* <div className="d-flex pt-2">
                 <button className="btn btn-outline-light btn-social" ><span><FaLinkedinIn /></span></button>
                 <button className="btn btn-outline-light btn-social" ><span><FaFacebookF /></span></button>
@@ -56,7 +57,7 @@ const navigate = useNavigate()
         <div className="container">
           <div className="copyright">
             <div className="row">             
-                <p>Copyright © 2023 <button className="text-dark border-bottom px-2" onClick={()=>navigate('/')}> www.technoshaala.com</button>, All Right Reserved.
+                <p>Copyright © 2023 <button className="text-dark border-bottom px-2" > www.technoshaala.com</button>, All Right Reserved.
                 </p>
              
             </div>
