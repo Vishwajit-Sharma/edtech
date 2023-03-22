@@ -45,7 +45,7 @@ const OurUSP = () => {
                 </LazyLoad>
 
                 <LazyLoad offset={20}>
-                    <div className="row features py-3">
+                    <div className="row features py-3 px-4">
                         <div className="col-lg-7 col-12 p-0 ">
                         <div className="row g-3">
                             {content.map((item, index) => 
