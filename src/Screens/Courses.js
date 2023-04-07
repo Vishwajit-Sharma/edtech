@@ -15,12 +15,16 @@ import frontendImg from '../Assets/frontend.png'
 import backendImg from '../Assets/backend.jpg'
 import javaImg from '../Assets/java.jpg'
 import marketImg from '../Assets/market.png'
-import {  FaStar, FaStarHalfAlt, FaRegStar, FaReact , FaPalette , FaCodeBranch, FaServer , FaChartBar   } from "react-icons/fa";
+import sassImg from '../Assets/sass.jpg'
+import nextImg from '../Assets/next.jpg'
+import tsImg from '../Assets/ts.jpg'
+import {  FaStar, FaStarHalfAlt, FaRegStar, FaReact , FaPalette , FaCodeBranch, FaServer , FaChartBar, FaSass  } from "react-icons/fa";
 import { DiPython, DiJava, DiJsBadge  } from 'react-icons/di';
 import { Element } from 'react-scroll';
 import FreeDemoForm from '../Common/FreeDemoForm'
 import MoreButton from '../Common/MoreButton'
 import { Player } from '@lottiefiles/react-lottie-player';
+import { SiNextdotjs, SiTypescript } from "react-icons/si";
 
 
 const Courses = () => {
@@ -112,7 +116,37 @@ const Courses = () => {
     bgColor: "bgColorFoundation",
     star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
   }
-  const cardContentDifferent1 = {
+  const cardContentshort1 = {
+    img: sassImg,
+    courseName: "CSS Preprocessor - SASS/SCSS",
+    description: "Why SASS + Variables + Nesting + Mixins + Inheritence",
+    time: "1 Month",
+    icon: <FaSass  />,
+    bgColor: "bgColorFoundation",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+    comingSoon: true
+  }
+  const cardContentshort2 = {
+    img: nextImg,
+    courseName: "Next Js",
+    description: "Page based Routing + Dynamic Routing + Pre-Rendering + API routes + Deploying",
+    time: "1 Month",
+    icon: <SiNextdotjs  />,
+    bgColor: "bgColorFoundation",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+    comingSoon: true
+  }
+  const cardContentshort3 = {
+    img: tsImg,
+    courseName: "TypeScript",
+    description: "Data Types + Object Type + Type Annotation + Interface + Generics",
+    time: "1 Month",
+    icon: <SiTypescript  />,
+    bgColor: "bgColorFoundation",
+    star: [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaRegStar/>],
+    comingSoon: true
+  }
+  const cardContentshort4 = {
     img: marketImg,
     courseName: "Market Research",
     description: "market research topic main points to be entered",
@@ -177,13 +211,15 @@ const Courses = () => {
         </LazyLoad>
       </Element>
 
-      <Element name="different">
+      <Element name="short">
         <LazyLoad offset={20}>
           {<div className="container-xxl py-5">
             <div className="container">
-              <HeadingTitle title="Add-ON" mainTitle="Add-On Courses" />
+              <HeadingTitle title="Quick Learn" mainTitle="Short Duration Courses" />
               <div className="row g-4 justify-content-center">
-                <CourseCard cardContent={cardContentDifferent1} />
+                <CourseCard cardContent={cardContentshort1} />
+                <CourseCard cardContent={cardContentshort2} />
+                <CourseCard cardContent={cardContentshort3} />
               </div>
             </div>
           </div>}
